@@ -7,6 +7,7 @@ Fowler's randomization inference test for leader effects (RIFLE) to detect a lea
 
 **English** · [Português (Brasil)](README.pt-BR.md) · [Español](README.es.md) · [Italiano](README.it.md) · [עברית](README.he.md)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24044367.svg)](https://doi.org/10.5281/zenodo.24044367)
 ![License: Apache-2.0 (code)](https://img.shields.io/badge/code-Apache--2.0-blue)
 ![License: CC BY 4.0 (text and figures)](https://img.shields.io/badge/text%20%26%20figures-CC%20BY%204.0-lightgrey)
 ![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)
@@ -22,9 +23,14 @@ Fowler's randomization inference test for leader effects (RIFLE) to detect a lea
 
 ## The paper
 
-The paper (PDF and DOCX in Portuguese, the original, and in English, Spanish and Italian translations) enters this
-repository with the final version, once the DOI exists. Hebrew readers are served by the English edition. Its
-figures and Table 1 are generated here in all four languages (`output/figures/`, `output/tables/`).
+| Language | PDF | DOCX |
+|---|---|---|
+| Portuguese (Brazil), original | [`paper-final.pdf`](docs/paper/paper-final.pdf) | [`paper-final.docx`](docs/paper/paper-final.docx) |
+| English, translation | [`paper-final-en.pdf`](docs/paper/paper-final-en.pdf) | [`paper-final-en.docx`](docs/paper/paper-final-en.docx) |
+| Spanish, translation | [`paper-final-es.pdf`](docs/paper/paper-final-es.pdf) | [`paper-final-es.docx`](docs/paper/paper-final-es.docx) |
+| Italian, translation | [`paper-final-it.pdf`](docs/paper/paper-final-it.pdf) | [`paper-final-it.docx`](docs/paper/paper-final-it.docx) |
+
+Each edition has its figures and Table 1 in its own language. Hebrew readers are served by the English edition.
 
 ## What this work contributes
 
@@ -111,6 +117,7 @@ data/            mandatos.csv (anonymized tenures), mascara_indice.csv, parametr
                  PREREGISTRATION.md, numeros_publicados.json (every anchored number of the paper, per edition)
 data/congelado/  21 outputs of the origin study with pinned sha256
 data/origem/     hash chains of the origin study (pilot, analysis, preregistration)
+docs/paper/      the paper in four editions (PDF and DOCX)
 docs/            algorithm.md (formal specification of the test and the mechanism) and the log of the
                  full run (byte-for-byte equality)
 locales/         figure and table labels in pt-BR, en, es and it
@@ -131,15 +138,18 @@ tests/           tests that lock the published numbers
 
 ## Citation
 
-The DOI is created by the first release of this repository; until then, use [`CITATION.cff`](CITATION.cff).
+Concept DOI (all versions, always resolves to the latest): [10.5281/zenodo.24044367](https://doi.org/10.5281/zenodo.24044367). Each release also
+has its own version DOI, listed on the Zenodo record. See [`CITATION.cff`](CITATION.cff).
 
 ```bibtex
 @software{flores_2026_rifle_gap_bias,
-  author  = {Flores, Carlos Ulisses},
-  title   = {Does a mayor improve a city beyond chance? Missing data at a change of mayor makes the test say yes: Replication package},
-  year    = {2026},
-  version = {1.0.0},
-  url     = {https://github.com/ulissesflores/rifle-gap-bias}
+  author    = {Flores, Carlos Ulisses},
+  title     = {Does a mayor improve a city beyond chance? Missing data at a change of mayor makes the test say yes: Replication package},
+  year      = {2026},
+  version   = {1.0.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24044367},
+  url       = {https://github.com/ulissesflores/rifle-gap-bias}
 }
 ```
 

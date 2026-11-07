@@ -15,6 +15,14 @@ type: software
 version: 1.0.0
 date-released: "2026-11-07"
 license: Apache-2.0
+doi: "10.5281/zenodo.24044367"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24044367"
+    description: "Concept DOI (all versions)"
+  - type: doi
+    value: "10.5281/zenodo.24044368"
+    description: "Version DOI of v1.0.0-rc1, the release that minted the concept DOI"
 repository-code: "https://github.com/ulissesflores/rifle-gap-bias"
 authors:
   - family-names: "Flores"

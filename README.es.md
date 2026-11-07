@@ -7,6 +7,7 @@ de inferencia por aleatorización para efectos del líder (RIFLE) de Berry y Fow
 
 [English](README.md) · [Português (Brasil)](README.pt-BR.md) · **Español** · [Italiano](README.it.md) · [עברית](README.he.md)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24044367.svg)](https://doi.org/10.5281/zenodo.24044367)
 ![License: Apache-2.0 (code)](https://img.shields.io/badge/code-Apache--2.0-blue)
 ![License: CC BY 4.0 (text and figures)](https://img.shields.io/badge/text%20%26%20figures-CC%20BY%204.0-lightgrey)
 ![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)
@@ -23,9 +24,14 @@ de inferencia por aleatorización para efectos del líder (RIFLE) de Berry y Fow
 
 ## El artículo
 
-El artículo (PDF y DOCX en portugués, el original, y en traducciones al inglés, español e italiano) entra en este
-repositorio con la versión final, una vez que exista el DOI. Los lectores de hebreo cuentan con la edición en inglés.
-Sus figuras y la Tabla 1 se generan aquí en los cuatro idiomas (`output/figures/`, `output/tables/`).
+| Idioma | PDF | DOCX |
+|---|---|---|
+| Portugués (Brasil), original | [`paper-final.pdf`](docs/paper/paper-final.pdf) | [`paper-final.docx`](docs/paper/paper-final.docx) |
+| Inglés, traducción | [`paper-final-en.pdf`](docs/paper/paper-final-en.pdf) | [`paper-final-en.docx`](docs/paper/paper-final-en.docx) |
+| Español, traducción | [`paper-final-es.pdf`](docs/paper/paper-final-es.pdf) | [`paper-final-es.docx`](docs/paper/paper-final-es.docx) |
+| Italiano, traducción | [`paper-final-it.pdf`](docs/paper/paper-final-it.pdf) | [`paper-final-it.docx`](docs/paper/paper-final-it.docx) |
+
+Cada edición trae sus figuras y la Tabla 1 en su propio idioma. Los lectores de hebreo cuentan con la edición en inglés.
 
 ## Qué aporta este trabajo
 
@@ -113,6 +119,7 @@ data/            mandatos.csv (anonymized tenures), mascara_indice.csv, parametr
                  PREREGISTRATION.md, numeros_publicados.json (every anchored number of the paper, per edition)
 data/congelado/  21 outputs of the origin study with pinned sha256
 data/origem/     hash chains of the origin study (pilot, analysis, preregistration)
+docs/paper/      the paper in four editions (PDF and DOCX)
 docs/            algorithm.md (formal specification of the test and the mechanism) and the log of the
                  full run (byte-for-byte equality)
 locales/         figure and table labels in pt-BR, en, es and it
@@ -133,15 +140,18 @@ tests/           tests that lock the published numbers
 
 ## Cita
 
-El DOI se crea con el primer release de este repositorio; hasta entonces, use [`CITATION.cff`](CITATION.cff).
+DOI de concepto (todas las versiones, siempre resuelve a la más reciente): [10.5281/zenodo.24044367](https://doi.org/10.5281/zenodo.24044367). Cada release tiene además
+su propio DOI de versión, indicado en el registro de Zenodo. Véase [`CITATION.cff`](CITATION.cff).
 
 ```bibtex
 @software{flores_2026_rifle_gap_bias,
-  author  = {Flores, Carlos Ulisses},
-  title   = {Does a mayor improve a city beyond chance? Missing data at a change of mayor makes the test say yes: Replication package},
-  year    = {2026},
-  version = {1.0.0},
-  url     = {https://github.com/ulissesflores/rifle-gap-bias}
+  author    = {Flores, Carlos Ulisses},
+  title     = {Does a mayor improve a city beyond chance? Missing data at a change of mayor makes the test say yes: Replication package},
+  year      = {2026},
+  version   = {1.0.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24044367},
+  url       = {https://github.com/ulissesflores/rifle-gap-bias}
 }
 ```
 

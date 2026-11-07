@@ -7,6 +7,7 @@
 
 [English](README.md) · [Português (Brasil)](README.pt-BR.md) · [Español](README.es.md) · [Italiano](README.it.md) · **עברית**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24044367.svg)](https://doi.org/10.5281/zenodo.24044367)
 ![License: Apache-2.0 (code)](https://img.shields.io/badge/code-Apache--2.0-blue)
 ![License: CC BY 4.0 (text and figures)](https://img.shields.io/badge/text%20%26%20figures-CC%20BY%204.0-lightgrey)
 ![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)
@@ -24,9 +25,14 @@
 
 ## המאמר
 
-המאמר (PDF ו-DOCX בפורטוגזית, שפת המקור, ובתרגומים לאנגלית, לספרדית ולאיטלקית) ייכנס למאגר זה עם הגרסה הסופית,
-לאחר שייווצר ה-DOI. קוראי עברית מופנים למהדורה האנגלית. האיורים שלו וטבלה 1 נוצרים כאן בכל ארבע השפות
-(`output/figures/`, `output/tables/`).
+| שפה | PDF | DOCX |
+|---|---|---|
+| פורטוגזית (ברזיל), המקור | [`paper-final.pdf`](docs/paper/paper-final.pdf) | [`paper-final.docx`](docs/paper/paper-final.docx) |
+| אנגלית, תרגום | [`paper-final-en.pdf`](docs/paper/paper-final-en.pdf) | [`paper-final-en.docx`](docs/paper/paper-final-en.docx) |
+| ספרדית, תרגום | [`paper-final-es.pdf`](docs/paper/paper-final-es.pdf) | [`paper-final-es.docx`](docs/paper/paper-final-es.docx) |
+| איטלקית, תרגום | [`paper-final-it.pdf`](docs/paper/paper-final-it.pdf) | [`paper-final-it.docx`](docs/paper/paper-final-it.docx) |
+
+לכל מהדורה האיורים וטבלה 1 בשפתה שלה. קוראי עברית מופנים למהדורה האנגלית.
 
 ## מה תורמת עבודה זו
 
@@ -120,6 +126,7 @@ data/            mandatos.csv (anonymized tenures), mascara_indice.csv, parametr
                  PREREGISTRATION.md, numeros_publicados.json (every anchored number of the paper, per edition)
 data/congelado/  21 outputs of the origin study with pinned sha256
 data/origem/     hash chains of the origin study (pilot, analysis, preregistration)
+docs/paper/      the paper in four editions (PDF and DOCX)
 docs/            algorithm.md (formal specification of the test and the mechanism) and the log of the
                  full run (byte-for-byte equality)
 locales/         figure and table labels in pt-BR, en, es and it
@@ -142,17 +149,20 @@ tests/           tests that lock the published numbers
 
 ## ציטוט
 
-ה-DOI נוצר עם ה-release הראשון של מאגר זה; עד אז, השתמשו ב-[`CITATION.cff`](CITATION.cff).
+DOI מושגי (כל הגרסאות, מפנה תמיד לאחרונה): [10.5281/zenodo.24044367](https://doi.org/10.5281/zenodo.24044367). לכל release יש גם DOI משלו
+לגרסה, המופיע ברשומת Zenodo. ראו [`CITATION.cff`](CITATION.cff).
 
 </div>
 
 ```bibtex
 @software{flores_2026_rifle_gap_bias,
-  author  = {Flores, Carlos Ulisses},
-  title   = {Does a mayor improve a city beyond chance? Missing data at a change of mayor makes the test say yes: Replication package},
-  year    = {2026},
-  version = {1.0.0},
-  url     = {https://github.com/ulissesflores/rifle-gap-bias}
+  author    = {Flores, Carlos Ulisses},
+  title     = {Does a mayor improve a city beyond chance? Missing data at a change of mayor makes the test say yes: Replication package},
+  year      = {2026},
+  version   = {1.0.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24044367},
+  url       = {https://github.com/ulissesflores/rifle-gap-bias}
 }
 ```
 

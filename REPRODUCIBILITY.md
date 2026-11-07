@@ -12,8 +12,7 @@ origin hash chains are in Portuguese and stay as recorded: translating them woul
 1. `scripts/verify_chain.py` recomputes the provenance chain of the latest run in `runs/` and exits with the number
    of discrepancies (0 = intact).
 2. `pytest`: every number anchored in the four editions of the paper (exported to `data/numeros_publicados.json`)
-   against `output/results.json` and present in the DOCX of each edition (skipped until the paper enters with the
-   DOI); no malformed anchor;
+   against `output/results.json` and present in the DOCX of each edition; no malformed anchor;
    `output/results.json` rebuilt byte for byte; the port of `rifle.ado` against hand calculations, against the
    exact enumeration of orderings (with and without `nostitch`) and against an independent reconstruction of the
    mean that includes the real row; absence of CPF and structure of the panel; linkage of the origin study's
@@ -73,8 +72,8 @@ them changes. Of these, 16 are not redone here:
    has been pinned since 2026-10-31; `tests/test_cadeias_origem.py` lists the four as an exception and requires
    registration of all the others.
 2. **Precedence in time declared, not authenticated.** The chains guarantee integrity and order, but the timestamps come
-   from the files' modification dates. There is no external timestamp (the Zenodo DOI will be the first external
-   anchor).
+   from the files' modification dates. There is no external timestamp (the Zenodo record of 2026-11-07, DOI 10.5281/zenodo.24044367, is the first
+   external anchor).
 3. **Reading rule outside the chain.** The reading rule for the ten cells added in the revision
    (`diagnostico_ado_juizes`) was written in the paper's preregistration before running, but that file was not in
    a chain; the module entered the `piloto` chain (seq 51) before its output (seq 52).
@@ -89,8 +88,9 @@ them changes. Of these, 16 are not redone here:
 
 ### The sealed run
 
-`runs/` holds one sealed run, which starts its own chain (`prev` is empty). `scripts/verify_chain.py` recomputes
-it from disk.
+`runs/` holds one sealed run, the one of this version. Its `prev` field is the `chain_head` of the run sealed in
+release v1.0.0-rc1 (the release that minted the DOI), which stays in that release. `scripts/verify_chain.py`
+recomputes the current run from disk.
 
 ## What this package does not redo
 

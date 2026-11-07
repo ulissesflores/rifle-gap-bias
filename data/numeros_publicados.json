@@ -2,7 +2,7 @@
  "_doc": "Trechos do paper canonico que o gate de numeros le, por edicao (pt-br original; en, es, it traducoes): cada ancora `<!-- num:caminho -->valor` e cada citacao de Figura/Tabela. O artigo publico e docs/paper/paper-final[-<locale>].pdf e .docx.",
  "edicoes": {
   "pt-br": {
-   "paper_sha256": "84a8d102f7a50eb79674c10b3c4f8dee34b8e12be7400d2050def7880c035aaf",
+   "paper_sha256": "b84c5285ac8c9427a74cb9d1ac889f8795c8598cbcffe9b3063b69ef782a4d10",
    "ancoras": [
     "<!-- num:ado_escala.celulas.p9_N5468.fracao_lacuna_vizinha_de_troca_pct -->62,3",
     "<!-- num:ado_escala.celulas.p9_N5468.taxa_pct -->76,6",
@@ -204,7 +204,7 @@
    ]
   },
   "en": {
-   "paper_sha256": "ea296ed53cea592e6c1ba95a6ba10aa43a2da6f9fd47d5ee64de42a2272014e9",
+   "paper_sha256": "5930c701a7dc85ba1160da7b4464b6b774964cc1eeeb6bbd41de1f5d62971801",
    "ancoras": [
     "<!-- num:ado_escala.celulas.p9_N5468.fracao_lacuna_vizinha_de_troca_pct -->62.3",
     "<!-- num:ado_escala.celulas.p9_N5468.taxa_pct -->76.6",
@@ -406,7 +406,7 @@
    ]
   },
   "es": {
-   "paper_sha256": "52e508fcc8b5782dae2b87c84284f7c807ce2b27dcf73108fff471c55a1ab810",
+   "paper_sha256": "922a2e908971e24ea33380f0a820d9d73f52797ce4f1fcdfa75878e5c982652d",
    "ancoras": [
     "<!-- num:ado_escala.celulas.p9_N5468.fracao_lacuna_vizinha_de_troca_pct -->62,3",
     "<!-- num:ado_escala.celulas.p9_N5468.taxa_pct -->76,6",
@@ -608,7 +608,7 @@
    ]
   },
   "it": {
-   "paper_sha256": "9b4123727ff7b619e944944eb647d5138c3f5c1e3e54cfbefbc01439f050e1f8",
+   "paper_sha256": "5daa634b61bed9cf7b947ad0f828214bf1b940b617972cf0811fdffb0a7f9546",
    "ancoras": [
     "<!-- num:ado_escala.celulas.p9_N5468.fracao_lacuna_vizinha_de_troca_pct -->62,3",
     "<!-- num:ado_escala.celulas.p9_N5468.taxa_pct -->76,6",

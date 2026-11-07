@@ -1,6 +1,6 @@
 {
-  "run_id": "20261107T212121Z",
-  "nota": "repo rifle-gap-bias (2026-11-07): em ingles + 4 idiomas, sem docs/paper ate o DOI",
+  "run_id": "20261107T213017Z",
+  "nota": "v1.0.0 final: DOI 10.5281/zenodo.24044367 nas 4 edicoes e no README; artigo em PDF e DOCX",
   "python": "3.12.12",
   "plataforma": "macOS-26.7.2-arm64-arm-64bit",
   "pip_freeze": [
@@ -412,19 +412,59 @@
       {
         "name": "paper",
         "kind": "tree",
-        "nfiles": 1,
-        "hash": "0066ed6506f27edbe72e5602b8304fe0c71592bb6a614d282e9c189dbb883f18",
+        "nfiles": 9,
+        "hash": "280d5e637b50c14d499e27358b5d20eefdcb29911d5e242895f65c6a89d50e0d",
         "leaves": [
           {
             "path": "data/numeros_publicados.json",
-            "sha256": "44028cadf70729563725fd7c190272737acb4ea4508a4f535f0434eb21870f68",
+            "sha256": "b6c9f7223e6cd4acc2ce6d78bc2bf3c10c44ac221ecff0a83a54c44b1634109d",
             "size": 53284
+          },
+          {
+            "path": "docs/paper/paper-final-en.docx",
+            "sha256": "38eb9f7fe44e59b6a0b3f0769ccf3b9d47e28b3903329b49caf95738d2c4c1e6",
+            "size": 307170
+          },
+          {
+            "path": "docs/paper/paper-final-en.pdf",
+            "sha256": "63d72a65b8f9977e1e302a53a959c133dbcdf25c17455b7f3c7ad23fbd2b120b",
+            "size": 723799
+          },
+          {
+            "path": "docs/paper/paper-final-es.docx",
+            "sha256": "c78eb268e9520fb234c5faf1070cf29629d4fecead757c7cafdf9ea1afa49f1c",
+            "size": 312373
+          },
+          {
+            "path": "docs/paper/paper-final-es.pdf",
+            "sha256": "a25cb9c4c8526da169aecf3fb035c935bf7d6e42665369b5e09b490412711f47",
+            "size": 763258
+          },
+          {
+            "path": "docs/paper/paper-final-it.docx",
+            "sha256": "f62422b6a25a5037ab4a3bcc360d3783d62e1a1ead5144f5d30c0b8493238fc9",
+            "size": 305588
+          },
+          {
+            "path": "docs/paper/paper-final-it.pdf",
+            "sha256": "ec573dee633f715a97c9df87310c60fa01349f25bfebb161721bb40cc6bd6d5f",
+            "size": 763522
+          },
+          {
+            "path": "docs/paper/paper-final.docx",
+            "sha256": "d72a19f85b4e541efd79af452fefd952db17c9ce2b38902b9e53e59918e45b40",
+            "size": 315508
+          },
+          {
+            "path": "docs/paper/paper-final.pdf",
+            "sha256": "8e39388c68c371f6f7775530b2e5af6d6111d0405a8b44b9546c3883090ea5c8",
+            "size": 766531
           }
         ]
       }
     ],
-    "prev_chain_head": "0000000000000000000000000000000000000000000000000000000000000000",
-    "root": "4173b2b04a0203a9efc02713147f570db88842411a72a8ef438f7f44175db902",
-    "chain_head": "4173b2b04a0203a9efc02713147f570db88842411a72a8ef438f7f44175db902"
+    "prev_chain_head": "4173b2b04a0203a9efc02713147f570db88842411a72a8ef438f7f44175db902",
+    "root": "43e0a9f1ada58c2ff03328082762c8cded8c8c2067204448608423e7e467d75e",
+    "chain_head": "dcb9c3ad664c7856c9fac77e4d29cfa8404fa64e6943657a38f73f8b5fab88ea"
   }
 }
