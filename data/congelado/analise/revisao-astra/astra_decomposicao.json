@@ -1,0 +1,151 @@
+{
+  "versoes": {
+    "principal": {
+      "B": 0.5664976762699927,
+      "dp_condicional_exato": 0.006033191665435401,
+      "numero_efetivo_contribuintes_variancia": 1.5096194371573253,
+      "concentracao_SS_10pct": 0.4988072869875202,
+      "escala_quadratica_media_por_celula": 0.9726757707064995,
+      "componentes": {
+        "C1": {
+          "dp_contribuicao_isolada_mesmo_denominador": 0.00035265857216339045,
+          "dp_sem_componente_mesmo_denominador": 0.0058883397259215505
+        },
+        "C2": {
+          "dp_contribuicao_isolada_mesmo_denominador": 0.005618957362178374,
+          "dp_sem_componente_mesmo_denominador": 0.0006992725898148169
+        },
+        "C3": {
+          "dp_contribuicao_isolada_mesmo_denominador": 0.00046527626234788233,
+          "dp_sem_componente_mesmo_denominador": 0.005757064789545029
+        }
+      },
+      "termos_cov_ordem": [
+        "C1",
+        "C2",
+        "C3",
+        "C1xC2",
+        "C1xC3",
+        "C2xC3"
+      ],
+      "fracao_covariancia_com_total": [
+        0.0036071635336327045,
+        0.9220620544672019,
+        0.005747029179433502,
+        0.022093905935710874,
+        0.003880743143912701,
+        0.04260910374010817
+      ],
+      "variancias_temporais_residuo": [
+        0.62899167732511,
+        0.730426754133234,
+        0.861842250894699,
+        0.9944567357087906,
+        0.9074155151455751,
+        0.7565443780758622,
+        0.844347644847442,
+        0.8339359684097081,
+        0.852939996113341,
+        1.5047195920559637
+      ]
+    },
+    "atraso": {
+      "B": 0.5774724768351103,
+      "dp_condicional_exato": 0.0065955382684500215,
+      "numero_efetivo_contribuintes_variancia": 3.71639248162588,
+      "concentracao_SS_10pct": 0.5155552245146466,
+      "escala_quadratica_media_por_celula": 0.9826329876755475,
+      "componentes": {
+        "C1": {
+          "dp_contribuicao_isolada_mesmo_denominador": 0.0003671025260913683,
+          "dp_sem_componente_mesmo_denominador": 0.006495112527292265
+        },
+        "C2": {
+          "dp_contribuicao_isolada_mesmo_denominador": 0.006236686959254583,
+          "dp_sem_componente_mesmo_denominador": 0.000874974336780923
+        },
+        "C3": {
+          "dp_contribuicao_isolada_mesmo_denominador": 0.0006547545437164425,
+          "dp_sem_componente_mesmo_denominador": 0.006329997887444499
+        }
+      },
+      "termos_cov_ordem": [
+        "C1",
+        "C2",
+        "C3",
+        "C1xC2",
+        "C1xC3",
+        "C2xC3"
+      ],
+      "fracao_covariancia_com_total": [
+        0.0032866085380140373,
+        0.9331220812337792,
+        0.00926608424044486,
+        0.014161743648089229,
+        0.004152614254284021,
+        0.03601086808538871
+      ],
+      "variancias_temporais_residuo": [
+        null,
+        0.7294330899832301,
+        0.8614796395138058,
+        0.9943516829795523,
+        0.9089811374886445,
+        0.7563437643517333,
+        0.8445056124035524,
+        0.8330470055075507,
+        0.8524734506274353,
+        1.5051426809013266
+      ]
+    },
+    "grandes": {
+      "B": 0.7245810976796252,
+      "dp_condicional_exato": 0.0029332432030918162,
+      "numero_efetivo_contribuintes_variancia": 3.500286766514986,
+      "concentracao_SS_10pct": 0.48525262359522325,
+      "escala_quadratica_media_por_celula": 1.0020156217687681,
+      "componentes": {
+        "C1": {
+          "dp_contribuicao_isolada_mesmo_denominador": 0.0007421372575518865,
+          "dp_sem_componente_mesmo_denominador": 0.0031317240521396834
+        },
+        "C2": {
+          "dp_contribuicao_isolada_mesmo_denominador": 0.003227779319647709,
+          "dp_sem_componente_mesmo_denominador": 0.0008600718034574955
+        },
+        "C3": {
+          "dp_contribuicao_isolada_mesmo_denominador": 0.0001661255260534606,
+          "dp_sem_componente_mesmo_denominador": 0.0029925769467422396
+        }
+      },
+      "termos_cov_ordem": [
+        "C1",
+        "C2",
+        "C3",
+        "C1xC2",
+        "C1xC3",
+        "C2xC3"
+      ],
+      "fracao_covariancia_com_total": [
+        0.06256329960857407,
+        1.0412634300887105,
+        0.0025771459263345797,
+        -0.09688580841195285,
+        0.01878951121450544,
+        -0.02830757842617199
+      ],
+      "variancias_temporais_residuo": [
+        0.42278993273507365,
+        0.466910777535734,
+        0.6167970956624724,
+        0.6976083485808942,
+        0.6857523298409923,
+        0.5725110513336709,
+        0.6533591788769636,
+        0.6723988101323661,
+        0.7510171964265528,
+        0.91152841363803
+      ]
+    }
+  }
+}

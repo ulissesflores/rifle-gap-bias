@@ -1,0 +1,60 @@
+{
+ "municipios": {
+  "secundaria": 5298,
+  "completos": 2737,
+  "com_lacuna": 2561,
+  "prefeito_nos_10": 5208,
+  "prefeito_nos_10_com_lacuna": 2471
+ },
+ "rodadas": {
+  "costura_completos_rho217": {
+   "rejeicao_sob_nulo": 0.08,
+   "bases": 100,
+   "semente": 101,
+   "rho": 0.21696453979704527,
+   "municipios": 2737
+  },
+  "costura_com_lacuna_rho217": {
+   "rejeicao_sob_nulo": 0.49,
+   "bases": 100,
+   "semente": 102,
+   "rho": 0.21696453979704527,
+   "municipios": 2561
+  },
+  "costura_todos_rho217": {
+   "rejeicao_sob_nulo": 0.34,
+   "bases": 100,
+   "semente": 103,
+   "rho": 0.21696453979704527,
+   "municipios": 5298
+  },
+  "costura_com_lacuna_rho0": {
+   "rejeicao_sob_nulo": 0.09,
+   "bases": 100,
+   "semente": 104,
+   "rho": 0.0,
+   "municipios": 2561
+  },
+  "mascara_com_lacuna_rho0": {
+   "rejeicao_sob_nulo": 0.06,
+   "bases": 100,
+   "semente": 105,
+   "rho": 0.0,
+   "municipios": 2471
+  },
+  "mascara_com_lacuna_rho217": {
+   "rejeicao_sob_nulo": 0.12,
+   "bases": 300,
+   "semente": 106,
+   "rho": 0.21696453979704527,
+   "municipios": 2471
+  },
+  "mascara_todos_rho217": {
+   "rejeicao_sob_nulo": 0.08666666666666667,
+   "bases": 300,
+   "semente": 107,
+   "rho": 0.21696453979704527,
+   "municipios": 5208
+  }
+ }
+}

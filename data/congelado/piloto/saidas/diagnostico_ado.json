@@ -1,0 +1,144 @@
+{
+ "semente": 14112026,
+ "bases": 500,
+ "permutacoes": 1000,
+ "N": 1000,
+ "celulas": {
+  "sem_lacuna": {
+   "lacuna": "nenhuma",
+   "modo": "costura",
+   "rho": 0.21696453979704527,
+   "prop": 0.0,
+   "municipios": 1000,
+   "celulas": 10000,
+   "unidades": 1000,
+   "stints": 3796,
+   "rejeicoes": 11,
+   "bases": 500,
+   "taxa": 0.022,
+   "ic95": [
+    0.011,
+    0.039
+   ]
+  },
+  "p9": {
+   "lacuna": "p9",
+   "modo": "costura",
+   "rho": 0.21696453979704527,
+   "prop": 0.0,
+   "municipios": 1000,
+   "celulas": 9000,
+   "unidades": 1000,
+   "stints": 3793,
+   "rejeicoes": 136,
+   "bases": 500,
+   "taxa": 0.272,
+   "ic95": [
+    0.2334,
+    0.3133
+   ]
+  },
+  "meio": {
+   "lacuna": "meio",
+   "modo": "costura",
+   "rho": 0.21696453979704527,
+   "prop": 0.0,
+   "municipios": 867,
+   "celulas": 7803,
+   "unidades": 867,
+   "stints": 3128,
+   "rejeicoes": 1,
+   "bases": 500,
+   "taxa": 0.002,
+   "ic95": [
+    0.0001,
+    0.0111
+   ]
+  },
+  "p9_nostitch": {
+   "lacuna": "p9",
+   "modo": "nostitch",
+   "rho": 0.21696453979704527,
+   "prop": 0.0,
+   "municipios": 1000,
+   "celulas": 9000,
+   "unidades": 2000,
+   "stints": 4161,
+   "rejeicoes": 23,
+   "bases": 500,
+   "taxa": 0.046,
+   "ic95": [
+    0.0294,
+    0.0682
+   ]
+  },
+  "aleatoria_nostitch": {
+   "lacuna": "aleatoria2",
+   "modo": "nostitch",
+   "rho": 0.21696453979704527,
+   "prop": 0.0,
+   "municipios": 869,
+   "celulas": 7821,
+   "unidades": 1738,
+   "stints": 3746,
+   "rejeicoes": 31,
+   "bases": 500,
+   "taxa": 0.062,
+   "ic95": [
+    0.0425,
+    0.0869
+   ]
+  },
+  "p9_rho0": {
+   "lacuna": "p9",
+   "modo": "costura",
+   "rho": 0.0,
+   "prop": 0.0,
+   "municipios": 1000,
+   "celulas": 9000,
+   "unidades": 1000,
+   "stints": 3793,
+   "rejeicoes": 32,
+   "bases": 500,
+   "taxa": 0.064,
+   "ic95": [
+    0.0442,
+    0.0892
+   ]
+  },
+  "sem_lacuna_poder": {
+   "lacuna": "nenhuma",
+   "modo": "costura",
+   "rho": 0.21696453979704527,
+   "prop": 0.1,
+   "municipios": 1000,
+   "celulas": 10000,
+   "unidades": 1000,
+   "stints": 3796,
+   "rejeicoes": 494,
+   "bases": 500,
+   "taxa": 0.988,
+   "ic95": [
+    0.9741,
+    0.9956
+   ]
+  },
+  "meio_poder": {
+   "lacuna": "meio",
+   "modo": "costura",
+   "rho": 0.21696453979704527,
+   "prop": 0.1,
+   "municipios": 867,
+   "celulas": 7803,
+   "unidades": 867,
+   "stints": 3128,
+   "rejeicoes": 484,
+   "bases": 500,
+   "taxa": 0.968,
+   "ic95": [
+    0.9486,
+    0.9816
+   ]
+  }
+ }
+}

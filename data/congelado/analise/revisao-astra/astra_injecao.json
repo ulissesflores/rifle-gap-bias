@@ -1,0 +1,80 @@
+{
+  "semente": 9112026,
+  "bases": 200,
+  "permutacoes": 1000,
+  "nota": "Injeção condicional no resíduo real; NÃO é teste de equivalência nem estimativa do poder verdadeiro.",
+  "versoes": {
+    "principal": {
+      "bases": 200,
+      "dif_media": 0.0026531871134265416,
+      "dif_dp": 0.0004335633550305979,
+      "dif_p5": 0.0019681847939998186,
+      "T1": 0.0,
+      "T1_IC95": [
+        0.0,
+        0.01827534035513624
+      ],
+      "T2": 1.0,
+      "T2_IC95": [
+        0.9817246596448638,
+        1.0
+      ],
+      "dp_condicional_media": 0.0056354197028973775,
+      "dp_condicional_p5_p50_p95": [
+        0.0055807987530666825,
+        0.005636165288226474,
+        0.005686297299836748
+      ],
+      "fracao_dp_condicional_ge_real": 0.0,
+      "variancia_injetada_dentro": 0.04331437256028023
+    },
+    "atraso": {
+      "bases": 200,
+      "dif_media": 0.01357073303616646,
+      "dif_dp": 0.0004913759963691965,
+      "dif_p5": 0.012730069155467557,
+      "T1": 1.0,
+      "T1_IC95": [
+        0.9817246596448638,
+        1.0
+      ],
+      "T2": 1.0,
+      "T2_IC95": [
+        0.9817246596448638,
+        1.0
+      ],
+      "dp_condicional_media": 0.006156095310587001,
+      "dp_condicional_p5_p50_p95": [
+        0.0060765288364092816,
+        0.006157180033269191,
+        0.006236615655573452
+      ],
+      "fracao_dp_condicional_ge_real": 0.0,
+      "variancia_injetada_dentro": 0.04338102252722376
+    },
+    "grandes": {
+      "bases": 200,
+      "dif_media": 0.002071445235289603,
+      "dif_dp": 0.00045750695734263127,
+      "dif_p5": 0.0013340980012533123,
+      "T1": 0.0,
+      "T1_IC95": [
+        0.0,
+        0.01827534035513624
+      ],
+      "T2": 1.0,
+      "T2_IC95": [
+        0.9817246596448638,
+        1.0
+      ],
+      "dp_condicional_media": 0.0028469937786394697,
+      "dp_condicional_p5_p50_p95": [
+        0.002693751033739075,
+        0.002835289511877258,
+        0.003007748718909647
+      ],
+      "fracao_dp_condicional_ge_real": 0.195,
+      "variancia_injetada_dentro": 0.019813595870852106
+    }
+  }
+}

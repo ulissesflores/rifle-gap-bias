@@ -1,0 +1,89 @@
+{
+  "locale": "es",
+  "_note": "Rótulos de este idioma. Los números vienen siempre de output/results.json.",
+  "figuras": {
+    "fig3_largura": {
+      "titulo": "Anchura de la permutación, muestra principal",
+      "eixo_x": "DE de la permutación, condicional al conjunto de datos",
+      "series": {
+        "real_indice": "Dato real: índice",
+        "real_so_c2": "Dato real: solo ingresos propios (C2)",
+        "real_sem_c2": "Dato real: sin ingresos propios",
+        "gerador_d3": "Generador con efecto de municipio (D3, media de 200 bases)",
+        "gerador_d5": "Generador con municipio y escala desigual (D5, media de 200 bases)"
+      }
+    },
+    "fig2_escala": {
+      "titulo": "Paquete rifle bajo la nula: costura (líneas), nostitch y sin laguna (puntos)",
+      "eixo_x": "Número de municipios en el panel (escala log)",
+      "eixo_y": "Rechazos al 5% (barra = intervalo exacto del 95%)",
+      "nominal": "nominal 5%",
+      "series": {
+        "na_troca": "Laguna junto a un cambio de alcalde",
+        "p9": "Laguna en el 1.er medio mandato tras la elección",
+        "aleatoria": "Laguna interior sorteada",
+        "p9_nostitch_N5468": "nostitch, laguna tras la elección",
+        "aleatoria_nostitch_N5468": "nostitch, laguna sorteada",
+        "na_troca_nostitch_N5468": "nostitch, laguna junto a un cambio de alcalde",
+        "sem_lacuna": "sin laguna (línea base del paquete)"
+      }
+    },
+    "fig1_tipo": {
+      "titulo": "Dónde cae la laguna decide (traducción fiel, ρ 0,217)",
+      "eixo_x": "Rechazos al 5% bajo la nula (barra = intervalo exacto del 95%)",
+      "nominal": "nominal 5%",
+      "series": {
+        "sem_lacuna": "Sin laguna",
+        "p9": "Laguna tras la elección, cosida",
+        "meio": "Laguna a mitad de mandato, cosida",
+        "p9_rho0": "Laguna tras la elección, cosida, ρ 0",
+        "p9_nostitch": "Laguna tras la elección, nostitch",
+        "aleatoria_nostitch": "Laguna sorteada, nostitch"
+      }
+    }
+  },
+  "tabelas": {
+    "tab1_celulas": {
+      "titulo": "Tabla 1. Celdas de la traducción fiel del paquete: diseño y rechazo al 5% (500 bases, 1.000 permutaciones cada una)",
+      "colunas": {
+        "modulo": "Módulo",
+        "n": "Municipios",
+        "obs": "Observaciones usadas",
+        "lacuna": "Laguna",
+        "modo": "Tratamiento",
+        "rho": "ρ",
+        "prop": "Efecto (Prop)",
+        "taxa": "Rechazo (%)",
+        "ic": "IC exacto del 95% (%)"
+      },
+      "modulo": {
+        "ado": "diagnostico_ado",
+        "ado_juizes": "diagnostico_ado_juizes",
+        "ado_escala": "diagnostico_ado_escala",
+        "ado_mascara_real": "diagnostico_ado_mascara_real"
+      },
+      "mascara_real": {
+        "interior": "máscara real, laguna interior",
+        "so_borda": "máscara real, solo borde"
+      },
+      "lacuna": {
+        "nenhuma": "ninguna",
+        "p9": "periodo 9",
+        "meio": "mitad de mandato",
+        "aleatoria2": "sorteada, 2+ alcaldes/tramo",
+        "aleatoria": "interior sorteada",
+        "na_troca": "junto a cambio de alcalde"
+      },
+      "fonte": "Fuente: `results.json` del estudio (salidas con sha256 verificado). Municipio sin laguna: 10 observaciones. Las filas de la máscara real usan solo la información de qué municipios-periodo tienen el índice; el resultado es sintético. Efecto = fracción de la varianza debida al alcalde; 0% = nula verdadera. Observaciones usadas = municipios-periodo que entran en la prueba después de la laguna y, con `nostitch`, del descarte de tramos con un solo alcalde; no registrado (—) en las celdas de escala y de la máscara real. En las celdas con laguna en el periodo 9 y `nostitch`, las observaciones usadas incluyen el periodo 10, tramo de una fila que nunca se sortea y que no contribuye a la variación entre permutaciones cuando su alcalde no aparece en el otro tramo. Municipios = unidades que entran en la celda antes del descarte de tramos por `nostitch`.",
+      "modo": {
+        "costura": "costura",
+        "nostitch": "nostitch"
+      },
+      "ate": " a "
+    }
+  },
+  "numero": {
+    "decimal": ",",
+    "milhar": "."
+  }
+}

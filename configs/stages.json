@@ -1,0 +1,73 @@
+{
+  "hash_alg": "sha256",
+  "_doc": "Ordem científica das etapas. Figuras ficam fora: o PNG varia com a versão do matplotlib e da plataforma; o que as figuras afirmam é conferido pelo teste dos números.",
+  "stages": [
+    {
+      "name": "ambiente",
+      "kind": "file",
+      "path": "requirements.lock"
+    },
+    {
+      "name": "prereg",
+      "kind": "file",
+      "path": "data/PREREGISTRATION.md"
+    },
+    {
+      "name": "dados",
+      "kind": "tree",
+      "globs": [
+        "data/mandatos.csv",
+        "data/mascara_indice.csv",
+        "data/parametros.json"
+      ]
+    },
+    {
+      "name": "cadeias_de_origem",
+      "kind": "tree",
+      "globs": [
+        "data/origem/*.jsonl"
+      ]
+    },
+    {
+      "name": "codigo",
+      "kind": "tree",
+      "globs": [
+        "code/*.py",
+        "scripts/*.py",
+        "scripts/*.sh",
+        "stata/*.do",
+        "tests/*.py",
+        "run_all.py",
+        "configs/stages.json"
+      ]
+    },
+    {
+      "name": "congelado",
+      "kind": "tree",
+      "globs": [
+        "data/congelado/**/*.json"
+      ]
+    },
+    {
+      "name": "resultados",
+      "kind": "file",
+      "path": "output/results.json"
+    },
+    {
+      "name": "tabelas",
+      "kind": "tree",
+      "globs": [
+        "output/tables/*.md"
+      ]
+    },
+    {
+      "name": "paper",
+      "kind": "tree",
+      "globs": [
+        "docs/paper/*.pdf",
+        "docs/paper/*.docx",
+        "data/numeros_publicados.json"
+      ]
+    }
+  ]
+}

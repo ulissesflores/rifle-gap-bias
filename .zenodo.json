@@ -1,0 +1,24 @@
+{
+  "title": "Does a mayor improve a city beyond chance? Missing data at a change of mayor makes the test say yes: Replication package",
+  "description": "Replication package of the methods paper on the size of the RIFLE test (Berry and Fowler) with gaps in the middle of the series. Code under Apache-2.0; paper text and figures under CC BY 4.0. The paper is in Portuguese (original), English, Spanish and Italian.",
+  "creators": [
+    {
+      "name": "Flores, Carlos Ulisses",
+      "affiliation": "Codex Hash Research Laboratory, Codex Hash Ltda., Brazil",
+      "orcid": "0000-0002-6034-7765"
+    }
+  ],
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "Apache-2.0",
+  "keywords": [
+    "randomization inference",
+    "leader effects",
+    "missing data",
+    "serial correlation",
+    "preregistration",
+    "mayors"
+  ],
+  "language": "eng",
+  "version": "1.0.0"
+}

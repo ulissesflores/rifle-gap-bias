@@ -1,0 +1,89 @@
+{
+  "locale": "it",
+  "_note": "Etichette di questa lingua. I numeri vengono sempre da output/results.json.",
+  "figuras": {
+    "fig3_largura": {
+      "titulo": "Larghezza della permutazione, campione principale",
+      "eixo_x": "DS della permutazione, condizionata al dataset",
+      "series": {
+        "real_indice": "Dato reale: indice",
+        "real_so_c2": "Dato reale: solo entrate proprie (C2)",
+        "real_sem_c2": "Dato reale: senza entrate proprie",
+        "gerador_d3": "Generatore con effetto comune (D3, media di 200 basi)",
+        "gerador_d5": "Generatore con comune e scala diseguale (D5, media di 200 basi)"
+      }
+    },
+    "fig2_escala": {
+      "titulo": "Pacchetto rifle sotto la nulla: cucitura (linee), nostitch e senza lacuna (punti)",
+      "eixo_x": "Numero di comuni nel panel (scala log)",
+      "eixo_y": "Rifiuti al 5% (barra = intervallo esatto al 95%)",
+      "nominal": "nominale 5%",
+      "series": {
+        "na_troca": "Lacuna accanto a un cambio di sindaco",
+        "p9": "Lacuna nel 1° mezzo mandato dopo l'elezione",
+        "aleatoria": "Lacuna interna sorteggiata",
+        "p9_nostitch_N5468": "nostitch, lacuna dopo l'elezione",
+        "aleatoria_nostitch_N5468": "nostitch, lacuna sorteggiata",
+        "na_troca_nostitch_N5468": "nostitch, lacuna accanto a un cambio di sindaco",
+        "sem_lacuna": "senza lacuna (linea di base del pacchetto)"
+      }
+    },
+    "fig1_tipo": {
+      "titulo": "Dove cade la lacuna decide (traduzione fedele, ρ 0,217)",
+      "eixo_x": "Rifiuti al 5% sotto la nulla (barra = intervallo esatto al 95%)",
+      "nominal": "nominale 5%",
+      "series": {
+        "sem_lacuna": "Senza lacuna",
+        "p9": "Lacuna dopo l'elezione, cucita",
+        "meio": "Lacuna a metà mandato, cucita",
+        "p9_rho0": "Lacuna dopo l'elezione, cucita, ρ 0",
+        "p9_nostitch": "Lacuna dopo l'elezione, nostitch",
+        "aleatoria_nostitch": "Lacuna sorteggiata, nostitch"
+      }
+    }
+  },
+  "tabelas": {
+    "tab1_celulas": {
+      "titulo": "Tabella 1. Celle della traduzione fedele del pacchetto: disegno e rifiuto al 5% (500 basi, 1.000 permutazioni ciascuna)",
+      "colunas": {
+        "modulo": "Modulo",
+        "n": "Comuni",
+        "obs": "Osservazioni usate",
+        "lacuna": "Lacuna",
+        "modo": "Trattamento",
+        "rho": "ρ",
+        "prop": "Effetto (Prop)",
+        "taxa": "Rifiuto (%)",
+        "ic": "IC esatto al 95% (%)"
+      },
+      "modulo": {
+        "ado": "diagnostico_ado",
+        "ado_juizes": "diagnostico_ado_juizes",
+        "ado_escala": "diagnostico_ado_escala",
+        "ado_mascara_real": "diagnostico_ado_mascara_real"
+      },
+      "mascara_real": {
+        "interior": "maschera reale, lacuna interna",
+        "so_borda": "maschera reale, solo bordo"
+      },
+      "lacuna": {
+        "nenhuma": "nessuna",
+        "p9": "periodo 9",
+        "meio": "metà mandato",
+        "aleatoria2": "sorteggiata, 2+ sindaci/tratto",
+        "aleatoria": "interna sorteggiata",
+        "na_troca": "accanto a cambio di sindaco"
+      },
+      "fonte": "Fonte: `results.json` dello studio (output con sha256 verificato). Comune senza lacuna: 10 osservazioni. Le righe della maschera reale usano solo l'informazione su quali comune-periodi hanno l'indice; il risultato è sintetico. Effetto = quota della varianza dovuta al sindaco; 0% = nulla vera. Osservazioni usate = comune-periodi che entrano nel test dopo la lacuna e, con `nostitch`, dopo lo scarto dei tratti con un solo sindaco; non registrato (—) nelle celle di scala e della maschera reale. Nelle celle con lacuna nel periodo 9 e `nostitch`, le osservazioni usate includono il periodo 10, tratto di una riga che non viene mai sorteggiato e che non contribuisce alla variazione tra le permutazioni quando il suo sindaco non compare nell'altro tratto. Comuni = unità che entrano nella cella prima dello scarto dei tratti da parte di `nostitch`.",
+      "modo": {
+        "costura": "cucitura",
+        "nostitch": "nostitch"
+      },
+      "ate": " a "
+    }
+  },
+  "numero": {
+    "decimal": ",",
+    "milhar": "."
+  }
+}

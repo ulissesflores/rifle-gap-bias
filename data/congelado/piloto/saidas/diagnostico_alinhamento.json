@@ -1,0 +1,104 @@
+{
+ "semente": 12112026,
+ "rho": 0.21696453979704527,
+ "bases": 500,
+ "permutacoes": 1000,
+ "condicoes": {
+  "sem_lacuna": {
+   "municipios": 5468,
+   "informam": 4779,
+   "rejeicoes": 19,
+   "bases": 500,
+   "taxa": 0.038,
+   "ic95": [
+    0.023,
+    0.0587
+   ],
+   "fracao_passagem_atravessa_lacuna": null
+  },
+  "alinhada_p9": {
+   "municipios": 5468,
+   "informam": 5458,
+   "rejeicoes": 491,
+   "bases": 500,
+   "taxa": 0.982,
+   "ic95": [
+    0.9661,
+    0.9917
+   ],
+   "fracao_passagem_atravessa_lacuna": 0.37673738112655447
+  },
+  "aleatoria": {
+   "municipios": 5468,
+   "informam": 5460,
+   "rejeicoes": 380,
+   "bases": 500,
+   "taxa": 0.76,
+   "ic95": [
+    0.7201,
+    0.7968
+   ],
+   "fracao_passagem_atravessa_lacuna": 0.3076079005120702
+  },
+  "na_troca": {
+   "municipios": 5468,
+   "informam": 5466,
+   "rejeicoes": 499,
+   "bases": 500,
+   "taxa": 0.998,
+   "ic95": [
+    0.9889,
+    0.9999
+   ],
+   "fracao_passagem_atravessa_lacuna": 0.0
+  },
+  "meio_da_passagem": {
+   "municipios": 4765,
+   "informam": 4752,
+   "rejeicoes": 0,
+   "bases": 500,
+   "taxa": 0.0,
+   "ic95": [
+    0.0,
+    0.0074
+   ],
+   "fracao_passagem_atravessa_lacuna": 1.0
+  },
+  "longa_alinhada": {
+   "municipios": 5468,
+   "informam": 3485,
+   "rejeicoes": 357,
+   "bases": 500,
+   "taxa": 0.714,
+   "ic95": [
+    0.6722,
+    0.7532
+   ],
+   "fracao_passagem_atravessa_lacuna": 0.06455742501828822
+  },
+  "alinhada_p9_nostitch": {
+   "municipios": 5468,
+   "informam": 3538,
+   "rejeicoes": 28,
+   "bases": 500,
+   "taxa": 0.056,
+   "ic95": [
+    0.0375,
+    0.0799
+   ],
+   "fracao_passagem_atravessa_lacuna": 0.37673738112655447
+  },
+  "longa_alinhada_nostitch": {
+   "municipios": 5468,
+   "informam": 3461,
+   "rejeicoes": 23,
+   "bases": 500,
+   "taxa": 0.046,
+   "ic95": [
+    0.0294,
+    0.0682
+   ],
+   "fracao_passagem_atravessa_lacuna": 0.06455742501828822
+  }
+ }
+}

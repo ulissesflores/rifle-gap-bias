@@ -1,0 +1,171 @@
+{
+  "semente": 5112026,
+  "permutacoes": 1000,
+  "numpy": "2.5.4",
+  "painel_sha256": "ef27976df1a35a7e68752eeaf855b978f624bb5d0453655532f427ba4767ac50",
+  "linhas_painel": 55441,
+  "versoes": {
+    "principal": {
+      "r2_real": 0.7584152045565953,
+      "diferenca": -0.007462468906891036,
+      "valor_p": 0.869,
+      "dp_perm": 0.006040890521979501,
+      "diferenca_exata": -0.00735421898118438,
+      "dp_perm_exato": 0.006033191665435401,
+      "municipios": 5298,
+      "trechos": 7508,
+      "celulas": 47791,
+      "informam": 4470,
+      "max_passagens": 6,
+      "D1": 0.5664976762699927,
+      "indice_erro_max": 0.0,
+      "delta_contra_original": {
+        "r2_real": -1.1102230246251565e-16,
+        "diferenca": 2.6020852139652106e-17,
+        "valor_p": 0.0
+      },
+      "erro_residuo_OLS_max": 3.552713678800501e-15,
+      "coef_alinhamento": 0.024106812448876278,
+      "curva_monotona": true,
+      "T2_limiar": 0.011050851097940484,
+      "T2_rejeita": true,
+      "prop_literal": 0.0,
+      "teste_centrado_municipio": {
+        "r2_real": 0.44271395510703704,
+        "diferenca": -0.017214368870462498,
+        "valor_p": 0.869,
+        "dp_perm": 0.013935082215941882,
+        "diferenca_exata": -0.016964658731021313,
+        "dp_perm_exato": 0.013917322549793238
+      },
+      "componentes": {
+        "C1": {
+          "r2_real": 0.8932199608851625,
+          "diferenca": -0.001292760772342315,
+          "valor_p": 0.979,
+          "dp_perm": 0.0006644425585743074,
+          "diferenca_exata": -0.0012767748957732265,
+          "dp_perm_exato": 0.0006388226159632141
+        },
+        "C2": {
+          "r2_real": 0.4205974804187601,
+          "diferenca": -0.0457092946356019,
+          "valor_p": 0.878,
+          "dp_perm": 0.03812278751237905,
+          "diferenca_exata": -0.04629891316741324,
+          "dp_perm_exato": 0.03834106542834773
+        },
+        "C3": {
+          "r2_real": 0.5135917716370672,
+          "diferenca": -0.0008877744627297831,
+          "valor_p": 0.656,
+          "dp_perm": 0.0022464508060270004,
+          "diferenca_exata": -0.0008583375338893734,
+          "dp_perm_exato": 0.0022873855339949423
+        }
+      }
+    },
+    "atraso": {
+      "r2_real": 0.7890932845359685,
+      "diferenca": -0.00014418188520994176,
+      "valor_p": 0.488,
+      "dp_perm": 0.006699742634463164,
+      "diferenca_exata": -5.48775439654583e-05,
+      "dp_perm_exato": 0.0065955382684500215,
+      "municipios": 5292,
+      "trechos": 7426,
+      "celulas": 43673,
+      "informam": 5043,
+      "max_passagens": 6,
+      "D1": 0.5774724768351103,
+      "indice_erro_max": 0.0,
+      "delta_contra_original": {
+        "r2_real": 0.0,
+        "diferenca": 9.562663161322149e-17,
+        "valor_p": 0.0
+      },
+      "erro_residuo_OLS_max": 3.552713678800501e-15,
+      "coef_alinhamento": 0.02849975905072725,
+      "curva_monotona": true,
+      "T2_limiar": 0.016156177061315835,
+      "T2_rejeita": true,
+      "prop_literal": 0.0,
+      "teste_centrado_municipio": {
+        "r2_real": 0.5008450245222817,
+        "diferenca": -0.0003412366705252726,
+        "valor_p": 0.488,
+        "dp_perm": 0.015856346077243854,
+        "diferenca_exata": -0.00012987921722696304,
+        "dp_perm_exato": 0.01560972459035796
+      }
+    },
+    "grandes": {
+      "r2_real": 0.8659771329272073,
+      "diferenca": -0.004123843455409207,
+      "valor_p": 0.904,
+      "dp_perm": 0.0029139554529918773,
+      "diferenca_exata": -0.004322130487368351,
+      "dp_perm_exato": 0.0029332432030918162,
+      "municipios": 1642,
+      "trechos": 2062,
+      "celulas": 15630,
+      "informam": 1440,
+      "max_passagens": 6,
+      "D1": 0.7245810976796252,
+      "indice_erro_max": 0.0,
+      "delta_contra_original": {
+        "r2_real": 2.220446049250313e-16,
+        "diferenca": 2.96637714392034e-16,
+        "valor_p": 0.0
+      },
+      "erro_residuo_OLS_max": 8.881784197001252e-16,
+      "coef_alinhamento": 0.02437730063755536,
+      "curva_monotona": true,
+      "T2_limiar": 0.008986220828214365,
+      "T2_rejeita": true,
+      "prop_literal": 0.0,
+      "teste_centrado_municipio": {
+        "r2_real": 0.5133853706348237,
+        "diferenca": -0.014972986315269348,
+        "valor_p": 0.904,
+        "dp_perm": 0.010580085202729775,
+        "diferenca_exata": -0.01569293338603503,
+        "dp_perm_exato": 0.01065011579953138
+      }
+    },
+    "restrita": {
+      "r2_real": 0.7433006737808303,
+      "diferenca": -0.0031638230177765264,
+      "valor_p": 0.854,
+      "dp_perm": 0.0029709983009837764,
+      "diferenca_exata": -0.0032399917855149073,
+      "dp_perm_exato": 0.003072035572558548,
+      "municipios": 978,
+      "trechos": 1420,
+      "celulas": 8663,
+      "informam": 789,
+      "max_passagens": 6,
+      "D1": 0.5653488123355399,
+      "indice_erro_max": 0.0,
+      "delta_contra_original": {
+        "r2_real": 0.0,
+        "diferenca": 9.71445146547012e-17,
+        "valor_p": 0.0
+      },
+      "erro_residuo_OLS_max": 1.7763568394002505e-15,
+      "coef_alinhamento": 0.07415508818170088,
+      "curva_monotona": true,
+      "T2_limiar": 0.008193730623972339,
+      "T2_rejeita": true,
+      "prop_literal": 0.0,
+      "teste_centrado_municipio": {
+        "r2_real": 0.4094130339353057,
+        "diferenca": -0.007278993150293338,
+        "valor_p": 0.854,
+        "dp_perm": 0.0068353622060669805,
+        "diferenca_exata": -0.007454234285944216,
+        "dp_perm_exato": 0.007067818194782166
+      }
+    }
+  }
+}

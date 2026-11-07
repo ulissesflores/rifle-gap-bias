@@ -1,0 +1,39 @@
+{
+ "semente": 16112026,
+ "rho": 0.21696453979704527,
+ "bases": 500,
+ "permutacoes": 1000,
+ "motor": "rifle_ado",
+ "celulas": {
+  "interior_costura": {
+   "municipios": 1854,
+   "rejeicoes": 174,
+   "bases": 500,
+   "taxa": 0.348,
+   "ic95": [
+    0.3063,
+    0.3916
+   ]
+  },
+  "interior_nostitch": {
+   "municipios": 1854,
+   "rejeicoes": 18,
+   "bases": 500,
+   "taxa": 0.036,
+   "ic95": [
+    0.0215,
+    0.0563
+   ]
+  },
+  "so_borda_costura": {
+   "municipios": 707,
+   "rejeicoes": 19,
+   "bases": 500,
+   "taxa": 0.038,
+   "ic95": [
+    0.023,
+    0.0587
+   ]
+  }
+ }
+}

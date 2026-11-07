@@ -1,0 +1,165 @@
+{
+ "semente": 15112026,
+ "rho": 0.21696453979704527,
+ "bases": 500,
+ "permutacoes": 1000,
+ "motor": "rifle_ado",
+ "celulas": {
+  "p9_N50": {
+   "condicao": "p9",
+   "N": 50,
+   "rejeicoes": 41,
+   "bases": 500,
+   "taxa": 0.082,
+   "ic95": [
+    0.0595,
+    0.1096
+   ],
+   "fracao_lacuna_vizinha_de_troca": 0.54,
+   "fracao_mesma_pessoa_dos_dois_lados": 0.46
+  },
+  "p9_N200": {
+   "condicao": "p9",
+   "N": 200,
+   "rejeicoes": 79,
+   "bases": 500,
+   "taxa": 0.158,
+   "ic95": [
+    0.1271,
+    0.193
+   ],
+   "fracao_lacuna_vizinha_de_troca": 0.64,
+   "fracao_mesma_pessoa_dos_dois_lados": 0.36
+  },
+  "p9_N1000": {
+   "condicao": "p9",
+   "N": 1000,
+   "rejeicoes": 131,
+   "bases": 500,
+   "taxa": 0.262,
+   "ic95": [
+    0.224,
+    0.3029
+   ],
+   "fracao_lacuna_vizinha_de_troca": 0.603,
+   "fracao_mesma_pessoa_dos_dois_lados": 0.397
+  },
+  "p9_N5468": {
+   "condicao": "p9",
+   "N": 5468,
+   "rejeicoes": 383,
+   "bases": 500,
+   "taxa": 0.766,
+   "ic95": [
+    0.7264,
+    0.8024
+   ],
+   "fracao_lacuna_vizinha_de_troca": 0.6232626188734455,
+   "fracao_mesma_pessoa_dos_dois_lados": 0.37673738112655447
+  },
+  "aleatoria_N50": {
+   "condicao": "aleatoria",
+   "N": 50,
+   "rejeicoes": 39,
+   "bases": 500,
+   "taxa": 0.078,
+   "ic95": [
+    0.0561,
+    0.1051
+   ],
+   "fracao_lacuna_vizinha_de_troca": 0.72,
+   "fracao_mesma_pessoa_dos_dois_lados": 0.28
+  },
+  "aleatoria_N200": {
+   "condicao": "aleatoria",
+   "N": 200,
+   "rejeicoes": 38,
+   "bases": 500,
+   "taxa": 0.076,
+   "ic95": [
+    0.0543,
+    0.1028
+   ],
+   "fracao_lacuna_vizinha_de_troca": 0.65,
+   "fracao_mesma_pessoa_dos_dois_lados": 0.35
+  },
+  "aleatoria_N1000": {
+   "condicao": "aleatoria",
+   "N": 1000,
+   "rejeicoes": 72,
+   "bases": 500,
+   "taxa": 0.144,
+   "ic95": [
+    0.1144,
+    0.1779
+   ],
+   "fracao_lacuna_vizinha_de_troca": 0.701,
+   "fracao_mesma_pessoa_dos_dois_lados": 0.3
+  },
+  "aleatoria_N5468": {
+   "condicao": "aleatoria",
+   "N": 5468,
+   "rejeicoes": 173,
+   "bases": 500,
+   "taxa": 0.346,
+   "ic95": [
+    0.3043,
+    0.3895
+   ],
+   "fracao_lacuna_vizinha_de_troca": 0.7011704462326261,
+   "fracao_mesma_pessoa_dos_dois_lados": 0.2990124359912216
+  },
+  "na_troca_N50": {
+   "condicao": "na_troca",
+   "N": 50,
+   "rejeicoes": 34,
+   "bases": 500,
+   "taxa": 0.068,
+   "ic95": [
+    0.0475,
+    0.0937
+   ],
+   "fracao_lacuna_vizinha_de_troca": 1.0,
+   "fracao_mesma_pessoa_dos_dois_lados": 0.0
+  },
+  "na_troca_N200": {
+   "condicao": "na_troca",
+   "N": 200,
+   "rejeicoes": 71,
+   "bases": 500,
+   "taxa": 0.142,
+   "ic95": [
+    0.1126,
+    0.1757
+   ],
+   "fracao_lacuna_vizinha_de_troca": 1.0,
+   "fracao_mesma_pessoa_dos_dois_lados": 0.0
+  },
+  "na_troca_N1000": {
+   "condicao": "na_troca",
+   "N": 1000,
+   "rejeicoes": 176,
+   "bases": 500,
+   "taxa": 0.352,
+   "ic95": [
+    0.3101,
+    0.3956
+   ],
+   "fracao_lacuna_vizinha_de_troca": 1.0,
+   "fracao_mesma_pessoa_dos_dois_lados": 0.0
+  },
+  "na_troca_N5468": {
+   "condicao": "na_troca",
+   "N": 5468,
+   "rejeicoes": 447,
+   "bases": 500,
+   "taxa": 0.894,
+   "ic95": [
+    0.8636,
+    0.9196
+   ],
+   "fracao_lacuna_vizinha_de_troca": 1.0,
+   "fracao_mesma_pessoa_dos_dois_lados": 0.0
+  }
+ }
+}

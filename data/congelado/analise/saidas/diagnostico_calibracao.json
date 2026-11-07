@@ -1,0 +1,114 @@
+{
+ "pos_hoc": true,
+ "semente_D3": 6112026,
+ "versoes": {
+  "principal": {
+   "D1_parte_entre_municipios_real": 0.5664976762699926,
+   "D2_identico_ao_registrado": true,
+   "D2_permutacao_real": {
+    "dp": 0.006040890521979503,
+    "p5_menos_media": -0.008628269779839326,
+    "p95_menos_media": 0.009168718723508884
+   },
+   "calibracao_selada": {
+    "dif_p5_prop0": -0.002522898088120451,
+    "dif_media_prop0.1": 0.013505555939974363,
+    "dif_p5_prop0.1": 0.011050851097940484
+   },
+   "D4_autocorrelacao_dentro_do_municipio": {
+    "1": 0.05940145066766907,
+    "2": -0.09057373579267615,
+    "3": -0.18748324267882596,
+    "4": -0.2065707500496861
+   },
+   "D3_variancia_municipio": 0.9504951083176854,
+   "D3_parte_entre_simulada": 0.5670172174502749,
+   "D3_prop0.0": {
+    "dif_media": 9.435402101986956e-05,
+    "dif_dp": 0.0008306235821021637,
+    "dif_p5": -0.0011531160679071728,
+    "poder_T1": 0.09,
+    "fracao_abaixo_do_limiar_T2_selado": 1.0
+   },
+   "D3_prop0.1": {
+    "dif_media": 0.0073932413555050066,
+    "dif_dp": 0.0008528922273551168,
+    "dif_p5": 0.006103564104804204,
+    "poder_T1": 1.0,
+    "fracao_abaixo_do_limiar_T2_selado": 1.0
+   }
+  },
+  "atraso": {
+   "D1_parte_entre_municipios_real": 0.5774724768351103,
+   "D2_identico_ao_registrado": true,
+   "D2_permutacao_real": {
+    "dp": 0.006699742634463163,
+    "p5_menos_media": -0.010563044322794424,
+    "p95_menos_media": 0.01157205572446185
+   },
+   "calibracao_selada": {
+    "dif_p5_prop0": -0.003469017211438802,
+    "dif_media_prop0.1": 0.019809349990622605,
+    "dif_p5_prop0.1": 0.016156177061315835
+   },
+   "D4_autocorrelacao_dentro_do_municipio": {
+    "1": 0.037253295634716244,
+    "2": -0.11827246655279293,
+    "3": -0.1902042845297512,
+    "4": -0.22952058224976027
+   },
+   "D3_variancia_municipio": 0.9608089459248184,
+   "D3_parte_entre_simulada": 0.574420412649334,
+   "D3_prop0.0": {
+    "dif_media": -5.464989602455783e-05,
+    "dif_dp": 0.0011610729059169725,
+    "dif_p5": -0.0018207953245100439,
+    "poder_T1": 0.085,
+    "fracao_abaixo_do_limiar_T2_selado": 1.0
+   },
+   "D3_prop0.1": {
+    "dif_media": 0.010688334156704678,
+    "dif_dp": 0.0010914113801414492,
+    "dif_p5": 0.008996806398825007,
+    "poder_T1": 1.0,
+    "fracao_abaixo_do_limiar_T2_selado": 1.0
+   }
+  },
+  "grandes": {
+   "D1_parte_entre_municipios_real": 0.7245810976796251,
+   "D2_identico_ao_registrado": true,
+   "D2_permutacao_real": {
+    "dp": 0.002913955452991876,
+    "p5_menos_media": -0.005090289020718064,
+    "p95_menos_media": 0.004167698224040728
+   },
+   "calibracao_selada": {
+    "dif_p5_prop0": -0.004348437478282599,
+    "dif_media_prop0.1": 0.013588455330796098,
+    "dif_p5_prop0.1": 0.008986220828214365
+   },
+   "D4_autocorrelacao_dentro_do_municipio": {
+    "1": 0.26612971712239664,
+    "2": -0.0028420949360594347,
+    "3": -0.21259406427430966,
+    "4": -0.27978068672582196
+   },
+   "D3_variancia_municipio": 2.091661464355044,
+   "D3_parte_entre_simulada": 0.7237060848154226,
+   "D3_prop0.0": {
+    "dif_media": -2.9432795438716907e-05,
+    "dif_dp": 0.0009148353447747205,
+    "dif_p5": -0.0014522116601279277,
+    "poder_T1": 0.065,
+    "fracao_abaixo_do_limiar_T2_selado": 1.0
+   },
+   "D3_prop0.1": {
+    "dif_media": 0.004898641954857675,
+    "dif_dp": 0.0010412075241159491,
+    "dif_p5": 0.003076874673140967,
+    "poder_T1": 1.0,
+    "fracao_abaixo_do_limiar_T2_selado": 1.0
+   }
+  }
+ }
+}

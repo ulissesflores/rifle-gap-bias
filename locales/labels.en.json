@@ -1,0 +1,89 @@
+{
+  "locale": "en",
+  "_note": "Labels for this language. Numbers always come from output/results.json.",
+  "figuras": {
+    "fig3_largura": {
+      "titulo": "Permutation width, main sample",
+      "eixo_x": "SD of the permutation, conditional on the dataset",
+      "series": {
+        "real_indice": "Real data: index",
+        "real_so_c2": "Real data: own revenue only (C2)",
+        "real_sem_c2": "Real data: without own revenue",
+        "gerador_d3": "Generator with municipality effect (D3, mean of 200 datasets)",
+        "gerador_d5": "Generator with municipality and unequal scale (D5, mean of 200 datasets)"
+      }
+    },
+    "fig2_escala": {
+      "titulo": "rifle package under the null: stitching (lines), nostitch and no gap (points)",
+      "eixo_x": "Number of municipalities in the panel (log scale)",
+      "eixo_y": "Rejections at 5% (bar = exact 95% interval)",
+      "nominal": "nominal 5%",
+      "series": {
+        "na_troca": "Gap next to a change of mayor",
+        "p9": "Gap in the 1st half-term after the election",
+        "aleatoria": "Random interior gap",
+        "p9_nostitch_N5468": "nostitch, gap after the election",
+        "aleatoria_nostitch_N5468": "nostitch, random gap",
+        "na_troca_nostitch_N5468": "nostitch, gap next to a change of mayor",
+        "sem_lacuna": "no gap (package baseline)"
+      }
+    },
+    "fig1_tipo": {
+      "titulo": "Where the gap falls decides (faithful port, ρ 0.217)",
+      "eixo_x": "Rejections at 5% under the null (bar = exact 95% interval)",
+      "nominal": "nominal 5%",
+      "series": {
+        "sem_lacuna": "No gap",
+        "p9": "Gap after the election, stitched",
+        "meio": "Gap in mid-term, stitched",
+        "p9_rho0": "Gap after the election, stitched, ρ 0",
+        "p9_nostitch": "Gap after the election, nostitch",
+        "aleatoria_nostitch": "Random gap, nostitch"
+      }
+    }
+  },
+  "tabelas": {
+    "tab1_celulas": {
+      "titulo": "Table 1. Cells of the faithful port: design and rejection at 5% (500 datasets, 1,000 permutations each)",
+      "colunas": {
+        "modulo": "Module",
+        "n": "Municipalities",
+        "obs": "Observations used",
+        "lacuna": "Gap",
+        "modo": "Treatment",
+        "rho": "ρ",
+        "prop": "Effect (Prop)",
+        "taxa": "Rejection (%)",
+        "ic": "Exact 95% CI (%)"
+      },
+      "modulo": {
+        "ado": "diagnostico_ado",
+        "ado_juizes": "diagnostico_ado_juizes",
+        "ado_escala": "diagnostico_ado_escala",
+        "ado_mascara_real": "diagnostico_ado_mascara_real"
+      },
+      "mascara_real": {
+        "interior": "real mask, interior gap",
+        "so_borda": "real mask, edge gap only"
+      },
+      "lacuna": {
+        "nenhuma": "none",
+        "p9": "period 9",
+        "meio": "mid-term",
+        "aleatoria2": "random, 2+ mayors/block",
+        "aleatoria": "random interior",
+        "na_troca": "next to mayor change"
+      },
+      "fonte": "Source: the study's `results.json` (outputs with verified sha256). Municipality with no gap: 10 observations. The real-mask rows use only the information on which municipality-periods have the index; the outcome is synthetic. Effect = share of variance due to the mayor; 0% = true null. Observations used = municipality-periods that enter the test after the gap and, under `nostitch`, after dropping blocks with a single mayor; not recorded (—) in the scale and real-mask cells. In the cells with a period-9 gap and `nostitch`, the observations used include period 10, a one-row block that is never shuffled and does not contribute to the variation across permutations when its mayor does not appear in the other block. Municipalities = units that enter the cell before `nostitch` drops blocks.",
+      "modo": {
+        "costura": "stitching",
+        "nostitch": "nostitch"
+      },
+      "ate": " to "
+    }
+  },
+  "numero": {
+    "decimal": ".",
+    "milhar": ","
+  }
+}

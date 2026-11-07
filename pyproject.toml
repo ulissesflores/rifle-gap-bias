@@ -1,0 +1,30 @@
+[project]
+name = "rifle-lacunas-prefeitos"
+version = "1.0.0"
+description = "Pacote de replicação de 'O prefeito melhora a cidade além do acaso? Dado faltando na troca de prefeito faz o teste dizer que sim'"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Carlos Ulisses Flores" }]
+dependencies = ["numpy==2.5.4", "scipy==1.18.1", "matplotlib==3.11.2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "interrogate>=1.7"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "D"]
+ignore = ["D203", "D213"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.interrogate]
+fail-under = 100
+exclude = [".venv"]

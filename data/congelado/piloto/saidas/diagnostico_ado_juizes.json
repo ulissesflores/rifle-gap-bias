@@ -1,0 +1,188 @@
+{
+ "semente": 17112026,
+ "bases": 500,
+ "permutacoes": 1000,
+ "motor": "rifle_ado",
+ "celulas": {
+  "sem_lacuna_N5468": {
+   "painel": "todo",
+   "lacuna": "nenhuma",
+   "modo": "costura",
+   "rho": 0.21696453979704527,
+   "prop": 0.0,
+   "municipios": 5468,
+   "celulas": 54680,
+   "unidades": 5468,
+   "stints": 20777,
+   "rejeicoes": 1,
+   "bases": 500,
+   "taxa": 0.002,
+   "ic95": [
+    0.0001,
+    0.0111
+   ]
+  },
+  "p9_nostitch_N5468": {
+   "painel": "todo",
+   "lacuna": "p9",
+   "modo": "nostitch",
+   "rho": 0.21696453979704527,
+   "prop": 0.0,
+   "municipios": 5468,
+   "celulas": 49212,
+   "unidades": 10936,
+   "stints": 22824,
+   "rejeicoes": 8,
+   "bases": 500,
+   "taxa": 0.016,
+   "ic95": [
+    0.0069,
+    0.0313
+   ]
+  },
+  "na_troca_nostitch_N5468": {
+   "painel": "todo",
+   "lacuna": "na_troca",
+   "modo": "nostitch",
+   "rho": 0.21696453979704527,
+   "prop": 0.0,
+   "municipios": 5468,
+   "celulas": 40533,
+   "unidades": 7958,
+   "stints": 17778,
+   "rejeicoes": 6,
+   "bases": 500,
+   "taxa": 0.012,
+   "ic95": [
+    0.0044,
+    0.0259
+   ]
+  },
+  "aleatoria_nostitch_N5468": {
+   "painel": "todo",
+   "lacuna": "aleatoria",
+   "modo": "nostitch",
+   "rho": 0.21696453979704527,
+   "prop": 0.0,
+   "municipios": 5468,
+   "celulas": 42972,
+   "unidades": 8577,
+   "stints": 20069,
+   "rejeicoes": 10,
+   "bases": 500,
+   "taxa": 0.02,
+   "ic95": [
+    0.0096,
+    0.0365
+   ]
+  },
+  "sem_lacuna_meio867": {
+   "painel": "meio867",
+   "lacuna": "nenhuma",
+   "modo": "costura",
+   "rho": 0.21696453979704527,
+   "prop": 0.0,
+   "municipios": 867,
+   "celulas": 8670,
+   "unidades": 867,
+   "stints": 3128,
+   "rejeicoes": 11,
+   "bases": 500,
+   "taxa": 0.022,
+   "ic95": [
+    0.011,
+    0.039
+   ]
+  },
+  "sem_lacuna_poder10_meio867": {
+   "painel": "meio867",
+   "lacuna": "nenhuma",
+   "modo": "costura",
+   "rho": 0.21696453979704527,
+   "prop": 0.1,
+   "municipios": 867,
+   "celulas": 8670,
+   "unidades": 867,
+   "stints": 3128,
+   "rejeicoes": 495,
+   "bases": 500,
+   "taxa": 0.99,
+   "ic95": [
+    0.9768,
+    0.9967
+   ]
+  },
+  "p9_nostitch_poder10": {
+   "painel": "mil",
+   "lacuna": "p9",
+   "modo": "nostitch",
+   "rho": 0.21696453979704527,
+   "prop": 0.1,
+   "municipios": 1000,
+   "celulas": 9000,
+   "unidades": 2000,
+   "stints": 4161,
+   "rejeicoes": 492,
+   "bases": 500,
+   "taxa": 0.984,
+   "ic95": [
+    0.9687,
+    0.9931
+   ]
+  },
+  "p9_nostitch_poder05": {
+   "painel": "mil",
+   "lacuna": "p9",
+   "modo": "nostitch",
+   "rho": 0.21696453979704527,
+   "prop": 0.05,
+   "municipios": 1000,
+   "celulas": 9000,
+   "unidades": 2000,
+   "stints": 4161,
+   "rejeicoes": 305,
+   "bases": 500,
+   "taxa": 0.61,
+   "ic95": [
+    0.5657,
+    0.653
+   ]
+  },
+  "sem_lacuna_poder05": {
+   "painel": "mil",
+   "lacuna": "nenhuma",
+   "modo": "costura",
+   "rho": 0.21696453979704527,
+   "prop": 0.05,
+   "municipios": 1000,
+   "celulas": 10000,
+   "unidades": 1000,
+   "stints": 3796,
+   "rejeicoes": 275,
+   "bases": 500,
+   "taxa": 0.55,
+   "ic95": [
+    0.5052,
+    0.5942
+   ]
+  },
+  "aleatoria2_nostitch_poder10": {
+   "painel": "mil",
+   "lacuna": "aleatoria2",
+   "modo": "nostitch",
+   "rho": 0.21696453979704527,
+   "prop": 0.1,
+   "municipios": 869,
+   "celulas": 7821,
+   "unidades": 1738,
+   "stints": 3752,
+   "rejeicoes": 495,
+   "bases": 500,
+   "taxa": 0.99,
+   "ic95": [
+    0.9768,
+    0.9967
+   ]
+  }
+ }
+}

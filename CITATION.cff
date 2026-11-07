@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite it as below."
+title: "Does a mayor improve a city beyond chance? Missing data at a change of mayor makes the test say yes: Replication package"
+abstract: >-
+  Replication package of the methods paper that measures, in a translation of the default path of
+  the official code of the rifle package (Berry and Fowler) and on the real tenure structure of
+  5,468 Brazilian municipalities (2005-2024), the size of the randomization inference test for
+  leader effects when one period is missing in the middle of the series. Under modest serial
+  correlation, the default gap stitching takes rejection under the null to 76.6% (gap in period 9)
+  and 89.4% (gap next to a change of mayor) in the full panel; the package's own nostitch option
+  removes this inflation. It carries the code, the anonymized panel, the frozen outputs with sha256,
+  the tests that lock every number of the paper, the provenance chain, figures and Table 1 in four
+  languages, and the paper in Portuguese (original), English, Spanish and Italian.
+type: software
+version: 1.0.0
+date-released: "2026-11-07"
+license: Apache-2.0
+repository-code: "https://github.com/ulissesflores/rifle-gap-bias"
+authors:
+  - family-names: "Flores"
+    given-names: "Carlos Ulisses"
+    affiliation: "Codex Hash Research Laboratory, Codex Hash Ltda., Brazil"
+    orcid: "https://orcid.org/0000-0002-6034-7765"
+keywords:
+  - randomization inference
+  - leader effects
+  - missing data
+  - serial correlation
+  - preregistration
+  - mayors
+references:
+  - type: article
+    authors:
+      - family-names: "Berry"
+        given-names: "Christopher R."
+      - family-names: "Fowler"
+        given-names: "Anthony"
+    title: "Leadership or luck? Randomization inference for leader effects in politics, business, and sports"
+    journal: "Science Advances"
+    volume: 7
+    issue: 4
+    year: 2021
+    doi: "10.1126/sciadv.abe3404"
+  - type: software
+    authors:
+      - family-names: "Berry"
+        given-names: "Christopher R."
+      - family-names: "Fowler"
+        given-names: "Anthony"
+    title: "RIFLE: Stata module to perform randomization inference for leader effects"
+    year: 2018
+    url: "https://ideas.repec.org/c/boc/bocode/s458461.html"

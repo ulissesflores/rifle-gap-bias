@@ -1,0 +1,242 @@
+{
+ "semente": 5112026,
+ "insumos_sha256": {
+  "dados/tabelas/indice_secundaria.csv": "fca5e6ce30bbe41f36b3f012402774560360e6a14c6d562b1589f04a3a4e9b6c",
+  "dados/tabelas/prefeitos_periodo.csv": "f8ad2492197af8c0c13017d4ace6fd030ee3c88bb174d595aa73e050dde8c302",
+  "dados/tabelas/alinhamento.csv": "afdf3dcb90630d56c015ce0e28db1f39bb3cebf919a9edaa348d1639710ac8a4",
+  "dados/tabelas/populacao.csv": "d915744207153ee86e099c751de61bed6c19b1a3de8703e042fa677415d7c637",
+  "dados/tabelas/reeleicao_margens.csv": "fbba15526c0a82cca442ae818c011a4faff6fa926102746e39587ee0a0949aed",
+  "dados/tabelas/c1_saeb.csv": "a861f41e83cd9da50ebe49a59d79517cf8d8b2eb79037e34f5dc6f6ee77351e6",
+  "dados/tabelas/c2_receita.csv": "d8782fc5ff781e14c299bbcc310935876fca9b3acefcc05a4bfd860c731b3728",
+  "dados/tabelas/c3_contagens.csv": "34dd4faf759928c94983a7d9187a5b2e5c9837025e3e879b60cf2e1259003880",
+  "dados/tabelas/ipca_anual.csv": "3dbac8f2d0a4751e4528b4f16097d8418a2b5f6c58a376534bed2ff83776a859",
+  "piloto/saidas/simulacoes_v2.json": "767352b4dccf6c51a234efce24d3c95f00de96e90ed4c7cb6f7a5772d8ec67dd",
+  "piloto/saidas/estagio1.json": "a1e4f81fdfb2a62e30a29cb6a5b7b4f6d8bd776985c6a2fdfad3a2bae5247787",
+  "piloto/saidas/estagio2.json": "259ee814ebc058142556d68d5e26147dfbcf45fdd550882ff3d863b7040c786c"
+ },
+ "modo": "real",
+ "construtor_dif_max_contra_indice_secundaria": null,
+ "versoes": {
+  "principal": {
+   "municipios": 5298,
+   "trechos": 7498,
+   "municipios_que_informam": 4474,
+   "celulas": 47758,
+   "coef_alinhamento": 0.023967297162430786,
+   "r2_real": 0.7728282928585233,
+   "diferenca": -0.0028774426481193993,
+   "valor_p": 0.862,
+   "T1_rejeita": false,
+   "prop": 0.0,
+   "prop_como": "diferenca_nao_positiva",
+   "T2_limiar_p5_no_degrau": 0.011050851097940484,
+   "T2_rejeita": true
+  },
+  "atraso": {
+   "municipios": 5292,
+   "trechos": 7416,
+   "municipios_que_informam": 5037,
+   "celulas": 43640,
+   "coef_alinhamento": 0.02903241465192048,
+   "r2_real": 0.793008221142353,
+   "diferenca": -0.0026879975876772377,
+   "valor_p": 0.707,
+   "T1_rejeita": false,
+   "prop": 0.0,
+   "prop_como": "diferenca_nao_positiva",
+   "T2_limiar_p5_no_degrau": 0.016156177061315835,
+   "T2_rejeita": true
+  },
+  "grandes": {
+   "municipios": 1642,
+   "trechos": 2061,
+   "municipios_que_informam": 1440,
+   "celulas": 15628,
+   "coef_alinhamento": 0.024303360231639648,
+   "r2_real": 0.8664494756967573,
+   "diferenca": -0.004353750128134215,
+   "valor_p": 0.911,
+   "T1_rejeita": false,
+   "prop": 0.0,
+   "prop_como": "diferenca_nao_positiva",
+   "T2_limiar_p5_no_degrau": 0.008986220828214365,
+   "T2_rejeita": true
+  },
+  "restrita": {
+   "municipios": 978,
+   "trechos": 1420,
+   "municipios_que_informam": 791,
+   "celulas": 8657,
+   "coef_alinhamento": 0.07473623398774112,
+   "r2_real": 0.7863367031508819,
+   "diferenca": -0.004417415980071837,
+   "valor_p": 0.929,
+   "T1_rejeita": false,
+   "prop": 0.0,
+   "prop_como": "diferenca_nao_positiva",
+   "T2_limiar_p5_no_degrau": 0.008193730623972339,
+   "T2_rejeita": true
+  }
+ },
+ "diagnostico_troca_endogena_principal_do_piloto": {
+  "n": 15010,
+  "taxa_continuidade": 0.3964690206528981,
+  "inclinacao_mlp": 0.0008259887123539591,
+  "frr": 0.051,
+  "passa": true
+ },
+ "desfecho": "nao_importa",
+ "degrau": 0.1,
+ "secundarios": {
+  "C1": {
+   "municipios": 5298,
+   "trechos": 7498,
+   "municipios_que_informam": 4474,
+   "celulas": 47758,
+   "coef_alinhamento": 0.08149686113821317,
+   "r2_real": 0.8932136101797736,
+   "diferenca": -0.001263309069828522,
+   "valor_p": 0.978,
+   "T1_rejeita": false,
+   "valor_p_holm": 1.0,
+   "rejeita_holm": false
+  },
+  "C2": {
+   "municipios": 5298,
+   "trechos": 7498,
+   "municipios_que_informam": 4474,
+   "celulas": 47758,
+   "coef_alinhamento": -0.011155767716394179,
+   "r2_real": 0.3610841666477572,
+   "diferenca": -0.028573437922946643,
+   "valor_p": 0.895,
+   "T1_rejeita": false,
+   "valor_p_holm": 1.0,
+   "rejeita_holm": false
+  },
+  "C3": {
+   "municipios": 5298,
+   "trechos": 7498,
+   "municipios_que_informam": 4474,
+   "celulas": 47758,
+   "coef_alinhamento": 0.0015607980654734946,
+   "r2_real": 0.5135820096246664,
+   "diferenca": -0.0008822474625836962,
+   "valor_p": 0.648,
+   "T1_rejeita": false,
+   "valor_p_holm": 1.0,
+   "rejeita_holm": false
+  }
+ },
+ "sensibilidades": {
+  "sens1": {
+   "municipios": 5268,
+   "trechos": 6558,
+   "municipios_que_informam": 4433,
+   "celulas": 40260,
+   "coef_alinhamento": -0.0019598340088470985,
+   "r2_real": 0.2976505130554856,
+   "diferenca": 0.02436427601608171,
+   "valor_p": 0.028,
+   "T1_rejeita": true,
+   "prop_aproximada": 0.17874897100460366,
+   "prop_como": "interpolada",
+   "diverge_do_T1_principal": true
+  },
+  "sens2": {
+   "ver": "versoes.atraso",
+   "diverge_do_T1_principal": false
+  },
+  "sens3": {
+   "municipios": 5298,
+   "trechos": 7498,
+   "municipios_que_informam": 4474,
+   "celulas": 47758,
+   "coef_alinhamento": -0.022435713295453616,
+   "r2_real": 0.6287031047966987,
+   "diferenca": -0.0042305481700785075,
+   "valor_p": 0.831,
+   "T1_rejeita": false,
+   "prop_aproximada": 0.0,
+   "prop_como": "diferenca_nao_positiva",
+   "diverge_do_T1_principal": false
+  },
+  "sens4": {
+   "municipios": 5184,
+   "trechos": 6126,
+   "municipios_que_informam": 2932,
+   "celulas": 29079,
+   "coef_alinhamento": 0.020972683085547474,
+   "r2_real": 0.8096490371951758,
+   "diferenca": -0.0004897930843484888,
+   "valor_p": 0.598,
+   "T1_rejeita": false,
+   "prop_aproximada": 0.0,
+   "prop_como": "diferenca_nao_positiva",
+   "diverge_do_T1_principal": false
+  },
+  "sens5": {
+   "municipios": 5161,
+   "trechos": 7364,
+   "municipios_que_informam": 4324,
+   "celulas": 46249,
+   "coef_alinhamento": 0.02767172826332802,
+   "r2_real": 0.7841046171914794,
+   "diferenca": -0.002663979829187979,
+   "valor_p": 0.839,
+   "T1_rejeita": false,
+   "prop_aproximada": 0.0,
+   "prop_como": "diferenca_nao_positiva",
+   "diverge_do_T1_principal": false
+  },
+  "sens6": {
+   "municipios": 5562,
+   "trechos": 5710,
+   "municipios_que_informam": 4848,
+   "celulas": 55286,
+   "coef_alinhamento": 0.024604657080869747,
+   "r2_real": 0.7022454174241356,
+   "diferenca": -0.004119142038412349,
+   "valor_p": 0.872,
+   "T1_rejeita": false,
+   "prop_aproximada": 0.0,
+   "prop_como": "diferenca_nao_positiva",
+   "diverge_do_T1_principal": false
+  },
+  "sens7": {
+   "municipios": 5281,
+   "trechos": 7956,
+   "municipios_que_informam": 4369,
+   "celulas": 46309,
+   "coef_alinhamento": 0.021012637155549824,
+   "r2_real": 0.8281436881713999,
+   "diferenca": -0.00047033006421548507,
+   "valor_p": 0.757,
+   "T1_rejeita": false,
+   "prop_aproximada": 0.0,
+   "prop_como": "diferenca_nao_positiva",
+   "diverge_do_T1_principal": false
+  },
+  "sens8": {
+   "municipios": 5264,
+   "trechos": 11816,
+   "municipios_que_informam": 4465,
+   "celulas": 37931,
+   "coef_alinhamento": 0.03000128742641821,
+   "r2_real": 0.8215253336328108,
+   "diferenca": -0.00783649261047481,
+   "valor_p": 0.991,
+   "T1_rejeita": false,
+   "prop_aproximada": 0.0,
+   "prop_como": "diferenca_nao_positiva",
+   "diverge_do_T1_principal": false
+  }
+ },
+ "pendente": {
+  "C1_em_dp_do_aluno": "exige o desvio-padrão do aluno no Saeb, com fonte do Inep; fica para o artigo"
+ },
+ "correcao": {
+  "regra": "Emenda 01 ao v2 §E: total de receita própria negativo = ausente",
+  "celulas_c2_removidas": 34
+ }
+}

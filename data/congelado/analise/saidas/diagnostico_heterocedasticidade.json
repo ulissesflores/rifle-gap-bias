@@ -1,0 +1,78 @@
+{
+ "pos_hoc": true,
+ "semente": 7112026,
+ "versoes": {
+  "principal": {
+   "parte_do_ss_dentro_nos_10pct_mais_variaveis": 0.4988072869875202,
+   "escala_percentis_50_90_99": [
+    0.7108155023012779,
+    1.3136710784531864,
+    2.548040108750937
+   ],
+   "variancia_municipio": 0.8916995963316917,
+   "prop0.0": {
+    "dif_media": -5.087915506227891e-05,
+    "dif_dp": 0.0035631843199531283,
+    "dif_p5": -0.006400047055787344,
+    "poder_T1": 0.03,
+    "fracao_abaixo_do_limiar_T2_selado": 1.0
+   },
+   "prop0.1": {
+    "dif_media": 0.007931400313747112,
+    "dif_dp": 0.003414827413242959,
+    "dif_p5": 0.0024797367128678366,
+    "poder_T1": 0.735,
+    "fracao_abaixo_do_limiar_T2_selado": 0.81
+   },
+   "dp_permutacao_real_D2": 0.006040890521979503
+  },
+  "atraso": {
+   "parte_do_ss_dentro_nos_10pct_mais_variaveis": 0.5155552245146466,
+   "escala_percentis_50_90_99": [
+    0.6976709615145342,
+    1.3198154007961502,
+    2.524549540086979
+   ],
+   "variancia_municipio": 0.9330135303809236,
+   "prop0.0": {
+    "dif_media": -0.00039716216162090644,
+    "dif_dp": 0.004488207466287328,
+    "dif_p5": -0.007338595287257915,
+    "poder_T1": 0.04,
+    "fracao_abaixo_do_limiar_T2_selado": 1.0
+   },
+   "prop0.1": {
+    "dif_media": 0.01079185760032801,
+    "dif_dp": 0.004194849022876639,
+    "dif_p5": 0.0033050223681797054,
+    "poder_T1": 0.82,
+    "fracao_abaixo_do_limiar_T2_selado": 0.91
+   },
+   "dp_permutacao_real_D2": 0.006699742634463163
+  },
+  "grandes": {
+   "parte_do_ss_dentro_nos_10pct_mais_variaveis": 0.4852526235952232,
+   "escala_percentis_50_90_99": [
+    0.7339759378213819,
+    1.283268247654457,
+    3.0751324012686507
+   ],
+   "variancia_municipio": 2.088957342939586,
+   "prop0.0": {
+    "dif_media": 2.6188149581862774e-06,
+    "dif_dp": 0.002944764248326461,
+    "dif_p5": -0.0047862289833396745,
+    "poder_T1": 0.06,
+    "fracao_abaixo_do_limiar_T2_selado": 1.0
+   },
+   "prop0.1": {
+    "dif_media": 0.004590744095032455,
+    "dif_dp": 0.002706053209308153,
+    "dif_p5": -0.0006268236308135165,
+    "poder_T1": 0.675,
+    "fracao_abaixo_do_limiar_T2_selado": 0.96
+   },
+   "dp_permutacao_real_D2": 0.002913955452991876
+  }
+ }
+}

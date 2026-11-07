@@ -1,0 +1,38 @@
+# Verificação primeiro: a cadeia selada confere, a replicação leve passa e o lint fecha.
+# Só Python 3.12: é a versão da rodada selada e a do requirements.lock (numpy 2.5.4,
+# scipy 1.18.1); a igualdade byte a byte depende dessas versões. Python 3.11 nem instala o lock
+# (contourpy 1.4.0 exige 3.12; medido numa cópia limpa em 2026-11-06).
+name: ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.lock
+      - name: Cadeia de proveniência da última rodada selada
+        run: python scripts/verify_chain.py
+      - name: Replicação (caminho leve)
+        run: python run_all.py
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install ruff interrogate
+      - run: ruff format --check .
+      - run: ruff check .
+      - run: interrogate .

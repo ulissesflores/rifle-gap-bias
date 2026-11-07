@@ -1,0 +1,4247 @@
+{
+ "fontes": {
+  "costura": {
+   "caminho": "piloto/saidas/diagnostico_costura.json",
+   "sha256": "7f39dd98b518134891782bf13ffcad1e2a422591c58c5200e83856e609debf57"
+  },
+  "borda": {
+   "caminho": "piloto/saidas/diagnostico_borda.json",
+   "sha256": "04e13d5fc4d4d685e98aa6a2824b1422a4b5f700ccd96ba1be212b61990cac16"
+  },
+  "piloto_v1": {
+   "caminho": "piloto/saidas/simulacoes.json",
+   "sha256": "f598bf57298e3000b362ee97bb3a63163337e93990e5ec1b5b0890449c91b00c"
+  },
+  "piloto_v2": {
+   "caminho": "piloto/saidas/simulacoes_v2.json",
+   "sha256": "767352b4dccf6c51a234efce24d3c95f00de96e90ed4c7cb6f7a5772d8ec67dd"
+  },
+  "confirmacao": {
+   "caminho": "piloto/saidas/confirmacao_tamanho_v2.json",
+   "sha256": "0c98e2ab1a0a4a46b4119653a78b0118400da37688753fc5f660000a2ebf2616"
+  },
+  "resultado": {
+   "caminho": "analise/saidas/resultado_v2.json",
+   "sha256": "31c3598ad61009090accb8d3ab3cc1588cbdab2483b49abb7cece19fe83e346d"
+  },
+  "corrigido": {
+   "caminho": "analise/saidas/resultado_v2_corrigido.json",
+   "sha256": "cfd199cd9c56ed239ac46305fcb8e02f6227ffded9e7c656a6e40348ca7bb592"
+  },
+  "d1_d4": {
+   "caminho": "analise/saidas/diagnostico_calibracao.json",
+   "sha256": "c0e7d7b769858c5ee34a67948569d268fa8f9f3257eaa1965e6b83b41db26414"
+  },
+  "d5": {
+   "caminho": "analise/saidas/diagnostico_heterocedasticidade.json",
+   "sha256": "ac71aff0aadaa6784e55e8d49db593e42e8277ea1c7a190eb47f5c64d5768fce"
+  },
+  "alinhamento_motor": {
+   "caminho": "piloto/saidas/diagnostico_alinhamento.json",
+   "sha256": "5491adba73d5cff5f1adfcabbbe71c086a1cfb2d1790db1d880cac7c365e9bd4"
+  },
+  "escala_motor": {
+   "caminho": "piloto/saidas/diagnostico_escala.json",
+   "sha256": "5ff43eb1806a11c623d18561ae322bb2c32bb83aa48118a5212dfeead24b52bf"
+  },
+  "ado": {
+   "caminho": "piloto/saidas/diagnostico_ado.json",
+   "sha256": "f3061d971801a02535ea0b08bc223b7bc176cb76b30cf7d5a42503b74fb89326"
+  },
+  "ado_escala": {
+   "caminho": "piloto/saidas/diagnostico_ado_escala.json",
+   "sha256": "f3f25245229b88af2070de9646e9489e193845ec216c1e7827f3cc908aac1563"
+  },
+  "ado_mascara_real": {
+   "caminho": "piloto/saidas/diagnostico_ado_mascara_real.json",
+   "sha256": "d7f31226cacb48d9d4f5914cbe3031a03a2f7b88febd46ae45fffbd69bd8734f"
+  },
+  "ado_juizes": {
+   "caminho": "piloto/saidas/diagnostico_ado_juizes.json",
+   "sha256": "1f2d332e746edb57ccca6db0defc13f02968582bd1cf81dffbb60e8e19e40e5c"
+  },
+  "verificacoes_port": {
+   "caminho": "piloto/saidas/verificacoes_port.json",
+   "sha256": "c94011105838a44e05cc27fc449913d3737c7170caa026b2fd8367faea9201e9"
+  },
+  "iptu": {
+   "caminho": "analise/saidas/nota_iptu.json",
+   "sha256": "2ca51b33c91029462a49816e654032ac4fb2fa6135ba1d31f214f0b0455b7d28"
+  },
+  "astra_reproducao": {
+   "caminho": "analise/revisao-astra/astra_reproducao.json",
+   "sha256": "60e33ec83941dc68f92331f3fda0e5d9ff602a9e3f93edbbbe0d10e963c3e095"
+  },
+  "astra_simulacoes": {
+   "caminho": "analise/revisao-astra/astra_simulacoes.json",
+   "sha256": "48684b8d607838cfd7d0477fd323b93ec55ba28f88137b4e808d85050a924188"
+  },
+  "astra_injecao": {
+   "caminho": "analise/revisao-astra/astra_injecao.json",
+   "sha256": "0af55d4b38f5ad03474cd121e3faa64fabb4003e67e043f0b23263b22cef3307"
+  },
+  "astra_decomposicao": {
+   "caminho": "analise/revisao-astra/astra_decomposicao.json",
+   "sha256": "980a81c1761bc701fe16d45fa96be50cd8a5d519ea903ce99eb293a79f75b33e"
+  }
+ },
+ "costura": {
+  "municipios": {
+   "secundaria": 5298,
+   "completos": 2737,
+   "com_lacuna": 2561,
+   "prefeito_nos_10": 5208,
+   "prefeito_nos_10_com_lacuna": 2471
+  },
+  "rodadas": {
+   "costura_completos_rho217": {
+    "rejeicao_sob_nulo": 0.08,
+    "bases": 100,
+    "semente": 101,
+    "rho": 0.21696453979704527,
+    "municipios": 2737
+   },
+   "costura_com_lacuna_rho217": {
+    "rejeicao_sob_nulo": 0.49,
+    "bases": 100,
+    "semente": 102,
+    "rho": 0.21696453979704527,
+    "municipios": 2561
+   },
+   "costura_todos_rho217": {
+    "rejeicao_sob_nulo": 0.34,
+    "bases": 100,
+    "semente": 103,
+    "rho": 0.21696453979704527,
+    "municipios": 5298
+   },
+   "costura_com_lacuna_rho0": {
+    "rejeicao_sob_nulo": 0.09,
+    "bases": 100,
+    "semente": 104,
+    "rho": 0.0,
+    "municipios": 2561
+   },
+   "mascara_com_lacuna_rho0": {
+    "rejeicao_sob_nulo": 0.06,
+    "bases": 100,
+    "semente": 105,
+    "rho": 0.0,
+    "municipios": 2471
+   },
+   "mascara_com_lacuna_rho217": {
+    "rejeicao_sob_nulo": 0.12,
+    "bases": 300,
+    "semente": 106,
+    "rho": 0.21696453979704527,
+    "municipios": 2471
+   },
+   "mascara_todos_rho217": {
+    "rejeicao_sob_nulo": 0.08666666666666667,
+    "bases": 300,
+    "semente": 107,
+    "rho": 0.21696453979704527,
+    "municipios": 5208
+   }
+  }
+ },
+ "borda": {
+  "municipios": {
+   "com_lacuna": 2561,
+   "so_borda": 707,
+   "interior": 1854
+  },
+  "rodadas": {
+   "costura_so_borda_rho217": {
+    "rejeicao_sob_nulo": 0.05,
+    "bases": 200,
+    "semente": 201,
+    "rho": 0.21696453979704527,
+    "municipios": 707
+   },
+   "costura_lacuna_interior_rho217": {
+    "rejeicao_sob_nulo": 0.64,
+    "bases": 200,
+    "semente": 202,
+    "rho": 0.21696453979704527,
+    "municipios": 1854
+   },
+   "costura_com_lacuna_rho084": {
+    "rejeicao_sob_nulo": 0.215,
+    "bases": 200,
+    "semente": 203,
+    "rho": 0.084,
+    "municipios": 2561
+   }
+  }
+ },
+ "piloto_v1": {
+  "autocorrelacao_medida": 0.08384517128053605,
+  "rho_gerador": 0.21696453979704527,
+  "versoes": {
+   "principal": {
+    "municipios": 2737,
+    "informam": 2420,
+    "pontos": {
+     "0.0": {
+      "poder_T1": 0.04,
+      "dif_media": 4.031896249442224e-05,
+      "dif_p5": -0.0032765504093775293,
+      "poder_T1_pct": 4.0
+     },
+     "0.025": {
+      "poder_T1": 0.485,
+      "dif_media": 0.0034394743786366868,
+      "dif_p5": -3.190937641032997e-05,
+      "poder_T1_pct": 48.5
+     },
+     "0.05": {
+      "poder_T1": 0.92,
+      "dif_media": 0.007175352772918942,
+      "dif_p5": 0.0033677626702814187,
+      "poder_T2_sob_prop0": 0.925,
+      "poder_T1_pct": 92.0
+     },
+     "0.075": {
+      "poder_T1": 1.0,
+      "dif_media": 0.010734320660339264,
+      "dif_p5": 0.006727752975334056,
+      "poder_T1_pct": 100.0
+     },
+     "0.1": {
+      "poder_T1": 1.0,
+      "dif_media": 0.014354064151808975,
+      "dif_p5": 0.011025037503771989,
+      "poder_T2_sob_prop0": 1.0,
+      "poder_T1_pct": 100.0
+     },
+     "0.125": {
+      "poder_T1": 1.0,
+      "dif_media": 0.017795295683509058,
+      "dif_p5": 0.013929105800418451,
+      "poder_T1_pct": 100.0
+     },
+     "0.15": {
+      "poder_T1": 1.0,
+      "dif_media": 0.02162186603251719,
+      "dif_p5": 0.018114994238295167,
+      "poder_T2_sob_prop0": 1.0,
+      "poder_T1_pct": 100.0
+     },
+     "0.175": {
+      "poder_T1": 1.0,
+      "dif_media": 0.025143907483870537,
+      "dif_p5": 0.021902053140921716,
+      "poder_T1_pct": 100.0
+     },
+     "0.2": {
+      "poder_T1": 1.0,
+      "dif_media": 0.028496097421523096,
+      "dif_p5": 0.02472519265366026,
+      "poder_T1_pct": 100.0
+     },
+     "0.225": {
+      "poder_T1": 1.0,
+      "dif_media": 0.03204336606201912,
+      "dif_p5": 0.02836800959771397,
+      "poder_T1_pct": 100.0
+     },
+     "0.25": {
+      "poder_T1": 1.0,
+      "dif_media": 0.03592192586893311,
+      "dif_p5": 0.03205594077355099,
+      "poder_T1_pct": 100.0
+     },
+     "0.275": {
+      "poder_T1": 1.0,
+      "dif_media": 0.03959072059710318,
+      "dif_p5": 0.036084779605954735,
+      "poder_T1_pct": 100.0
+     },
+     "0.3": {
+      "poder_T1": 1.0,
+      "dif_media": 0.04293313976032648,
+      "dif_p5": 0.03882218542341294,
+      "poder_T1_pct": 100.0
+     }
+    }
+   },
+   "atraso": {
+    "municipios": 2737,
+    "informam": 2731,
+    "pontos": {
+     "0.0": {
+      "poder_T1": 0.05,
+      "dif_media": -4.490691014082726e-05,
+      "dif_p5": -0.00485732784138152,
+      "poder_T1_pct": 5.0
+     },
+     "0.025": {
+      "poder_T1": 0.7,
+      "dif_media": 0.006079906358591951,
+      "dif_p5": 0.00203079915311844,
+      "poder_T1_pct": 70.0
+     },
+     "0.05": {
+      "poder_T1": 0.995,
+      "dif_media": 0.011651281149250563,
+      "dif_p5": 0.006585433137112468,
+      "poder_T2_sob_prop0": 0.985,
+      "poder_T1_pct": 99.5
+     },
+     "0.075": {
+      "poder_T1": 1.0,
+      "dif_media": 0.017254989367179743,
+      "dif_p5": 0.012065338839108014,
+      "poder_T1_pct": 100.0
+     },
+     "0.1": {
+      "poder_T1": 1.0,
+      "dif_media": 0.0232557315361701,
+      "dif_p5": 0.018089444671638016,
+      "poder_T2_sob_prop0": 1.0,
+      "poder_T1_pct": 100.0
+     },
+     "0.125": {
+      "poder_T1": 1.0,
+      "dif_media": 0.028594360820384575,
+      "dif_p5": 0.022914975430402697,
+      "poder_T1_pct": 100.0
+     },
+     "0.15": {
+      "poder_T1": 1.0,
+      "dif_media": 0.03450513939624262,
+      "dif_p5": 0.029492563850654054,
+      "poder_T2_sob_prop0": 1.0,
+      "poder_T1_pct": 100.0
+     },
+     "0.175": {
+      "poder_T1": 1.0,
+      "dif_media": 0.04058100276544506,
+      "dif_p5": 0.03579602646472552,
+      "poder_T1_pct": 100.0
+     },
+     "0.2": {
+      "poder_T1": 1.0,
+      "dif_media": 0.04585391506672577,
+      "dif_p5": 0.04150255590853267,
+      "poder_T1_pct": 100.0
+     },
+     "0.225": {
+      "poder_T1": 1.0,
+      "dif_media": 0.05204346332111073,
+      "dif_p5": 0.047170473831385465,
+      "poder_T1_pct": 100.0
+     },
+     "0.25": {
+      "poder_T1": 1.0,
+      "dif_media": 0.05745160316982077,
+      "dif_p5": 0.05208292431256134,
+      "poder_T1_pct": 100.0
+     },
+     "0.275": {
+      "poder_T1": 1.0,
+      "dif_media": 0.06315084368215698,
+      "dif_p5": 0.05792873158738114,
+      "poder_T1_pct": 100.0
+     },
+     "0.3": {
+      "poder_T1": 1.0,
+      "dif_media": 0.06864709409387217,
+      "dif_p5": 0.0634380321321704,
+      "poder_T1_pct": 100.0
+     }
+    }
+   },
+   "grandes": {
+    "municipios": 1120,
+    "informam": 994,
+    "pontos": {
+     "0.0": {
+      "poder_T1": 0.035,
+      "dif_media": -0.0003114260492266105,
+      "dif_p5": -0.00598532496659703,
+      "poder_T1_pct": 3.5
+     },
+     "0.025": {
+      "poder_T1": 0.265,
+      "dif_media": 0.0033411933834559993,
+      "dif_p5": -0.002152907490785363,
+      "poder_T1_pct": 26.5
+     },
+     "0.05": {
+      "poder_T1": 0.665,
+      "dif_media": 0.007216989971647309,
+      "dif_p5": 0.0011953212581682362,
+      "poder_T2_sob_prop0": 0.675,
+      "poder_T1_pct": 66.5
+     },
+     "0.075": {
+      "poder_T1": 0.905,
+      "dif_media": 0.010437716831002777,
+      "dif_p5": 0.004802454118242267,
+      "poder_T1_pct": 90.5
+     },
+     "0.1": {
+      "poder_T1": 0.99,
+      "dif_media": 0.014096704459059046,
+      "dif_p5": 0.00823378208886455,
+      "poder_T2_sob_prop0": 0.995,
+      "poder_T1_pct": 99.0
+     },
+     "0.125": {
+      "poder_T1": 1.0,
+      "dif_media": 0.017760501997323628,
+      "dif_p5": 0.012110887783251728,
+      "poder_T1_pct": 100.0
+     },
+     "0.15": {
+      "poder_T1": 1.0,
+      "dif_media": 0.021078204130447097,
+      "dif_p5": 0.01535108582737813,
+      "poder_T2_sob_prop0": 1.0,
+      "poder_T1_pct": 100.0
+     },
+     "0.175": {
+      "poder_T1": 1.0,
+      "dif_media": 0.025043711024466456,
+      "dif_p5": 0.019529677239806115,
+      "poder_T1_pct": 100.0
+     },
+     "0.2": {
+      "poder_T1": 1.0,
+      "dif_media": 0.02834943163075547,
+      "dif_p5": 0.022914913674531013,
+      "poder_T1_pct": 100.0
+     },
+     "0.225": {
+      "poder_T1": 1.0,
+      "dif_media": 0.0319688547737762,
+      "dif_p5": 0.025675245389108543,
+      "poder_T1_pct": 100.0
+     },
+     "0.25": {
+      "poder_T1": 1.0,
+      "dif_media": 0.03614145605312248,
+      "dif_p5": 0.031646790731715224,
+      "poder_T1_pct": 100.0
+     },
+     "0.275": {
+      "poder_T1": 1.0,
+      "dif_media": 0.03906697295040185,
+      "dif_p5": 0.03327705223165121,
+      "poder_T1_pct": 100.0
+     },
+     "0.3": {
+      "poder_T1": 1.0,
+      "dif_media": 0.04258419496486926,
+      "dif_p5": 0.0367537019310071,
+      "poder_T1_pct": 100.0
+     }
+    }
+   }
+  },
+  "degrau": 0.1,
+  "troca_endogena": {
+   "n": 8529,
+   "taxa_continuidade": 0.39840544026263336,
+   "inclinacao_mlp": 0.0009478789171014577,
+   "frr": 0.09,
+   "passa": false
+  }
+ },
+ "piloto_v2": {
+  "semente": 31102026,
+  "rho_gerador_da_principal": 0.21696453979704527,
+  "dp_indice_da_principal": 0.5737098855919568,
+  "versoes": {
+   "principal": {
+    "municipios": 5298,
+    "trechos": 7508,
+    "municipios_que_informam": 4470,
+    "tamanho_T1_1000_bases": 0.055,
+    "tamanho_T1_1000_bases_rho0": 0.066,
+    "pontos": {
+     "0.0": {
+      "poder_T1": 0.04,
+      "dif_media": 8.39711991398484e-06,
+      "dif_p5": -0.002522898088120451,
+      "poder_T1_pct": 4.0
+     },
+     "0.025": {
+      "poder_T1": 0.695,
+      "dif_media": 0.0035247162264645682,
+      "dif_p5": 0.0009749746253296665,
+      "poder_T1_pct": 69.5
+     },
+     "0.05": {
+      "poder_T1": 0.985,
+      "dif_media": 0.006685553778200898,
+      "dif_p5": 0.0036031187181067128,
+      "poder_T2_sob_prop0": 0.995,
+      "poder_T1_pct": 98.5
+     },
+     "0.075": {
+      "poder_T1": 1.0,
+      "dif_media": 0.010373120681456714,
+      "dif_p5": 0.007445842578375539,
+      "poder_T1_pct": 100.0
+     },
+     "0.1": {
+      "poder_T1": 1.0,
+      "dif_media": 0.013505555939974363,
+      "dif_p5": 0.011050851097940484,
+      "poder_T2_sob_prop0": 1.0,
+      "poder_T1_pct": 100.0
+     },
+     "0.125": {
+      "poder_T1": 1.0,
+      "dif_media": 0.017346348130636922,
+      "dif_p5": 0.014642324811672564,
+      "poder_T1_pct": 100.0
+     },
+     "0.15": {
+      "poder_T1": 1.0,
+      "dif_media": 0.02040094686891032,
+      "dif_p5": 0.017682671527342753,
+      "poder_T2_sob_prop0": 1.0,
+      "poder_T1_pct": 100.0
+     },
+     "0.175": {
+      "poder_T1": 1.0,
+      "dif_media": 0.023858368456103774,
+      "dif_p5": 0.02122261859135103,
+      "poder_T1_pct": 100.0
+     },
+     "0.2": {
+      "poder_T1": 1.0,
+      "dif_media": 0.027232011246063288,
+      "dif_p5": 0.024522116112511833,
+      "poder_T1_pct": 100.0
+     },
+     "0.225": {
+      "poder_T1": 1.0,
+      "dif_media": 0.030536515802130824,
+      "dif_p5": 0.027719192040192665,
+      "poder_T1_pct": 100.0
+     },
+     "0.25": {
+      "poder_T1": 1.0,
+      "dif_media": 0.03402574983336225,
+      "dif_p5": 0.03131248964717833,
+      "poder_T1_pct": 100.0
+     },
+     "0.275": {
+      "poder_T1": 1.0,
+      "dif_media": 0.037325051283487065,
+      "dif_p5": 0.034869572896968806,
+      "poder_T1_pct": 100.0
+     },
+     "0.3": {
+      "poder_T1": 1.0,
+      "dif_media": 0.040905629563773,
+      "dif_p5": 0.038102613420106624,
+      "poder_T1_pct": 100.0
+     }
+    },
+    "viavel_1000": true
+   },
+   "atraso": {
+    "municipios": 5292,
+    "trechos": 7426,
+    "municipios_que_informam": 5043,
+    "pontos": {
+     "0.0": {
+      "poder_T1": 0.07,
+      "dif_media": -0.00011500705178990822,
+      "dif_p5": -0.003469017211438802,
+      "poder_T1_pct": 7.0
+     },
+     "0.025": {
+      "poder_T1": 0.765,
+      "dif_media": 0.004961039010852938,
+      "dif_p5": 0.0015567222709407635,
+      "poder_T1_pct": 76.5
+     },
+     "0.05": {
+      "poder_T1": 1.0,
+      "dif_media": 0.009901032504709393,
+      "dif_p5": 0.0062928836576966905,
+      "poder_T2_sob_prop0": 1.0,
+      "poder_T1_pct": 100.0
+     },
+     "0.075": {
+      "poder_T1": 1.0,
+      "dif_media": 0.014789919949614636,
+      "dif_p5": 0.011238848437580596,
+      "poder_T1_pct": 100.0
+     },
+     "0.1": {
+      "poder_T1": 1.0,
+      "dif_media": 0.019809349990622605,
+      "dif_p5": 0.016156177061315835,
+      "poder_T2_sob_prop0": 1.0,
+      "poder_T1_pct": 100.0
+     },
+     "0.125": {
+      "poder_T1": 1.0,
+      "dif_media": 0.024779822679820183,
+      "dif_p5": 0.021133516502130894,
+      "poder_T1_pct": 100.0
+     },
+     "0.15": {
+      "poder_T1": 1.0,
+      "dif_media": 0.029505267100142642,
+      "dif_p5": 0.02639117037215962,
+      "poder_T2_sob_prop0": 1.0,
+      "poder_T1_pct": 100.0
+     },
+     "0.175": {
+      "poder_T1": 1.0,
+      "dif_media": 0.03470304816664973,
+      "dif_p5": 0.031397048533007205,
+      "poder_T1_pct": 100.0
+     },
+     "0.2": {
+      "poder_T1": 1.0,
+      "dif_media": 0.039845976877359524,
+      "dif_p5": 0.03639116438668282,
+      "poder_T1_pct": 100.0
+     },
+     "0.225": {
+      "poder_T1": 1.0,
+      "dif_media": 0.04448459801855306,
+      "dif_p5": 0.04100353491175605,
+      "poder_T1_pct": 100.0
+     },
+     "0.25": {
+      "poder_T1": 1.0,
+      "dif_media": 0.04984130500065101,
+      "dif_p5": 0.04583319604019704,
+      "poder_T1_pct": 100.0
+     },
+     "0.275": {
+      "poder_T1": 1.0,
+      "dif_media": 0.05464135293913637,
+      "dif_p5": 0.051224571521982606,
+      "poder_T1_pct": 100.0
+     },
+     "0.3": {
+      "poder_T1": 1.0,
+      "dif_media": 0.05940989007790822,
+      "dif_p5": 0.056020939945876515,
+      "poder_T1_pct": 100.0
+     }
+    },
+    "viavel_1000": true
+   },
+   "grandes": {
+    "municipios": 1642,
+    "trechos": 2062,
+    "municipios_que_informam": 1440,
+    "tamanho_T1_1000_bases": 0.045,
+    "pontos": {
+     "0.0": {
+      "poder_T1": 0.05,
+      "dif_media": 0.00015529077726724876,
+      "dif_p5": -0.004348437478282599,
+      "poder_T1_pct": 5.0
+     },
+     "0.025": {
+      "poder_T1": 0.355,
+      "dif_media": 0.0034327972735065963,
+      "dif_p5": -0.0010840064166018125,
+      "poder_T1_pct": 35.5
+     },
+     "0.05": {
+      "poder_T1": 0.76,
+      "dif_media": 0.006847945301439293,
+      "dif_p5": 0.001845972556897335,
+      "poder_T2_sob_prop0": 0.76,
+      "poder_T1_pct": 76.0
+     },
+     "0.075": {
+      "poder_T1": 0.97,
+      "dif_media": 0.010520105800856742,
+      "dif_p5": 0.00537439644716819,
+      "poder_T1_pct": 97.0
+     },
+     "0.1": {
+      "poder_T1": 1.0,
+      "dif_media": 0.013588455330796098,
+      "dif_p5": 0.008986220828214365,
+      "poder_T2_sob_prop0": 1.0,
+      "poder_T1_pct": 100.0
+     },
+     "0.125": {
+      "poder_T1": 1.0,
+      "dif_media": 0.017348663771097443,
+      "dif_p5": 0.01200493808779568,
+      "poder_T1_pct": 100.0
+     },
+     "0.15": {
+      "poder_T1": 1.0,
+      "dif_media": 0.020605675358659283,
+      "dif_p5": 0.015702157192763095,
+      "poder_T2_sob_prop0": 1.0,
+      "poder_T1_pct": 100.0
+     },
+     "0.175": {
+      "poder_T1": 1.0,
+      "dif_media": 0.024227017943316335,
+      "dif_p5": 0.01929700279338851,
+      "poder_T1_pct": 100.0
+     },
+     "0.2": {
+      "poder_T1": 1.0,
+      "dif_media": 0.027419692779949295,
+      "dif_p5": 0.023141452829166253,
+      "poder_T1_pct": 100.0
+     },
+     "0.225": {
+      "poder_T1": 1.0,
+      "dif_media": 0.03054871572165612,
+      "dif_p5": 0.025935122625756073,
+      "poder_T1_pct": 100.0
+     },
+     "0.25": {
+      "poder_T1": 1.0,
+      "dif_media": 0.03433734112588718,
+      "dif_p5": 0.029026219227460015,
+      "poder_T1_pct": 100.0
+     },
+     "0.275": {
+      "poder_T1": 1.0,
+      "dif_media": 0.038195615290362,
+      "dif_p5": 0.0334595557242542,
+      "poder_T1_pct": 100.0
+     },
+     "0.3": {
+      "poder_T1": 1.0,
+      "dif_media": 0.04124773596367969,
+      "dif_p5": 0.03683437447809685,
+      "poder_T1_pct": 100.0
+     }
+    },
+    "viavel_1000": true
+   },
+   "restrita": {
+    "municipios": 978,
+    "trechos": 1420,
+    "municipios_que_informam": 789,
+    "pontos": {
+     "0.0": {
+      "poder_T1": 0.07,
+      "dif_media": 0.00022182969810869034,
+      "dif_p5": -0.006973661732010239,
+      "poder_T1_pct": 7.0
+     },
+     "0.025": {
+      "poder_T1": 0.225,
+      "dif_media": 0.003413450832217397,
+      "dif_p5": -0.0016106993144141876,
+      "poder_T1_pct": 22.5
+     },
+     "0.05": {
+      "poder_T1": 0.56,
+      "dif_media": 0.006506137492802836,
+      "dif_p5": 0.0003629417239592981,
+      "poder_T2_sob_prop0": 0.5,
+      "poder_T1_pct": 56.0
+     },
+     "0.075": {
+      "poder_T1": 0.78,
+      "dif_media": 0.009452802362405982,
+      "dif_p5": 0.0030566344881428624,
+      "poder_T1_pct": 78.0
+     },
+     "0.1": {
+      "poder_T1": 0.98,
+      "dif_media": 0.013607302290682029,
+      "dif_p5": 0.008193730623972339,
+      "poder_T2_sob_prop0": 0.985,
+      "poder_T1_pct": 98.0
+     },
+     "0.125": {
+      "poder_T1": 0.99,
+      "dif_media": 0.01630017189767168,
+      "dif_p5": 0.01056901728886836,
+      "poder_T1_pct": 99.0
+     },
+     "0.15": {
+      "poder_T1": 1.0,
+      "dif_media": 0.01906377602260478,
+      "dif_p5": 0.0134176009654983,
+      "poder_T2_sob_prop0": 1.0,
+      "poder_T1_pct": 100.0
+     },
+     "0.175": {
+      "poder_T1": 1.0,
+      "dif_media": 0.022425474863884142,
+      "dif_p5": 0.016602885337138634,
+      "poder_T1_pct": 100.0
+     },
+     "0.2": {
+      "poder_T1": 1.0,
+      "dif_media": 0.026407145321602,
+      "dif_p5": 0.020202621418836154,
+      "poder_T1_pct": 100.0
+     },
+     "0.225": {
+      "poder_T1": 1.0,
+      "dif_media": 0.029764491722729117,
+      "dif_p5": 0.02237818209398857,
+      "poder_T1_pct": 100.0
+     },
+     "0.25": {
+      "poder_T1": 1.0,
+      "dif_media": 0.032636328643723844,
+      "dif_p5": 0.026556302810538474,
+      "poder_T1_pct": 100.0
+     },
+     "0.275": {
+      "poder_T1": 1.0,
+      "dif_media": 0.03582007031016614,
+      "dif_p5": 0.029344081434273146,
+      "poder_T1_pct": 100.0
+     },
+     "0.3": {
+      "poder_T1": 1.0,
+      "dif_media": 0.0393731703352185,
+      "dif_p5": 0.03346554609216814,
+      "poder_T1_pct": 100.0
+     }
+    },
+    "viavel_1000": false
+   }
+  },
+  "degrau": 0.1,
+  "viabilidade_tres_versoes": true,
+  "degrau_restrita": 0.1,
+  "troca_endogena_principal": {
+   "n": 15010,
+   "taxa_continuidade": 0.3964690206528981,
+   "inclinacao_mlp": 0.0008259887123539591,
+   "frr": 0.051,
+   "passa": true
+  },
+  "troca_endogena_restrita": {
+   "n": 2729,
+   "taxa_continuidade": 0.33052400146573835,
+   "inclinacao_mlp": 0.03341912989017508,
+   "frr": 0.0615,
+   "passa": true
+  }
+ },
+ "confirmacao": {
+  "semente": 4112026,
+  "limite": 0.075,
+  "permutacoes": 1000,
+  "rho_gerador": 0.21696453979704527,
+  "condicoes": {
+   "principal": {
+    "versao": "principal",
+    "ruido": "ar1",
+    "bases": 2000,
+    "decisiva": true,
+    "rejeicoes": 104,
+    "taxa": 0.052,
+    "ic95": [
+     0.0427,
+     0.0627
+    ],
+    "passa": true,
+    "taxa_pct": 5.2,
+    "ic95_pct": [
+     4.27,
+     6.27
+    ]
+   },
+   "atraso": {
+    "versao": "atraso",
+    "ruido": "ar1",
+    "bases": 2000,
+    "decisiva": true,
+    "rejeicoes": 131,
+    "taxa": 0.0655,
+    "ic95": [
+     0.0551,
+     0.0772
+    ],
+    "passa": true,
+    "taxa_pct": 6.55,
+    "ic95_pct": [
+     5.51,
+     7.72
+    ]
+   },
+   "grandes": {
+    "versao": "grandes",
+    "ruido": "ar1",
+    "bases": 2000,
+    "decisiva": true,
+    "rejeicoes": 106,
+    "taxa": 0.053,
+    "ic95": [
+     0.0436,
+     0.0637
+    ],
+    "passa": true,
+    "taxa_pct": 5.3,
+    "ic95_pct": [
+     4.36,
+     6.37
+    ]
+   },
+   "principal_rho0": {
+    "versao": "principal",
+    "ruido": "rho0",
+    "bases": 1000,
+    "decisiva": false,
+    "rejeicoes": 46,
+    "taxa": 0.046,
+    "ic95": [
+     0.0339,
+     0.0609
+    ],
+    "passa": true,
+    "taxa_pct": 4.6,
+    "ic95_pct": [
+     3.39,
+     6.09
+    ]
+   },
+   "principal_rho04": {
+    "versao": "principal",
+    "ruido": "rho04",
+    "bases": 1000,
+    "decisiva": false,
+    "rejeicoes": 50,
+    "taxa": 0.05,
+    "ic95": [
+     0.0373,
+     0.0654
+    ],
+    "passa": true,
+    "taxa_pct": 5.0,
+    "ic95_pct": [
+     3.73,
+     6.54
+    ]
+   },
+   "principal_ma1_theta06": {
+    "versao": "principal",
+    "ruido": "ma1",
+    "bases": 1000,
+    "decisiva": false,
+    "rejeicoes": 56,
+    "taxa": 0.056,
+    "ic95": [
+     0.0426,
+     0.0721
+    ],
+    "passa": true,
+    "taxa_pct": 5.6,
+    "ic95_pct": [
+     4.26,
+     7.21
+    ]
+   },
+   "principal_t5": {
+    "versao": "principal",
+    "ruido": "t5",
+    "bases": 1000,
+    "decisiva": false,
+    "rejeicoes": 50,
+    "taxa": 0.05,
+    "ic95": [
+     0.0373,
+     0.0654
+    ],
+    "passa": true,
+    "taxa_pct": 5.0,
+    "ic95_pct": [
+     3.73,
+     6.54
+    ]
+   },
+   "principal_escala_municipal": {
+    "versao": "principal",
+    "ruido": "escala",
+    "bases": 1000,
+    "decisiva": false,
+    "rejeicoes": 62,
+    "taxa": 0.062,
+    "ic95": [
+     0.0479,
+     0.0788
+    ],
+    "passa": true,
+    "taxa_pct": 6.2,
+    "ic95_pct": [
+     4.79,
+     7.88
+    ]
+   },
+   "principal_nao_estacionario": {
+    "versao": "principal",
+    "ruido": "naoestac",
+    "bases": 1000,
+    "decisiva": false,
+    "rejeicoes": 12,
+    "taxa": 0.012,
+    "ic95": [
+     0.0062,
+     0.0209
+    ],
+    "passa": true,
+    "taxa_pct": 1.2,
+    "ic95_pct": [
+     0.62,
+     2.09
+    ]
+   }
+  },
+  "decisivas_passam": true,
+  "informativas_passam": true
+ },
+ "resultado": {
+  "semente": 5112026,
+  "insumos_sha256": {
+   "dados/tabelas/indice_secundaria.csv": "fca5e6ce30bbe41f36b3f012402774560360e6a14c6d562b1589f04a3a4e9b6c",
+   "dados/tabelas/prefeitos_periodo.csv": "f8ad2492197af8c0c13017d4ace6fd030ee3c88bb174d595aa73e050dde8c302",
+   "dados/tabelas/alinhamento.csv": "afdf3dcb90630d56c015ce0e28db1f39bb3cebf919a9edaa348d1639710ac8a4",
+   "dados/tabelas/populacao.csv": "d915744207153ee86e099c751de61bed6c19b1a3de8703e042fa677415d7c637",
+   "dados/tabelas/reeleicao_margens.csv": "fbba15526c0a82cca442ae818c011a4faff6fa926102746e39587ee0a0949aed",
+   "dados/tabelas/c1_saeb.csv": "a861f41e83cd9da50ebe49a59d79517cf8d8b2eb79037e34f5dc6f6ee77351e6",
+   "dados/tabelas/c2_receita.csv": "d8782fc5ff781e14c299bbcc310935876fca9b3acefcc05a4bfd860c731b3728",
+   "dados/tabelas/c3_contagens.csv": "34dd4faf759928c94983a7d9187a5b2e5c9837025e3e879b60cf2e1259003880",
+   "dados/tabelas/ipca_anual.csv": "3dbac8f2d0a4751e4528b4f16097d8418a2b5f6c58a376534bed2ff83776a859",
+   "piloto/saidas/simulacoes_v2.json": "767352b4dccf6c51a234efce24d3c95f00de96e90ed4c7cb6f7a5772d8ec67dd",
+   "piloto/saidas/estagio1.json": "a1e4f81fdfb2a62e30a29cb6a5b7b4f6d8bd776985c6a2fdfad3a2bae5247787",
+   "piloto/saidas/estagio2.json": "259ee814ebc058142556d68d5e26147dfbcf45fdd550882ff3d863b7040c786c"
+  },
+  "modo": "real",
+  "construtor_dif_max_contra_indice_secundaria": 0.0,
+  "versoes": {
+   "principal": {
+    "municipios": 5298,
+    "trechos": 7508,
+    "municipios_que_informam": 4470,
+    "celulas": 47791,
+    "coef_alinhamento": 0.02410681244887619,
+    "r2_real": 0.7584152045565954,
+    "diferenca": -0.007462468906891062,
+    "valor_p": 0.869,
+    "T1_rejeita": false,
+    "prop": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "T2_limiar_p5_no_degrau": 0.011050851097940484,
+    "T2_rejeita": true
+   },
+   "atraso": {
+    "municipios": 5292,
+    "trechos": 7426,
+    "municipios_que_informam": 5043,
+    "celulas": 43673,
+    "coef_alinhamento": 0.028499759050727765,
+    "r2_real": 0.7890932845359685,
+    "diferenca": -0.00014418188521003739,
+    "valor_p": 0.488,
+    "T1_rejeita": false,
+    "prop": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "T2_limiar_p5_no_degrau": 0.016156177061315835,
+    "T2_rejeita": true
+   },
+   "grandes": {
+    "municipios": 1642,
+    "trechos": 2062,
+    "municipios_que_informam": 1440,
+    "celulas": 15630,
+    "coef_alinhamento": 0.024377300637555572,
+    "r2_real": 0.8659771329272071,
+    "diferenca": -0.004123843455409504,
+    "valor_p": 0.904,
+    "T1_rejeita": false,
+    "prop": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "T2_limiar_p5_no_degrau": 0.008986220828214365,
+    "T2_rejeita": true
+   },
+   "restrita": {
+    "municipios": 978,
+    "trechos": 1420,
+    "municipios_que_informam": 789,
+    "celulas": 8663,
+    "coef_alinhamento": 0.07415508818170147,
+    "r2_real": 0.7433006737808303,
+    "diferenca": -0.0031638230177766236,
+    "valor_p": 0.854,
+    "T1_rejeita": false,
+    "prop": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "T2_limiar_p5_no_degrau": 0.008193730623972339,
+    "T2_rejeita": true
+   }
+  },
+  "diagnostico_troca_endogena_principal_do_piloto": {
+   "n": 15010,
+   "taxa_continuidade": 0.3964690206528981,
+   "inclinacao_mlp": 0.0008259887123539591,
+   "frr": 0.051,
+   "passa": true
+  },
+  "desfecho": "nao_importa",
+  "degrau": 0.1,
+  "secundarios": {
+   "C1": {
+    "municipios": 5298,
+    "trechos": 7508,
+    "municipios_que_informam": 4470,
+    "celulas": 47791,
+    "coef_alinhamento": 0.0818638181771292,
+    "r2_real": 0.8932199608851625,
+    "diferenca": -0.0012927607723424162,
+    "valor_p": 0.979,
+    "T1_rejeita": false,
+    "valor_p_holm": 1.0,
+    "rejeita_holm": false
+   },
+   "C2": {
+    "municipios": 5298,
+    "trechos": 7508,
+    "municipios_que_informam": 4470,
+    "celulas": 47791,
+    "coef_alinhamento": -0.011763295078914793,
+    "r2_real": 0.4205974804187602,
+    "diferenca": -0.04570929463560175,
+    "valor_p": 0.878,
+    "T1_rejeita": false,
+    "valor_p_holm": 1.0,
+    "rejeita_holm": false
+   },
+   "C3": {
+    "municipios": 5298,
+    "trechos": 7508,
+    "municipios_que_informam": 4470,
+    "celulas": 47791,
+    "coef_alinhamento": 0.0022199142484141867,
+    "r2_real": 0.5135917716370672,
+    "diferenca": -0.0008877744627298068,
+    "valor_p": 0.656,
+    "T1_rejeita": false,
+    "valor_p_holm": 1.0,
+    "rejeita_holm": false
+   }
+  },
+  "sensibilidades": {
+   "sens1": {
+    "municipios": 5268,
+    "trechos": 6558,
+    "municipios_que_informam": 4432,
+    "celulas": 40283,
+    "coef_alinhamento": -0.0015470413676040007,
+    "r2_real": 0.305576204994799,
+    "diferenca": 0.01645778437634332,
+    "valor_p": 0.129,
+    "T1_rejeita": false,
+    "prop_aproximada": 0.1192162729055362,
+    "prop_como": "interpolada",
+    "diverge_do_T1_principal": false
+   },
+   "sens2": {
+    "ver": "versoes.atraso",
+    "diverge_do_T1_principal": false
+   },
+   "sens3": {
+    "municipios": 5298,
+    "trechos": 7508,
+    "municipios_que_informam": 4470,
+    "celulas": 47791,
+    "coef_alinhamento": -0.021760724378843334,
+    "r2_real": 0.6171987917693944,
+    "diferenca": -0.011346341521591863,
+    "valor_p": 0.887,
+    "T1_rejeita": false,
+    "prop_aproximada": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "diverge_do_T1_principal": false
+   },
+   "sens4": {
+    "municipios": 5187,
+    "trechos": 6139,
+    "municipios_que_informam": 2923,
+    "celulas": 29124,
+    "coef_alinhamento": 0.021692173361150542,
+    "r2_real": 0.7846442636810164,
+    "diferenca": -0.00556595959472006,
+    "valor_p": 0.772,
+    "T1_rejeita": false,
+    "prop_aproximada": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "diverge_do_T1_principal": false
+   },
+   "sens5": {
+    "municipios": 5161,
+    "trechos": 7374,
+    "municipios_que_informam": 4321,
+    "celulas": 46281,
+    "coef_alinhamento": 0.027892910421719517,
+    "r2_real": 0.7680538002852011,
+    "diferenca": -0.0077108437216588666,
+    "valor_p": 0.856,
+    "T1_rejeita": false,
+    "prop_aproximada": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "diverge_do_T1_principal": false
+   },
+   "sens6": {
+    "municipios": 5562,
+    "trechos": 5710,
+    "municipios_que_informam": 4848,
+    "celulas": 55286,
+    "coef_alinhamento": 0.025941075976256903,
+    "r2_real": 0.6718961006934498,
+    "diferenca": -0.011387504765399625,
+    "valor_p": 0.962,
+    "T1_rejeita": false,
+    "prop_aproximada": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "diverge_do_T1_principal": false
+   },
+   "sens7": {
+    "municipios": 5278,
+    "trechos": 7934,
+    "municipios_que_informam": 4370,
+    "celulas": 46333,
+    "coef_alinhamento": 0.022100054250780477,
+    "r2_real": 0.8274282851349576,
+    "diferenca": -0.0002974674450545445,
+    "valor_p": 0.666,
+    "T1_rejeita": false,
+    "prop_aproximada": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "diverge_do_T1_principal": false
+   },
+   "sens8": {
+    "municipios": 5265,
+    "trechos": 11850,
+    "municipios_que_informam": 4465,
+    "celulas": 37965,
+    "coef_alinhamento": 0.030256517438495983,
+    "r2_real": 0.831556435058618,
+    "diferenca": -0.006634245186477483,
+    "valor_p": 0.965,
+    "T1_rejeita": false,
+    "prop_aproximada": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "diverge_do_T1_principal": false
+   }
+  },
+  "pendente": {
+   "C1_em_dp_do_aluno": "exige o desvio-padrão do aluno no Saeb, com fonte do Inep; fica para o artigo"
+  }
+ },
+ "corrigido": {
+  "semente": 5112026,
+  "insumos_sha256": {
+   "dados/tabelas/indice_secundaria.csv": "fca5e6ce30bbe41f36b3f012402774560360e6a14c6d562b1589f04a3a4e9b6c",
+   "dados/tabelas/prefeitos_periodo.csv": "f8ad2492197af8c0c13017d4ace6fd030ee3c88bb174d595aa73e050dde8c302",
+   "dados/tabelas/alinhamento.csv": "afdf3dcb90630d56c015ce0e28db1f39bb3cebf919a9edaa348d1639710ac8a4",
+   "dados/tabelas/populacao.csv": "d915744207153ee86e099c751de61bed6c19b1a3de8703e042fa677415d7c637",
+   "dados/tabelas/reeleicao_margens.csv": "fbba15526c0a82cca442ae818c011a4faff6fa926102746e39587ee0a0949aed",
+   "dados/tabelas/c1_saeb.csv": "a861f41e83cd9da50ebe49a59d79517cf8d8b2eb79037e34f5dc6f6ee77351e6",
+   "dados/tabelas/c2_receita.csv": "d8782fc5ff781e14c299bbcc310935876fca9b3acefcc05a4bfd860c731b3728",
+   "dados/tabelas/c3_contagens.csv": "34dd4faf759928c94983a7d9187a5b2e5c9837025e3e879b60cf2e1259003880",
+   "dados/tabelas/ipca_anual.csv": "3dbac8f2d0a4751e4528b4f16097d8418a2b5f6c58a376534bed2ff83776a859",
+   "piloto/saidas/simulacoes_v2.json": "767352b4dccf6c51a234efce24d3c95f00de96e90ed4c7cb6f7a5772d8ec67dd",
+   "piloto/saidas/estagio1.json": "a1e4f81fdfb2a62e30a29cb6a5b7b4f6d8bd776985c6a2fdfad3a2bae5247787",
+   "piloto/saidas/estagio2.json": "259ee814ebc058142556d68d5e26147dfbcf45fdd550882ff3d863b7040c786c"
+  },
+  "modo": "real",
+  "construtor_dif_max_contra_indice_secundaria": null,
+  "versoes": {
+   "principal": {
+    "municipios": 5298,
+    "trechos": 7498,
+    "municipios_que_informam": 4474,
+    "celulas": 47758,
+    "coef_alinhamento": 0.023967297162430786,
+    "r2_real": 0.7728282928585233,
+    "diferenca": -0.0028774426481193993,
+    "valor_p": 0.862,
+    "T1_rejeita": false,
+    "prop": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "T2_limiar_p5_no_degrau": 0.011050851097940484,
+    "T2_rejeita": true
+   },
+   "atraso": {
+    "municipios": 5292,
+    "trechos": 7416,
+    "municipios_que_informam": 5037,
+    "celulas": 43640,
+    "coef_alinhamento": 0.02903241465192048,
+    "r2_real": 0.793008221142353,
+    "diferenca": -0.0026879975876772377,
+    "valor_p": 0.707,
+    "T1_rejeita": false,
+    "prop": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "T2_limiar_p5_no_degrau": 0.016156177061315835,
+    "T2_rejeita": true
+   },
+   "grandes": {
+    "municipios": 1642,
+    "trechos": 2061,
+    "municipios_que_informam": 1440,
+    "celulas": 15628,
+    "coef_alinhamento": 0.024303360231639648,
+    "r2_real": 0.8664494756967573,
+    "diferenca": -0.004353750128134215,
+    "valor_p": 0.911,
+    "T1_rejeita": false,
+    "prop": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "T2_limiar_p5_no_degrau": 0.008986220828214365,
+    "T2_rejeita": true
+   },
+   "restrita": {
+    "municipios": 978,
+    "trechos": 1420,
+    "municipios_que_informam": 791,
+    "celulas": 8657,
+    "coef_alinhamento": 0.07473623398774112,
+    "r2_real": 0.7863367031508819,
+    "diferenca": -0.004417415980071837,
+    "valor_p": 0.929,
+    "T1_rejeita": false,
+    "prop": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "T2_limiar_p5_no_degrau": 0.008193730623972339,
+    "T2_rejeita": true
+   }
+  },
+  "diagnostico_troca_endogena_principal_do_piloto": {
+   "n": 15010,
+   "taxa_continuidade": 0.3964690206528981,
+   "inclinacao_mlp": 0.0008259887123539591,
+   "frr": 0.051,
+   "passa": true
+  },
+  "desfecho": "nao_importa",
+  "degrau": 0.1,
+  "secundarios": {
+   "C1": {
+    "municipios": 5298,
+    "trechos": 7498,
+    "municipios_que_informam": 4474,
+    "celulas": 47758,
+    "coef_alinhamento": 0.08149686113821317,
+    "r2_real": 0.8932136101797736,
+    "diferenca": -0.001263309069828522,
+    "valor_p": 0.978,
+    "T1_rejeita": false,
+    "valor_p_holm": 1.0,
+    "rejeita_holm": false
+   },
+   "C2": {
+    "municipios": 5298,
+    "trechos": 7498,
+    "municipios_que_informam": 4474,
+    "celulas": 47758,
+    "coef_alinhamento": -0.011155767716394179,
+    "r2_real": 0.3610841666477572,
+    "diferenca": -0.028573437922946643,
+    "valor_p": 0.895,
+    "T1_rejeita": false,
+    "valor_p_holm": 1.0,
+    "rejeita_holm": false
+   },
+   "C3": {
+    "municipios": 5298,
+    "trechos": 7498,
+    "municipios_que_informam": 4474,
+    "celulas": 47758,
+    "coef_alinhamento": 0.0015607980654734946,
+    "r2_real": 0.5135820096246664,
+    "diferenca": -0.0008822474625836962,
+    "valor_p": 0.648,
+    "T1_rejeita": false,
+    "valor_p_holm": 1.0,
+    "rejeita_holm": false
+   }
+  },
+  "sensibilidades": {
+   "sens1": {
+    "municipios": 5268,
+    "trechos": 6558,
+    "municipios_que_informam": 4433,
+    "celulas": 40260,
+    "coef_alinhamento": -0.0019598340088470985,
+    "r2_real": 0.2976505130554856,
+    "diferenca": 0.02436427601608171,
+    "valor_p": 0.028,
+    "T1_rejeita": true,
+    "prop_aproximada": 0.17874897100460366,
+    "prop_como": "interpolada",
+    "diverge_do_T1_principal": true
+   },
+   "sens2": {
+    "ver": "versoes.atraso",
+    "diverge_do_T1_principal": false
+   },
+   "sens3": {
+    "municipios": 5298,
+    "trechos": 7498,
+    "municipios_que_informam": 4474,
+    "celulas": 47758,
+    "coef_alinhamento": -0.022435713295453616,
+    "r2_real": 0.6287031047966987,
+    "diferenca": -0.0042305481700785075,
+    "valor_p": 0.831,
+    "T1_rejeita": false,
+    "prop_aproximada": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "diverge_do_T1_principal": false
+   },
+   "sens4": {
+    "municipios": 5184,
+    "trechos": 6126,
+    "municipios_que_informam": 2932,
+    "celulas": 29079,
+    "coef_alinhamento": 0.020972683085547474,
+    "r2_real": 0.8096490371951758,
+    "diferenca": -0.0004897930843484888,
+    "valor_p": 0.598,
+    "T1_rejeita": false,
+    "prop_aproximada": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "diverge_do_T1_principal": false
+   },
+   "sens5": {
+    "municipios": 5161,
+    "trechos": 7364,
+    "municipios_que_informam": 4324,
+    "celulas": 46249,
+    "coef_alinhamento": 0.02767172826332802,
+    "r2_real": 0.7841046171914794,
+    "diferenca": -0.002663979829187979,
+    "valor_p": 0.839,
+    "T1_rejeita": false,
+    "prop_aproximada": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "diverge_do_T1_principal": false
+   },
+   "sens6": {
+    "municipios": 5562,
+    "trechos": 5710,
+    "municipios_que_informam": 4848,
+    "celulas": 55286,
+    "coef_alinhamento": 0.024604657080869747,
+    "r2_real": 0.7022454174241356,
+    "diferenca": -0.004119142038412349,
+    "valor_p": 0.872,
+    "T1_rejeita": false,
+    "prop_aproximada": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "diverge_do_T1_principal": false
+   },
+   "sens7": {
+    "municipios": 5281,
+    "trechos": 7956,
+    "municipios_que_informam": 4369,
+    "celulas": 46309,
+    "coef_alinhamento": 0.021012637155549824,
+    "r2_real": 0.8281436881713999,
+    "diferenca": -0.00047033006421548507,
+    "valor_p": 0.757,
+    "T1_rejeita": false,
+    "prop_aproximada": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "diverge_do_T1_principal": false
+   },
+   "sens8": {
+    "municipios": 5264,
+    "trechos": 11816,
+    "municipios_que_informam": 4465,
+    "celulas": 37931,
+    "coef_alinhamento": 0.03000128742641821,
+    "r2_real": 0.8215253336328108,
+    "diferenca": -0.00783649261047481,
+    "valor_p": 0.991,
+    "T1_rejeita": false,
+    "prop_aproximada": 0.0,
+    "prop_como": "diferenca_nao_positiva",
+    "diverge_do_T1_principal": false
+   }
+  },
+  "pendente": {
+   "C1_em_dp_do_aluno": "exige o desvio-padrão do aluno no Saeb, com fonte do Inep; fica para o artigo"
+  },
+  "correcao": {
+   "regra": "Emenda 01 ao v2 §E: total de receita própria negativo = ausente",
+   "celulas_c2_removidas": 34
+  }
+ },
+ "d1_d4": {
+  "pos_hoc": true,
+  "semente_D3": 6112026,
+  "versoes": {
+   "principal": {
+    "D1_parte_entre_municipios_real": 0.5664976762699926,
+    "D2_identico_ao_registrado": true,
+    "D2_permutacao_real": {
+     "dp": 0.006040890521979503,
+     "p5_menos_media": -0.008628269779839326,
+     "p95_menos_media": 0.009168718723508884
+    },
+    "calibracao_selada": {
+     "dif_p5_prop0": -0.002522898088120451,
+     "dif_media_prop0.1": 0.013505555939974363,
+     "dif_p5_prop0.1": 0.011050851097940484
+    },
+    "D4_autocorrelacao_dentro_do_municipio": {
+     "1": 0.05940145066766907,
+     "2": -0.09057373579267615,
+     "3": -0.18748324267882596,
+     "4": -0.2065707500496861
+    },
+    "D3_variancia_municipio": 0.9504951083176854,
+    "D3_parte_entre_simulada": 0.5670172174502749,
+    "D3_prop0.0": {
+     "dif_media": 9.435402101986956e-05,
+     "dif_dp": 0.0008306235821021637,
+     "dif_p5": -0.0011531160679071728,
+     "poder_T1": 0.09,
+     "fracao_abaixo_do_limiar_T2_selado": 1.0,
+     "poder_T1_pct": 9.0,
+     "fracao_abaixo_do_limiar_T2_selado_pct": 100.0
+    },
+    "D3_prop0.1": {
+     "dif_media": 0.0073932413555050066,
+     "dif_dp": 0.0008528922273551168,
+     "dif_p5": 0.006103564104804204,
+     "poder_T1": 1.0,
+     "fracao_abaixo_do_limiar_T2_selado": 1.0,
+     "poder_T1_pct": 100.0,
+     "fracao_abaixo_do_limiar_T2_selado_pct": 100.0
+    },
+    "D1_parte_entre_municipios_real_pct": 56.649768
+   },
+   "atraso": {
+    "D1_parte_entre_municipios_real": 0.5774724768351103,
+    "D2_identico_ao_registrado": true,
+    "D2_permutacao_real": {
+     "dp": 0.006699742634463163,
+     "p5_menos_media": -0.010563044322794424,
+     "p95_menos_media": 0.01157205572446185
+    },
+    "calibracao_selada": {
+     "dif_p5_prop0": -0.003469017211438802,
+     "dif_media_prop0.1": 0.019809349990622605,
+     "dif_p5_prop0.1": 0.016156177061315835
+    },
+    "D4_autocorrelacao_dentro_do_municipio": {
+     "1": 0.037253295634716244,
+     "2": -0.11827246655279293,
+     "3": -0.1902042845297512,
+     "4": -0.22952058224976027
+    },
+    "D3_variancia_municipio": 0.9608089459248184,
+    "D3_parte_entre_simulada": 0.574420412649334,
+    "D3_prop0.0": {
+     "dif_media": -5.464989602455783e-05,
+     "dif_dp": 0.0011610729059169725,
+     "dif_p5": -0.0018207953245100439,
+     "poder_T1": 0.085,
+     "fracao_abaixo_do_limiar_T2_selado": 1.0,
+     "poder_T1_pct": 8.5,
+     "fracao_abaixo_do_limiar_T2_selado_pct": 100.0
+    },
+    "D3_prop0.1": {
+     "dif_media": 0.010688334156704678,
+     "dif_dp": 0.0010914113801414492,
+     "dif_p5": 0.008996806398825007,
+     "poder_T1": 1.0,
+     "fracao_abaixo_do_limiar_T2_selado": 1.0,
+     "poder_T1_pct": 100.0,
+     "fracao_abaixo_do_limiar_T2_selado_pct": 100.0
+    },
+    "D1_parte_entre_municipios_real_pct": 57.747248
+   },
+   "grandes": {
+    "D1_parte_entre_municipios_real": 0.7245810976796251,
+    "D2_identico_ao_registrado": true,
+    "D2_permutacao_real": {
+     "dp": 0.002913955452991876,
+     "p5_menos_media": -0.005090289020718064,
+     "p95_menos_media": 0.004167698224040728
+    },
+    "calibracao_selada": {
+     "dif_p5_prop0": -0.004348437478282599,
+     "dif_media_prop0.1": 0.013588455330796098,
+     "dif_p5_prop0.1": 0.008986220828214365
+    },
+    "D4_autocorrelacao_dentro_do_municipio": {
+     "1": 0.26612971712239664,
+     "2": -0.0028420949360594347,
+     "3": -0.21259406427430966,
+     "4": -0.27978068672582196
+    },
+    "D3_variancia_municipio": 2.091661464355044,
+    "D3_parte_entre_simulada": 0.7237060848154226,
+    "D3_prop0.0": {
+     "dif_media": -2.9432795438716907e-05,
+     "dif_dp": 0.0009148353447747205,
+     "dif_p5": -0.0014522116601279277,
+     "poder_T1": 0.065,
+     "fracao_abaixo_do_limiar_T2_selado": 1.0,
+     "poder_T1_pct": 6.5,
+     "fracao_abaixo_do_limiar_T2_selado_pct": 100.0
+    },
+    "D3_prop0.1": {
+     "dif_media": 0.004898641954857675,
+     "dif_dp": 0.0010412075241159491,
+     "dif_p5": 0.003076874673140967,
+     "poder_T1": 1.0,
+     "fracao_abaixo_do_limiar_T2_selado": 1.0,
+     "poder_T1_pct": 100.0,
+     "fracao_abaixo_do_limiar_T2_selado_pct": 100.0
+    },
+    "D1_parte_entre_municipios_real_pct": 72.45811
+   }
+  }
+ },
+ "d5": {
+  "pos_hoc": true,
+  "semente": 7112026,
+  "versoes": {
+   "principal": {
+    "parte_do_ss_dentro_nos_10pct_mais_variaveis": 0.4988072869875202,
+    "escala_percentis_50_90_99": [
+     0.7108155023012779,
+     1.3136710784531864,
+     2.548040108750937
+    ],
+    "variancia_municipio": 0.8916995963316917,
+    "prop0.0": {
+     "dif_media": -5.087915506227891e-05,
+     "dif_dp": 0.0035631843199531283,
+     "dif_p5": -0.006400047055787344,
+     "poder_T1": 0.03,
+     "fracao_abaixo_do_limiar_T2_selado": 1.0,
+     "poder_T1_pct": 3.0,
+     "fracao_abaixo_do_limiar_T2_selado_pct": 100.0
+    },
+    "prop0.1": {
+     "dif_media": 0.007931400313747112,
+     "dif_dp": 0.003414827413242959,
+     "dif_p5": 0.0024797367128678366,
+     "poder_T1": 0.735,
+     "fracao_abaixo_do_limiar_T2_selado": 0.81,
+     "poder_T1_pct": 73.5,
+     "fracao_abaixo_do_limiar_T2_selado_pct": 81.0
+    },
+    "dp_permutacao_real_D2": 0.006040890521979503
+   },
+   "atraso": {
+    "parte_do_ss_dentro_nos_10pct_mais_variaveis": 0.5155552245146466,
+    "escala_percentis_50_90_99": [
+     0.6976709615145342,
+     1.3198154007961502,
+     2.524549540086979
+    ],
+    "variancia_municipio": 0.9330135303809236,
+    "prop0.0": {
+     "dif_media": -0.00039716216162090644,
+     "dif_dp": 0.004488207466287328,
+     "dif_p5": -0.007338595287257915,
+     "poder_T1": 0.04,
+     "fracao_abaixo_do_limiar_T2_selado": 1.0,
+     "poder_T1_pct": 4.0,
+     "fracao_abaixo_do_limiar_T2_selado_pct": 100.0
+    },
+    "prop0.1": {
+     "dif_media": 0.01079185760032801,
+     "dif_dp": 0.004194849022876639,
+     "dif_p5": 0.0033050223681797054,
+     "poder_T1": 0.82,
+     "fracao_abaixo_do_limiar_T2_selado": 0.91,
+     "poder_T1_pct": 82.0,
+     "fracao_abaixo_do_limiar_T2_selado_pct": 91.0
+    },
+    "dp_permutacao_real_D2": 0.006699742634463163
+   },
+   "grandes": {
+    "parte_do_ss_dentro_nos_10pct_mais_variaveis": 0.4852526235952232,
+    "escala_percentis_50_90_99": [
+     0.7339759378213819,
+     1.283268247654457,
+     3.0751324012686507
+    ],
+    "variancia_municipio": 2.088957342939586,
+    "prop0.0": {
+     "dif_media": 2.6188149581862774e-06,
+     "dif_dp": 0.002944764248326461,
+     "dif_p5": -0.0047862289833396745,
+     "poder_T1": 0.06,
+     "fracao_abaixo_do_limiar_T2_selado": 1.0,
+     "poder_T1_pct": 6.0,
+     "fracao_abaixo_do_limiar_T2_selado_pct": 100.0
+    },
+    "prop0.1": {
+     "dif_media": 0.004590744095032455,
+     "dif_dp": 0.002706053209308153,
+     "dif_p5": -0.0006268236308135165,
+     "poder_T1": 0.675,
+     "fracao_abaixo_do_limiar_T2_selado": 0.96,
+     "poder_T1_pct": 67.5,
+     "fracao_abaixo_do_limiar_T2_selado_pct": 96.0
+    },
+    "dp_permutacao_real_D2": 0.002913955452991876
+   }
+  }
+ },
+ "alinhamento_motor": {
+  "semente": 12112026,
+  "rho": 0.21696453979704527,
+  "bases": 500,
+  "permutacoes": 1000,
+  "condicoes": {
+   "sem_lacuna": {
+    "municipios": 5468,
+    "informam": 4779,
+    "rejeicoes": 19,
+    "bases": 500,
+    "taxa": 0.038,
+    "ic95": [
+     0.023,
+     0.0587
+    ],
+    "fracao_passagem_atravessa_lacuna": null,
+    "taxa_pct": 3.8,
+    "ic95_pct": [
+     2.3,
+     5.87
+    ]
+   },
+   "alinhada_p9": {
+    "municipios": 5468,
+    "informam": 5458,
+    "rejeicoes": 491,
+    "bases": 500,
+    "taxa": 0.982,
+    "ic95": [
+     0.9661,
+     0.9917
+    ],
+    "fracao_passagem_atravessa_lacuna": 0.37673738112655447,
+    "taxa_pct": 98.2,
+    "ic95_pct": [
+     96.61,
+     99.17
+    ]
+   },
+   "aleatoria": {
+    "municipios": 5468,
+    "informam": 5460,
+    "rejeicoes": 380,
+    "bases": 500,
+    "taxa": 0.76,
+    "ic95": [
+     0.7201,
+     0.7968
+    ],
+    "fracao_passagem_atravessa_lacuna": 0.3076079005120702,
+    "taxa_pct": 76.0,
+    "ic95_pct": [
+     72.01,
+     79.68
+    ]
+   },
+   "na_troca": {
+    "municipios": 5468,
+    "informam": 5466,
+    "rejeicoes": 499,
+    "bases": 500,
+    "taxa": 0.998,
+    "ic95": [
+     0.9889,
+     0.9999
+    ],
+    "fracao_passagem_atravessa_lacuna": 0.0,
+    "taxa_pct": 99.8,
+    "ic95_pct": [
+     98.89,
+     99.99
+    ]
+   },
+   "meio_da_passagem": {
+    "municipios": 4765,
+    "informam": 4752,
+    "rejeicoes": 0,
+    "bases": 500,
+    "taxa": 0.0,
+    "ic95": [
+     0.0,
+     0.0074
+    ],
+    "fracao_passagem_atravessa_lacuna": 1.0,
+    "taxa_pct": 0.0,
+    "ic95_pct": [
+     0.0,
+     0.74
+    ]
+   },
+   "longa_alinhada": {
+    "municipios": 5468,
+    "informam": 3485,
+    "rejeicoes": 357,
+    "bases": 500,
+    "taxa": 0.714,
+    "ic95": [
+     0.6722,
+     0.7532
+    ],
+    "fracao_passagem_atravessa_lacuna": 0.06455742501828822,
+    "taxa_pct": 71.4,
+    "ic95_pct": [
+     67.22,
+     75.32
+    ]
+   },
+   "alinhada_p9_nostitch": {
+    "municipios": 5468,
+    "informam": 3538,
+    "rejeicoes": 28,
+    "bases": 500,
+    "taxa": 0.056,
+    "ic95": [
+     0.0375,
+     0.0799
+    ],
+    "fracao_passagem_atravessa_lacuna": 0.37673738112655447,
+    "taxa_pct": 5.6,
+    "ic95_pct": [
+     3.75,
+     7.99
+    ]
+   },
+   "longa_alinhada_nostitch": {
+    "municipios": 5468,
+    "informam": 3461,
+    "rejeicoes": 23,
+    "bases": 500,
+    "taxa": 0.046,
+    "ic95": [
+     0.0294,
+     0.0682
+    ],
+    "fracao_passagem_atravessa_lacuna": 0.06455742501828822,
+    "taxa_pct": 4.6,
+    "ic95_pct": [
+     2.94,
+     6.82
+    ]
+   }
+  }
+ },
+ "escala_motor": {
+  "semente": 13112026,
+  "rho": 0.21696453979704527,
+  "bases": 500,
+  "permutacoes": 1000,
+  "celulas": {
+   "aleatoria_N50": {
+    "condicao": "aleatoria",
+    "N": 50,
+    "informam": 50,
+    "rejeicoes": 34,
+    "bases": 500,
+    "taxa": 0.068,
+    "ic95": [
+     0.0475,
+     0.0937
+    ],
+    "fracao_lacuna_vizinha_de_troca": 0.74,
+    "fracao_passagem_atravessa_lacuna": 0.26,
+    "taxa_pct": 6.8,
+    "ic95_pct": [
+     4.75,
+     9.37
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 74.0
+   },
+   "aleatoria_N200": {
+    "condicao": "aleatoria",
+    "N": 200,
+    "informam": 200,
+    "rejeicoes": 62,
+    "bases": 500,
+    "taxa": 0.124,
+    "ic95": [
+     0.0964,
+     0.1561
+    ],
+    "fracao_lacuna_vizinha_de_troca": 0.69,
+    "fracao_passagem_atravessa_lacuna": 0.31,
+    "taxa_pct": 12.4,
+    "ic95_pct": [
+     9.64,
+     15.61
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 69.0
+   },
+   "aleatoria_N1000": {
+    "condicao": "aleatoria",
+    "N": 1000,
+    "informam": 1000,
+    "rejeicoes": 151,
+    "bases": 500,
+    "taxa": 0.302,
+    "ic95": [
+     0.262,
+     0.3443
+    ],
+    "fracao_lacuna_vizinha_de_troca": 0.703,
+    "fracao_passagem_atravessa_lacuna": 0.297,
+    "taxa_pct": 30.2,
+    "ic95_pct": [
+     26.2,
+     34.43
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 70.3
+   },
+   "alinhada_p9_N50": {
+    "condicao": "alinhada_p9",
+    "N": 50,
+    "informam": 50,
+    "rejeicoes": 64,
+    "bases": 500,
+    "taxa": 0.128,
+    "ic95": [
+     0.1,
+     0.1605
+    ],
+    "fracao_lacuna_vizinha_de_troca": 0.7,
+    "fracao_passagem_atravessa_lacuna": 0.3,
+    "taxa_pct": 12.8,
+    "ic95_pct": [
+     10.0,
+     16.05
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 70.0
+   },
+   "alinhada_p9_N200": {
+    "condicao": "alinhada_p9",
+    "N": 200,
+    "informam": 200,
+    "rejeicoes": 90,
+    "bases": 500,
+    "taxa": 0.18,
+    "ic95": [
+     0.1473,
+     0.2165
+    ],
+    "fracao_lacuna_vizinha_de_troca": 0.615,
+    "fracao_passagem_atravessa_lacuna": 0.385,
+    "taxa_pct": 18.0,
+    "ic95_pct": [
+     14.73,
+     21.65
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 61.5
+   },
+   "alinhada_p9_N1000": {
+    "condicao": "alinhada_p9",
+    "N": 1000,
+    "informam": 999,
+    "rejeicoes": 254,
+    "bases": 500,
+    "taxa": 0.508,
+    "ic95": [
+     0.4632,
+     0.5527
+    ],
+    "fracao_lacuna_vizinha_de_troca": 0.617,
+    "fracao_passagem_atravessa_lacuna": 0.383,
+    "taxa_pct": 50.8,
+    "ic95_pct": [
+     46.32,
+     55.27
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 61.7
+   }
+  }
+ },
+ "ado": {
+  "semente": 14112026,
+  "bases": 500,
+  "permutacoes": 1000,
+  "N": 1000,
+  "celulas": {
+   "sem_lacuna": {
+    "lacuna": "nenhuma",
+    "modo": "costura",
+    "rho": 0.21696453979704527,
+    "prop": 0.0,
+    "municipios": 1000,
+    "celulas": 10000,
+    "unidades": 1000,
+    "stints": 3796,
+    "rejeicoes": 11,
+    "bases": 500,
+    "taxa": 0.022,
+    "ic95": [
+     0.011,
+     0.039
+    ],
+    "taxa_pct": 2.2,
+    "ic95_pct": [
+     1.1,
+     3.9
+    ]
+   },
+   "p9": {
+    "lacuna": "p9",
+    "modo": "costura",
+    "rho": 0.21696453979704527,
+    "prop": 0.0,
+    "municipios": 1000,
+    "celulas": 9000,
+    "unidades": 1000,
+    "stints": 3793,
+    "rejeicoes": 136,
+    "bases": 500,
+    "taxa": 0.272,
+    "ic95": [
+     0.2334,
+     0.3133
+    ],
+    "taxa_pct": 27.2,
+    "ic95_pct": [
+     23.34,
+     31.33
+    ]
+   },
+   "meio": {
+    "lacuna": "meio",
+    "modo": "costura",
+    "rho": 0.21696453979704527,
+    "prop": 0.0,
+    "municipios": 867,
+    "celulas": 7803,
+    "unidades": 867,
+    "stints": 3128,
+    "rejeicoes": 1,
+    "bases": 500,
+    "taxa": 0.002,
+    "ic95": [
+     0.0001,
+     0.0111
+    ],
+    "taxa_pct": 0.2,
+    "ic95_pct": [
+     0.01,
+     1.11
+    ]
+   },
+   "p9_nostitch": {
+    "lacuna": "p9",
+    "modo": "nostitch",
+    "rho": 0.21696453979704527,
+    "prop": 0.0,
+    "municipios": 1000,
+    "celulas": 9000,
+    "unidades": 2000,
+    "stints": 4161,
+    "rejeicoes": 23,
+    "bases": 500,
+    "taxa": 0.046,
+    "ic95": [
+     0.0294,
+     0.0682
+    ],
+    "taxa_pct": 4.6,
+    "ic95_pct": [
+     2.94,
+     6.82
+    ]
+   },
+   "aleatoria_nostitch": {
+    "lacuna": "aleatoria2",
+    "modo": "nostitch",
+    "rho": 0.21696453979704527,
+    "prop": 0.0,
+    "municipios": 869,
+    "celulas": 7821,
+    "unidades": 1738,
+    "stints": 3746,
+    "rejeicoes": 31,
+    "bases": 500,
+    "taxa": 0.062,
+    "ic95": [
+     0.0425,
+     0.0869
+    ],
+    "taxa_pct": 6.2,
+    "ic95_pct": [
+     4.25,
+     8.69
+    ]
+   },
+   "p9_rho0": {
+    "lacuna": "p9",
+    "modo": "costura",
+    "rho": 0.0,
+    "prop": 0.0,
+    "municipios": 1000,
+    "celulas": 9000,
+    "unidades": 1000,
+    "stints": 3793,
+    "rejeicoes": 32,
+    "bases": 500,
+    "taxa": 0.064,
+    "ic95": [
+     0.0442,
+     0.0892
+    ],
+    "taxa_pct": 6.4,
+    "ic95_pct": [
+     4.42,
+     8.92
+    ]
+   },
+   "sem_lacuna_poder": {
+    "lacuna": "nenhuma",
+    "modo": "costura",
+    "rho": 0.21696453979704527,
+    "prop": 0.1,
+    "municipios": 1000,
+    "celulas": 10000,
+    "unidades": 1000,
+    "stints": 3796,
+    "rejeicoes": 494,
+    "bases": 500,
+    "taxa": 0.988,
+    "ic95": [
+     0.9741,
+     0.9956
+    ],
+    "taxa_pct": 98.8,
+    "ic95_pct": [
+     97.41,
+     99.56
+    ]
+   },
+   "meio_poder": {
+    "lacuna": "meio",
+    "modo": "costura",
+    "rho": 0.21696453979704527,
+    "prop": 0.1,
+    "municipios": 867,
+    "celulas": 7803,
+    "unidades": 867,
+    "stints": 3128,
+    "rejeicoes": 484,
+    "bases": 500,
+    "taxa": 0.968,
+    "ic95": [
+     0.9486,
+     0.9816
+    ],
+    "taxa_pct": 96.8,
+    "ic95_pct": [
+     94.86,
+     98.16
+    ]
+   }
+  }
+ },
+ "ado_escala": {
+  "semente": 15112026,
+  "rho": 0.21696453979704527,
+  "bases": 500,
+  "permutacoes": 1000,
+  "motor": "rifle_ado",
+  "celulas": {
+   "p9_N50": {
+    "condicao": "p9",
+    "N": 50,
+    "rejeicoes": 41,
+    "bases": 500,
+    "taxa": 0.082,
+    "ic95": [
+     0.0595,
+     0.1096
+    ],
+    "fracao_lacuna_vizinha_de_troca": 0.54,
+    "fracao_mesma_pessoa_dos_dois_lados": 0.46,
+    "taxa_pct": 8.2,
+    "ic95_pct": [
+     5.95,
+     10.96
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 54.0,
+    "fracao_mesma_pessoa_dos_dois_lados_pct": 46.0
+   },
+   "p9_N200": {
+    "condicao": "p9",
+    "N": 200,
+    "rejeicoes": 79,
+    "bases": 500,
+    "taxa": 0.158,
+    "ic95": [
+     0.1271,
+     0.193
+    ],
+    "fracao_lacuna_vizinha_de_troca": 0.64,
+    "fracao_mesma_pessoa_dos_dois_lados": 0.36,
+    "taxa_pct": 15.8,
+    "ic95_pct": [
+     12.71,
+     19.3
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 64.0,
+    "fracao_mesma_pessoa_dos_dois_lados_pct": 36.0
+   },
+   "p9_N1000": {
+    "condicao": "p9",
+    "N": 1000,
+    "rejeicoes": 131,
+    "bases": 500,
+    "taxa": 0.262,
+    "ic95": [
+     0.224,
+     0.3029
+    ],
+    "fracao_lacuna_vizinha_de_troca": 0.603,
+    "fracao_mesma_pessoa_dos_dois_lados": 0.397,
+    "taxa_pct": 26.2,
+    "ic95_pct": [
+     22.4,
+     30.29
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 60.3,
+    "fracao_mesma_pessoa_dos_dois_lados_pct": 39.7
+   },
+   "p9_N5468": {
+    "condicao": "p9",
+    "N": 5468,
+    "rejeicoes": 383,
+    "bases": 500,
+    "taxa": 0.766,
+    "ic95": [
+     0.7264,
+     0.8024
+    ],
+    "fracao_lacuna_vizinha_de_troca": 0.6232626188734455,
+    "fracao_mesma_pessoa_dos_dois_lados": 0.37673738112655447,
+    "taxa_pct": 76.6,
+    "ic95_pct": [
+     72.64,
+     80.24
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 62.326262,
+    "fracao_mesma_pessoa_dos_dois_lados_pct": 37.673738
+   },
+   "aleatoria_N50": {
+    "condicao": "aleatoria",
+    "N": 50,
+    "rejeicoes": 39,
+    "bases": 500,
+    "taxa": 0.078,
+    "ic95": [
+     0.0561,
+     0.1051
+    ],
+    "fracao_lacuna_vizinha_de_troca": 0.72,
+    "fracao_mesma_pessoa_dos_dois_lados": 0.28,
+    "taxa_pct": 7.8,
+    "ic95_pct": [
+     5.61,
+     10.51
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 72.0,
+    "fracao_mesma_pessoa_dos_dois_lados_pct": 28.0
+   },
+   "aleatoria_N200": {
+    "condicao": "aleatoria",
+    "N": 200,
+    "rejeicoes": 38,
+    "bases": 500,
+    "taxa": 0.076,
+    "ic95": [
+     0.0543,
+     0.1028
+    ],
+    "fracao_lacuna_vizinha_de_troca": 0.65,
+    "fracao_mesma_pessoa_dos_dois_lados": 0.35,
+    "taxa_pct": 7.6,
+    "ic95_pct": [
+     5.43,
+     10.28
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 65.0,
+    "fracao_mesma_pessoa_dos_dois_lados_pct": 35.0
+   },
+   "aleatoria_N1000": {
+    "condicao": "aleatoria",
+    "N": 1000,
+    "rejeicoes": 72,
+    "bases": 500,
+    "taxa": 0.144,
+    "ic95": [
+     0.1144,
+     0.1779
+    ],
+    "fracao_lacuna_vizinha_de_troca": 0.701,
+    "fracao_mesma_pessoa_dos_dois_lados": 0.3,
+    "taxa_pct": 14.4,
+    "ic95_pct": [
+     11.44,
+     17.79
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 70.1,
+    "fracao_mesma_pessoa_dos_dois_lados_pct": 30.0
+   },
+   "aleatoria_N5468": {
+    "condicao": "aleatoria",
+    "N": 5468,
+    "rejeicoes": 173,
+    "bases": 500,
+    "taxa": 0.346,
+    "ic95": [
+     0.3043,
+     0.3895
+    ],
+    "fracao_lacuna_vizinha_de_troca": 0.7011704462326261,
+    "fracao_mesma_pessoa_dos_dois_lados": 0.2990124359912216,
+    "taxa_pct": 34.6,
+    "ic95_pct": [
+     30.43,
+     38.95
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 70.117045,
+    "fracao_mesma_pessoa_dos_dois_lados_pct": 29.901244
+   },
+   "na_troca_N50": {
+    "condicao": "na_troca",
+    "N": 50,
+    "rejeicoes": 34,
+    "bases": 500,
+    "taxa": 0.068,
+    "ic95": [
+     0.0475,
+     0.0937
+    ],
+    "fracao_lacuna_vizinha_de_troca": 1.0,
+    "fracao_mesma_pessoa_dos_dois_lados": 0.0,
+    "taxa_pct": 6.8,
+    "ic95_pct": [
+     4.75,
+     9.37
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 100.0,
+    "fracao_mesma_pessoa_dos_dois_lados_pct": 0.0
+   },
+   "na_troca_N200": {
+    "condicao": "na_troca",
+    "N": 200,
+    "rejeicoes": 71,
+    "bases": 500,
+    "taxa": 0.142,
+    "ic95": [
+     0.1126,
+     0.1757
+    ],
+    "fracao_lacuna_vizinha_de_troca": 1.0,
+    "fracao_mesma_pessoa_dos_dois_lados": 0.0,
+    "taxa_pct": 14.2,
+    "ic95_pct": [
+     11.26,
+     17.57
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 100.0,
+    "fracao_mesma_pessoa_dos_dois_lados_pct": 0.0
+   },
+   "na_troca_N1000": {
+    "condicao": "na_troca",
+    "N": 1000,
+    "rejeicoes": 176,
+    "bases": 500,
+    "taxa": 0.352,
+    "ic95": [
+     0.3101,
+     0.3956
+    ],
+    "fracao_lacuna_vizinha_de_troca": 1.0,
+    "fracao_mesma_pessoa_dos_dois_lados": 0.0,
+    "taxa_pct": 35.2,
+    "ic95_pct": [
+     31.01,
+     39.56
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 100.0,
+    "fracao_mesma_pessoa_dos_dois_lados_pct": 0.0
+   },
+   "na_troca_N5468": {
+    "condicao": "na_troca",
+    "N": 5468,
+    "rejeicoes": 447,
+    "bases": 500,
+    "taxa": 0.894,
+    "ic95": [
+     0.8636,
+     0.9196
+    ],
+    "fracao_lacuna_vizinha_de_troca": 1.0,
+    "fracao_mesma_pessoa_dos_dois_lados": 0.0,
+    "taxa_pct": 89.4,
+    "ic95_pct": [
+     86.36,
+     91.96
+    ],
+    "fracao_lacuna_vizinha_de_troca_pct": 100.0,
+    "fracao_mesma_pessoa_dos_dois_lados_pct": 0.0
+   }
+  }
+ },
+ "ado_mascara_real": {
+  "semente": 16112026,
+  "rho": 0.21696453979704527,
+  "bases": 500,
+  "permutacoes": 1000,
+  "motor": "rifle_ado",
+  "celulas": {
+   "interior_costura": {
+    "municipios": 1854,
+    "rejeicoes": 174,
+    "bases": 500,
+    "taxa": 0.348,
+    "ic95": [
+     0.3063,
+     0.3916
+    ],
+    "taxa_pct": 34.8,
+    "ic95_pct": [
+     30.63,
+     39.16
+    ]
+   },
+   "interior_nostitch": {
+    "municipios": 1854,
+    "rejeicoes": 18,
+    "bases": 500,
+    "taxa": 0.036,
+    "ic95": [
+     0.0215,
+     0.0563
+    ],
+    "taxa_pct": 3.6,
+    "ic95_pct": [
+     2.15,
+     5.63
+    ]
+   },
+   "so_borda_costura": {
+    "municipios": 707,
+    "rejeicoes": 19,
+    "bases": 500,
+    "taxa": 0.038,
+    "ic95": [
+     0.023,
+     0.0587
+    ],
+    "taxa_pct": 3.8,
+    "ic95_pct": [
+     2.3,
+     5.87
+    ]
+   }
+  }
+ },
+ "ado_juizes": {
+  "semente": 17112026,
+  "bases": 500,
+  "permutacoes": 1000,
+  "motor": "rifle_ado",
+  "celulas": {
+   "sem_lacuna_N5468": {
+    "painel": "todo",
+    "lacuna": "nenhuma",
+    "modo": "costura",
+    "rho": 0.21696453979704527,
+    "prop": 0.0,
+    "municipios": 5468,
+    "celulas": 54680,
+    "unidades": 5468,
+    "stints": 20777,
+    "rejeicoes": 1,
+    "bases": 500,
+    "taxa": 0.002,
+    "ic95": [
+     0.0001,
+     0.0111
+    ],
+    "taxa_pct": 0.2,
+    "ic95_pct": [
+     0.01,
+     1.11
+    ]
+   },
+   "p9_nostitch_N5468": {
+    "painel": "todo",
+    "lacuna": "p9",
+    "modo": "nostitch",
+    "rho": 0.21696453979704527,
+    "prop": 0.0,
+    "municipios": 5468,
+    "celulas": 49212,
+    "unidades": 10936,
+    "stints": 22824,
+    "rejeicoes": 8,
+    "bases": 500,
+    "taxa": 0.016,
+    "ic95": [
+     0.0069,
+     0.0313
+    ],
+    "taxa_pct": 1.6,
+    "ic95_pct": [
+     0.69,
+     3.13
+    ]
+   },
+   "na_troca_nostitch_N5468": {
+    "painel": "todo",
+    "lacuna": "na_troca",
+    "modo": "nostitch",
+    "rho": 0.21696453979704527,
+    "prop": 0.0,
+    "municipios": 5468,
+    "celulas": 40533,
+    "unidades": 7958,
+    "stints": 17778,
+    "rejeicoes": 6,
+    "bases": 500,
+    "taxa": 0.012,
+    "ic95": [
+     0.0044,
+     0.0259
+    ],
+    "taxa_pct": 1.2,
+    "ic95_pct": [
+     0.44,
+     2.59
+    ]
+   },
+   "aleatoria_nostitch_N5468": {
+    "painel": "todo",
+    "lacuna": "aleatoria",
+    "modo": "nostitch",
+    "rho": 0.21696453979704527,
+    "prop": 0.0,
+    "municipios": 5468,
+    "celulas": 42972,
+    "unidades": 8577,
+    "stints": 20069,
+    "rejeicoes": 10,
+    "bases": 500,
+    "taxa": 0.02,
+    "ic95": [
+     0.0096,
+     0.0365
+    ],
+    "taxa_pct": 2.0,
+    "ic95_pct": [
+     0.96,
+     3.65
+    ]
+   },
+   "sem_lacuna_meio867": {
+    "painel": "meio867",
+    "lacuna": "nenhuma",
+    "modo": "costura",
+    "rho": 0.21696453979704527,
+    "prop": 0.0,
+    "municipios": 867,
+    "celulas": 8670,
+    "unidades": 867,
+    "stints": 3128,
+    "rejeicoes": 11,
+    "bases": 500,
+    "taxa": 0.022,
+    "ic95": [
+     0.011,
+     0.039
+    ],
+    "taxa_pct": 2.2,
+    "ic95_pct": [
+     1.1,
+     3.9
+    ]
+   },
+   "sem_lacuna_poder10_meio867": {
+    "painel": "meio867",
+    "lacuna": "nenhuma",
+    "modo": "costura",
+    "rho": 0.21696453979704527,
+    "prop": 0.1,
+    "municipios": 867,
+    "celulas": 8670,
+    "unidades": 867,
+    "stints": 3128,
+    "rejeicoes": 495,
+    "bases": 500,
+    "taxa": 0.99,
+    "ic95": [
+     0.9768,
+     0.9967
+    ],
+    "taxa_pct": 99.0,
+    "ic95_pct": [
+     97.68,
+     99.67
+    ]
+   },
+   "p9_nostitch_poder10": {
+    "painel": "mil",
+    "lacuna": "p9",
+    "modo": "nostitch",
+    "rho": 0.21696453979704527,
+    "prop": 0.1,
+    "municipios": 1000,
+    "celulas": 9000,
+    "unidades": 2000,
+    "stints": 4161,
+    "rejeicoes": 492,
+    "bases": 500,
+    "taxa": 0.984,
+    "ic95": [
+     0.9687,
+     0.9931
+    ],
+    "taxa_pct": 98.4,
+    "ic95_pct": [
+     96.87,
+     99.31
+    ]
+   },
+   "p9_nostitch_poder05": {
+    "painel": "mil",
+    "lacuna": "p9",
+    "modo": "nostitch",
+    "rho": 0.21696453979704527,
+    "prop": 0.05,
+    "municipios": 1000,
+    "celulas": 9000,
+    "unidades": 2000,
+    "stints": 4161,
+    "rejeicoes": 305,
+    "bases": 500,
+    "taxa": 0.61,
+    "ic95": [
+     0.5657,
+     0.653
+    ],
+    "taxa_pct": 61.0,
+    "ic95_pct": [
+     56.57,
+     65.3
+    ]
+   },
+   "sem_lacuna_poder05": {
+    "painel": "mil",
+    "lacuna": "nenhuma",
+    "modo": "costura",
+    "rho": 0.21696453979704527,
+    "prop": 0.05,
+    "municipios": 1000,
+    "celulas": 10000,
+    "unidades": 1000,
+    "stints": 3796,
+    "rejeicoes": 275,
+    "bases": 500,
+    "taxa": 0.55,
+    "ic95": [
+     0.5052,
+     0.5942
+    ],
+    "taxa_pct": 55.0,
+    "ic95_pct": [
+     50.52,
+     59.42
+    ]
+   },
+   "aleatoria2_nostitch_poder10": {
+    "painel": "mil",
+    "lacuna": "aleatoria2",
+    "modo": "nostitch",
+    "rho": 0.21696453979704527,
+    "prop": 0.1,
+    "municipios": 869,
+    "celulas": 7821,
+    "unidades": 1738,
+    "stints": 3752,
+    "rejeicoes": 495,
+    "bases": 500,
+    "taxa": 0.99,
+    "ic95": [
+     0.9768,
+     0.9967
+    ],
+    "taxa_pct": 99.0,
+    "ic95_pct": [
+     97.68,
+     99.67
+    ]
+   }
+  }
+ },
+ "verificacoes_port": {
+  "semente": 19112026,
+  "rho": 0.21696453979704527,
+  "ponta": {
+   "ordens": 36,
+   "p_exato": 0.1111111111111111,
+   "p_teste": 0.110335,
+   "diff_exata": 0.2180924287118977,
+   "diff_teste": 0.21851773890098092,
+   "passa": true
+  },
+  "media_inclui_real": {
+   "diff_teste": 0.2424410029498525,
+   "diff_com_linha_real": 0.2424410029498526,
+   "diff_sem_linha_real": 0.32325467059980345,
+   "passa": true
+  },
+  "nostitch": {
+   "celulas": 8,
+   "trechos": 4,
+   "ordens": 8,
+   "p_exato": 0.75,
+   "p_teste": 0.75113,
+   "diff_exata": -0.049815773750248926,
+   "diff_teste": -0.05000970812712169,
+   "passa": true
+  },
+  "dois_municipios": {
+   "p_q_real_maior": 0.4729525,
+   "bases_q": 400000,
+   "rejeicao_teste": 0.48125,
+   "bases_teste": 4000,
+   "p_q_real_maior_pct": 47.29525,
+   "rejeicao_teste_pct": 48.125
+  }
+ },
+ "iptu": {
+  "municipio_anos_com_total_negativo_por_ano": {
+   "2024": 34
+  },
+  "municipios_2024": 34,
+  "municipios_2024_por_uf": {
+   "TO": 31,
+   "GO": 3
+  },
+  "conta": "RO1.1.1.2.50.0.0",
+  "coluna": "Receitas Brutas Realizadas",
+  "iptu_bruto_negativo_n": 34,
+  "iptu_bruto_mediana_reais": -19591153.71,
+  "municipio_anos_no_painel": 109334
+ },
+ "astra_reproducao": {
+  "semente": 5112026,
+  "permutacoes": 1000,
+  "numpy": "2.5.4",
+  "painel_sha256": "ef27976df1a35a7e68752eeaf855b978f624bb5d0453655532f427ba4767ac50",
+  "linhas_painel": 55441,
+  "versoes": {
+   "principal": {
+    "r2_real": 0.7584152045565953,
+    "diferenca": -0.007462468906891036,
+    "valor_p": 0.869,
+    "dp_perm": 0.006040890521979501,
+    "diferenca_exata": -0.00735421898118438,
+    "dp_perm_exato": 0.006033191665435401,
+    "municipios": 5298,
+    "trechos": 7508,
+    "celulas": 47791,
+    "informam": 4470,
+    "max_passagens": 6,
+    "D1": 0.5664976762699927,
+    "indice_erro_max": 0.0,
+    "delta_contra_original": {
+     "r2_real": -1.1102230246251565e-16,
+     "diferenca": 2.6020852139652106e-17,
+     "valor_p": 0.0
+    },
+    "erro_residuo_OLS_max": 3.552713678800501e-15,
+    "coef_alinhamento": 0.024106812448876278,
+    "curva_monotona": true,
+    "T2_limiar": 0.011050851097940484,
+    "T2_rejeita": true,
+    "prop_literal": 0.0,
+    "teste_centrado_municipio": {
+     "r2_real": 0.44271395510703704,
+     "diferenca": -0.017214368870462498,
+     "valor_p": 0.869,
+     "dp_perm": 0.013935082215941882,
+     "diferenca_exata": -0.016964658731021313,
+     "dp_perm_exato": 0.013917322549793238
+    },
+    "componentes": {
+     "C1": {
+      "r2_real": 0.8932199608851625,
+      "diferenca": -0.001292760772342315,
+      "valor_p": 0.979,
+      "dp_perm": 0.0006644425585743074,
+      "diferenca_exata": -0.0012767748957732265,
+      "dp_perm_exato": 0.0006388226159632141
+     },
+     "C2": {
+      "r2_real": 0.4205974804187601,
+      "diferenca": -0.0457092946356019,
+      "valor_p": 0.878,
+      "dp_perm": 0.03812278751237905,
+      "diferenca_exata": -0.04629891316741324,
+      "dp_perm_exato": 0.03834106542834773
+     },
+     "C3": {
+      "r2_real": 0.5135917716370672,
+      "diferenca": -0.0008877744627297831,
+      "valor_p": 0.656,
+      "dp_perm": 0.0022464508060270004,
+      "diferenca_exata": -0.0008583375338893734,
+      "dp_perm_exato": 0.0022873855339949423
+     }
+    }
+   },
+   "atraso": {
+    "r2_real": 0.7890932845359685,
+    "diferenca": -0.00014418188520994176,
+    "valor_p": 0.488,
+    "dp_perm": 0.006699742634463164,
+    "diferenca_exata": -5.48775439654583e-05,
+    "dp_perm_exato": 0.0065955382684500215,
+    "municipios": 5292,
+    "trechos": 7426,
+    "celulas": 43673,
+    "informam": 5043,
+    "max_passagens": 6,
+    "D1": 0.5774724768351103,
+    "indice_erro_max": 0.0,
+    "delta_contra_original": {
+     "r2_real": 0.0,
+     "diferenca": 9.562663161322149e-17,
+     "valor_p": 0.0
+    },
+    "erro_residuo_OLS_max": 3.552713678800501e-15,
+    "coef_alinhamento": 0.02849975905072725,
+    "curva_monotona": true,
+    "T2_limiar": 0.016156177061315835,
+    "T2_rejeita": true,
+    "prop_literal": 0.0,
+    "teste_centrado_municipio": {
+     "r2_real": 0.5008450245222817,
+     "diferenca": -0.0003412366705252726,
+     "valor_p": 0.488,
+     "dp_perm": 0.015856346077243854,
+     "diferenca_exata": -0.00012987921722696304,
+     "dp_perm_exato": 0.01560972459035796
+    }
+   },
+   "grandes": {
+    "r2_real": 0.8659771329272073,
+    "diferenca": -0.004123843455409207,
+    "valor_p": 0.904,
+    "dp_perm": 0.0029139554529918773,
+    "diferenca_exata": -0.004322130487368351,
+    "dp_perm_exato": 0.0029332432030918162,
+    "municipios": 1642,
+    "trechos": 2062,
+    "celulas": 15630,
+    "informam": 1440,
+    "max_passagens": 6,
+    "D1": 0.7245810976796252,
+    "indice_erro_max": 0.0,
+    "delta_contra_original": {
+     "r2_real": 2.220446049250313e-16,
+     "diferenca": 2.96637714392034e-16,
+     "valor_p": 0.0
+    },
+    "erro_residuo_OLS_max": 8.881784197001252e-16,
+    "coef_alinhamento": 0.02437730063755536,
+    "curva_monotona": true,
+    "T2_limiar": 0.008986220828214365,
+    "T2_rejeita": true,
+    "prop_literal": 0.0,
+    "teste_centrado_municipio": {
+     "r2_real": 0.5133853706348237,
+     "diferenca": -0.014972986315269348,
+     "valor_p": 0.904,
+     "dp_perm": 0.010580085202729775,
+     "diferenca_exata": -0.01569293338603503,
+     "dp_perm_exato": 0.01065011579953138
+    }
+   },
+   "restrita": {
+    "r2_real": 0.7433006737808303,
+    "diferenca": -0.0031638230177765264,
+    "valor_p": 0.854,
+    "dp_perm": 0.0029709983009837764,
+    "diferenca_exata": -0.0032399917855149073,
+    "dp_perm_exato": 0.003072035572558548,
+    "municipios": 978,
+    "trechos": 1420,
+    "celulas": 8663,
+    "informam": 789,
+    "max_passagens": 6,
+    "D1": 0.5653488123355399,
+    "indice_erro_max": 0.0,
+    "delta_contra_original": {
+     "r2_real": 0.0,
+     "diferenca": 9.71445146547012e-17,
+     "valor_p": 0.0
+    },
+    "erro_residuo_OLS_max": 1.7763568394002505e-15,
+    "coef_alinhamento": 0.07415508818170088,
+    "curva_monotona": true,
+    "T2_limiar": 0.008193730623972339,
+    "T2_rejeita": true,
+    "prop_literal": 0.0,
+    "teste_centrado_municipio": {
+     "r2_real": 0.4094130339353057,
+     "diferenca": -0.007278993150293338,
+     "valor_p": 0.854,
+     "dp_perm": 0.0068353622060669805,
+     "diferenca_exata": -0.007454234285944216,
+     "dp_perm_exato": 0.007067818194782166
+    }
+   }
+  }
+ },
+ "astra_simulacoes": {
+  "semente": 8112026,
+  "bases": 200,
+  "permutacoes": 1000,
+  "rho": 0.21696453979704527,
+  "nota": "Variâncias municipais fixadas nos valores fornecidos de D3/D5; novos sorteios, motor independente.",
+  "versoes": {
+   "principal": {
+    "D3_nulo": {
+     "bases": 200,
+     "dif_media": -6.032699256568749e-06,
+     "dif_dp": 0.0009073842688682737,
+     "dif_p5": -0.0013889402710723206,
+     "T1": 0.07,
+     "T1_IC95": [
+      0.038795570429562824,
+      0.11465973353711054
+     ],
+     "T2": 1.0,
+     "T2_IC95": [
+      0.9817246596448638,
+      1.0
+     ],
+     "dp_condicional_media": 0.0008398889301813595,
+     "dp_condicional_p5_p50_p95": [
+      0.0008145107656317618,
+      0.0008412146422324174,
+      0.000864754692164906
+     ],
+     "fracao_dp_condicional_ge_real": 0.0,
+     "s2_municipal": 0.9504951083176854,
+     "s2_efeito": 0,
+     "variancia_ruido_ponderada": 1.0,
+     "prop_total_latente": 0.0,
+     "prop_condicional_latente": 0.0,
+     "segundos": 5.986858999996912,
+     "seed_sequence": [
+      8112026,
+      0,
+      0
+     ],
+     "T1_pct": 7.0,
+     "T1_IC95_pct": [
+      3.879557,
+      11.465973
+     ],
+     "T2_pct": 100.0,
+     "T2_IC95_pct": [
+      98.172466,
+      100.0
+     ]
+    },
+    "D3_condicional10": {
+     "bases": 200,
+     "dif_media": 0.007320793023945929,
+     "dif_dp": 0.0009313514009623304,
+     "dif_p5": 0.0058988748707840336,
+     "T1": 1.0,
+     "T1_IC95": [
+      0.9817246596448638,
+      1.0
+     ],
+     "T2": 1.0,
+     "T2_IC95": [
+      0.9817246596448638,
+      1.0
+     ],
+     "dp_condicional_media": 0.000902918634044666,
+     "dp_condicional_p5_p50_p95": [
+      0.0008763713534248039,
+      0.0009041567971800875,
+      0.0009275076654698633
+     ],
+     "fracao_dp_condicional_ge_real": 0.0,
+     "s2_municipal": 0.9504951083176854,
+     "s2_efeito": 0.1111111111111111,
+     "variancia_ruido_ponderada": 1.0,
+     "prop_total_latente": 0.05389540934829754,
+     "prop_condicional_latente": 0.09999999999999999,
+     "segundos": 5.923011042003054,
+     "seed_sequence": [
+      8112026,
+      0,
+      1
+     ],
+     "T1_pct": 100.0,
+     "T1_IC95_pct": [
+      98.172466,
+      100.0
+     ],
+     "T2_pct": 100.0,
+     "T2_IC95_pct": [
+      98.172466,
+      100.0
+     ]
+    },
+    "D3_total10": {
+     "bases": 200,
+     "dif_media": 0.013487920220497805,
+     "dif_dp": 0.000903795242262064,
+     "dif_p5": 0.012148899442342773,
+     "T1": 1.0,
+     "T1_IC95": [
+      0.9817246596448638,
+      1.0
+     ],
+     "T2": 0.005,
+     "T2_IC95": [
+      0.00012658102786701825,
+      0.02754189845720562
+     ],
+     "dp_condicional_media": 0.0009649635504664429,
+     "dp_condicional_p5_p50_p95": [
+      0.0009357642776942559,
+      0.000966249994766811,
+      0.0009942355377859685
+     ],
+     "fracao_dp_condicional_ge_real": 0.0,
+     "s2_municipal": 0.9504951083176854,
+     "s2_efeito": 0.21672167870196504,
+     "variancia_ruido_ponderada": 1.0,
+     "prop_total_latente": 0.10000000000000002,
+     "prop_condicional_latente": 0.17811935341956772,
+     "segundos": 5.942164000007324,
+     "seed_sequence": [
+      8112026,
+      0,
+      2
+     ],
+     "T1_pct": 100.0,
+     "T1_IC95_pct": [
+      98.172466,
+      100.0
+     ],
+     "T2_pct": 0.5,
+     "T2_IC95_pct": [
+      0.012658,
+      2.75419
+     ]
+    },
+    "D5_nulo": {
+     "bases": 200,
+     "dif_media": 0.00012700062301483004,
+     "dif_dp": 0.0038003071484446847,
+     "dif_p5": -0.005825589782685642,
+     "T1": 0.035,
+     "T1_IC95": [
+      0.014185525898419244,
+      0.0707809983509772
+     ],
+     "T2": 0.995,
+     "T2_IC95": [
+      0.9724581015427943,
+      0.999873418972133
+     ],
+     "dp_condicional_media": 0.0037352881842602687,
+     "dp_condicional_p5_p50_p95": [
+      0.0022598303277581873,
+      0.0035266470371584455,
+      0.006095623592827499
+     ],
+     "fracao_dp_condicional_ge_real": 0.055,
+     "s2_municipal": 0.8916995963316917,
+     "s2_efeito": 0,
+     "variancia_ruido_ponderada": 0.9726757707064995,
+     "prop_total_latente": 0.0,
+     "prop_condicional_latente": 0.0,
+     "segundos": 5.935085125005571,
+     "seed_sequence": [
+      8112026,
+      0,
+      3
+     ],
+     "T1_pct": 3.5,
+     "T1_IC95_pct": [
+      1.418553,
+      7.0781
+     ],
+     "T2_pct": 99.5,
+     "T2_IC95_pct": [
+      97.24581,
+      99.987342
+     ]
+    },
+    "D5_condicional10": {
+     "bases": 200,
+     "dif_media": 0.0076429292951655636,
+     "dif_dp": 0.003609548783019378,
+     "dif_p5": 0.0023407126127074204,
+     "T1": 0.7,
+     "T1_IC95": [
+      0.6313501245409987,
+      0.7626103559245527
+     ],
+     "T2": 0.85,
+     "T2_IC95": [
+      0.7928412963314493,
+      0.8964504764781374
+     ],
+     "dp_condicional_media": 0.0037017253657625183,
+     "dp_condicional_p5_p50_p95": [
+      0.002080466186375372,
+      0.0033957655740478104,
+      0.006673107728998911
+     ],
+     "fracao_dp_condicional_ge_real": 0.07,
+     "s2_municipal": 0.8916995963316917,
+     "s2_efeito": 0.1111111111111111,
+     "variancia_ruido_ponderada": 0.9726757707064995,
+     "prop_total_latente": 0.05624493629295983,
+     "prop_condicional_latente": 0.10252118103216706,
+     "segundos": 5.979800333007006,
+     "seed_sequence": [
+      8112026,
+      0,
+      4
+     ],
+     "T1_pct": 70.0,
+     "T1_IC95_pct": [
+      63.135012,
+      76.261036
+     ],
+     "T2_pct": 85.0,
+     "T2_IC95_pct": [
+      79.28413,
+      89.645048
+     ]
+    },
+    "D5_total10": {
+     "bases": 200,
+     "dif_media": 0.013878553889505292,
+     "dif_dp": 0.0033777769739390053,
+     "dif_p5": 0.008820373146024485,
+     "T1": 0.935,
+     "T1_IC95": [
+      0.8914127634961848,
+      0.9649392913430209
+     ],
+     "T2": 0.215,
+     "T2_IC95": [
+      0.1601816953323363,
+      0.27847104388405713
+     ],
+     "dp_condicional_media": 0.0035681275843015337,
+     "dp_condicional_p5_p50_p95": [
+      0.0019900635805706448,
+      0.0031519277514536785,
+      0.006266655693626483
+     ],
+     "fracao_dp_condicional_ge_real": 0.06,
+     "s2_municipal": 0.8916995963316917,
+     "s2_efeito": 0.20715281855979903,
+     "variancia_ruido_ponderada": 0.9726757707064995,
+     "prop_total_latente": 0.1,
+     "prop_condicional_latente": 0.1755787412208933,
+     "segundos": 5.946932040998945,
+     "seed_sequence": [
+      8112026,
+      0,
+      5
+     ],
+     "T1_pct": 93.5,
+     "T1_IC95_pct": [
+      89.141276,
+      96.493929
+     ],
+     "T2_pct": 21.5,
+     "T2_IC95_pct": [
+      16.01817,
+      27.847104
+     ]
+    },
+    "D3_condicional30": {
+     "bases": 200,
+     "dif_media": 0.024522752688281222,
+     "dif_dp": 0.0009234709956904286,
+     "dif_p5": 0.02312698637880292,
+     "T1": 1.0,
+     "T1_IC95": [
+      0.9817246596448638,
+      1.0
+     ],
+     "T2": 0.0,
+     "T2_IC95": [
+      0.0,
+      0.01827534035513624
+     ],
+     "dp_condicional_media": 0.001088444134347054,
+     "dp_condicional_p5_p50_p95": [
+      0.0010580418916866822,
+      0.001088713227992769,
+      0.001119705887157072
+     ],
+     "fracao_dp_condicional_ge_real": 0.0,
+     "s2_municipal": 0.9504951083176854,
+     "s2_efeito": 0.42857142857142855,
+     "variancia_ruido_ponderada": 1.0,
+     "prop_total_latente": 0.18014268282375653,
+     "prop_condicional_latente": 0.3,
+     "segundos": 5.950481375009986,
+     "seed_sequence": [
+      8112026,
+      0,
+      6
+     ],
+     "T1_pct": 100.0,
+     "T1_IC95_pct": [
+      98.172466,
+      100.0
+     ],
+     "T2_pct": 0.0,
+     "T2_IC95_pct": [
+      0.0,
+      1.827534
+     ]
+    },
+    "D5_calendario_condicional10": {
+     "bases": 200,
+     "dif_media": 0.007496669439342733,
+     "dif_dp": 0.0037020120992617197,
+     "dif_p5": 0.0018087649174420295,
+     "T1": 0.665,
+     "T1_IC95": [
+      0.5950033586505903,
+      0.7300208448426304
+     ],
+     "T2": 0.865,
+     "T2_IC95": [
+      0.8096908273166017,
+      0.9091128982451022
+     ],
+     "dp_condicional_media": 0.0037667276732812425,
+     "dp_condicional_p5_p50_p95": [
+      0.002092447106537442,
+      0.003505308227564446,
+      0.006406363236699435
+     ],
+     "fracao_dp_condicional_ge_real": 0.075,
+     "s2_municipal": 0.8916995963316917,
+     "s2_efeito": 0.1111111111111111,
+     "variancia_ruido_ponderada": 0.9726757707064995,
+     "prop_total_latente": 0.05624493629295983,
+     "prop_condicional_latente": 0.10252118103216706,
+     "segundos": 5.916235999990022,
+     "seed_sequence": [
+      8112026,
+      0,
+      7
+     ],
+     "T1_pct": 66.5,
+     "T1_IC95_pct": [
+      59.500336,
+      73.002084
+     ],
+     "T2_pct": 86.5,
+     "T2_IC95_pct": [
+      80.969083,
+      90.91129
+     ]
+    }
+   },
+   "atraso": {
+    "D3_nulo": {
+     "bases": 200,
+     "dif_media": 4.042897144846656e-05,
+     "dif_dp": 0.0011121260994445758,
+     "dif_p5": -0.0018795869705874998,
+     "T1": 0.07,
+     "T1_IC95": [
+      0.038795570429562824,
+      0.11465973353711054
+     ],
+     "T2": 1.0,
+     "T2_IC95": [
+      0.9817246596448638,
+      1.0
+     ],
+     "dp_condicional_media": 0.0010321338750172505,
+     "dp_condicional_p5_p50_p95": [
+      0.0010055540568079224,
+      0.001033020594777967,
+      0.0010589824236117663
+     ],
+     "fracao_dp_condicional_ge_real": 0.0,
+     "s2_municipal": 0.9608089459248184,
+     "s2_efeito": 0,
+     "variancia_ruido_ponderada": 1.0,
+     "prop_total_latente": 0.0,
+     "prop_condicional_latente": 0.0,
+     "segundos": 6.682769041013671,
+     "seed_sequence": [
+      8112026,
+      1,
+      0
+     ],
+     "T1_pct": 7.0,
+     "T1_IC95_pct": [
+      3.879557,
+      11.465973
+     ],
+     "T2_pct": 100.0,
+     "T2_IC95_pct": [
+      98.172466,
+      100.0
+     ]
+    },
+    "D3_condicional10": {
+     "bases": 200,
+     "dif_media": 0.010443376077529033,
+     "dif_dp": 0.0012341244619803486,
+     "dif_p5": 0.008572839750268818,
+     "T1": 1.0,
+     "T1_IC95": [
+      0.9817246596448638,
+      1.0
+     ],
+     "T2": 1.0,
+     "T2_IC95": [
+      0.9817246596448638,
+      1.0
+     ],
+     "dp_condicional_media": 0.00107742729536966,
+     "dp_condicional_p5_p50_p95": [
+      0.0010507990709561902,
+      0.00107684843595708,
+      0.0011055190966167752
+     ],
+     "fracao_dp_condicional_ge_real": 0.0,
+     "s2_municipal": 0.9608089459248184,
+     "s2_efeito": 0.1111111111111111,
+     "variancia_ruido_ponderada": 1.0,
+     "prop_total_latente": 0.05362712269413796,
+     "prop_condicional_latente": 0.09999999999999999,
+     "segundos": 6.678785125026479,
+     "seed_sequence": [
+      8112026,
+      1,
+      1
+     ],
+     "T1_pct": 100.0,
+     "T1_IC95_pct": [
+      98.172466,
+      100.0
+     ],
+     "T2_pct": 100.0,
+     "T2_IC95_pct": [
+      98.172466,
+      100.0
+     ]
+    },
+    "D3_total10": {
+     "bases": 200,
+     "dif_media": 0.01989308330098318,
+     "dif_dp": 0.0011780672332353883,
+     "dif_p5": 0.017689792811013745,
+     "T1": 1.0,
+     "T1_IC95": [
+      0.9817246596448638,
+      1.0
+     ],
+     "T2": 0.005,
+     "T2_IC95": [
+      0.00012658102786701825,
+      0.02754189845720562
+     ],
+     "dp_condicional_media": 0.001125448183438491,
+     "dp_condicional_p5_p50_p95": [
+      0.0010925321434006288,
+      0.0011267138490921157,
+      0.0011547616430890798
+     ],
+     "fracao_dp_condicional_ge_real": 0.0,
+     "s2_municipal": 0.9608089459248184,
+     "s2_efeito": 0.21786766065831314,
+     "variancia_ruido_ponderada": 1.0,
+     "prop_total_latente": 0.09999999999999999,
+     "prop_condicional_latente": 0.17889272184183436,
+     "segundos": 6.926567415997852,
+     "seed_sequence": [
+      8112026,
+      1,
+      2
+     ],
+     "T1_pct": 100.0,
+     "T1_IC95_pct": [
+      98.172466,
+      100.0
+     ],
+     "T2_pct": 0.5,
+     "T2_IC95_pct": [
+      0.012658,
+      2.75419
+     ]
+    },
+    "D5_nulo": {
+     "bases": 200,
+     "dif_media": 0.00011621543649169203,
+     "dif_dp": 0.005125141453815968,
+     "dif_p5": -0.007716782124025515,
+     "T1": 0.05,
+     "T1_IC95": [
+      0.02423416547210855,
+      0.09002753770135137
+     ],
+     "T2": 0.99,
+     "T2_IC95": [
+      0.9643453316027603,
+      0.998786650986264
+     ],
+     "dp_condicional_media": 0.004628643037053466,
+     "dp_condicional_p5_p50_p95": [
+      0.002782718699113899,
+      0.004388717349642402,
+      0.007301739555030021
+     ],
+     "fracao_dp_condicional_ge_real": 0.08,
+     "s2_municipal": 0.9330135303809236,
+     "s2_efeito": 0,
+     "variancia_ruido_ponderada": 0.9826329876755474,
+     "prop_total_latente": 0.0,
+     "prop_condicional_latente": 0.0,
+     "segundos": 6.982646624994231,
+     "seed_sequence": [
+      8112026,
+      1,
+      3
+     ],
+     "T1_pct": 5.0,
+     "T1_IC95_pct": [
+      2.423417,
+      9.002754
+     ],
+     "T2_pct": 99.0,
+     "T2_IC95_pct": [
+      96.434533,
+      99.878665
+     ]
+    },
+    "D5_condicional10": {
+     "bases": 200,
+     "dif_media": 0.010526383186811716,
+     "dif_dp": 0.0042444955303752654,
+     "dif_p5": 0.0037511061128152608,
+     "T1": 0.775,
+     "T1_IC95": [
+      0.7107603940312353,
+      0.8308974528701735
+     ],
+     "T2": 0.91,
+     "T2_IC95": [
+      0.8614917915261779,
+      0.9457857455439036
+     ],
+     "dp_condicional_media": 0.0042620231704182275,
+     "dp_condicional_p5_p50_p95": [
+      0.0028510580234590343,
+      0.004039800448608889,
+      0.006478900967038562
+     ],
+     "fracao_dp_condicional_ge_real": 0.045,
+     "s2_municipal": 0.9330135303809236,
+     "s2_efeito": 0.1111111111111111,
+     "variancia_ruido_ponderada": 0.9826329876755474,
+     "prop_total_latente": 0.05482210083341145,
+     "prop_condicional_latente": 0.10158784969388349,
+     "segundos": 6.886761874979129,
+     "seed_sequence": [
+      8112026,
+      1,
+      4
+     ],
+     "T1_pct": 77.5,
+     "T1_IC95_pct": [
+      71.076039,
+      83.089745
+     ],
+     "T2_pct": 91.0,
+     "T2_IC95_pct": [
+      86.149179,
+      94.578575
+     ]
+    },
+    "D5_total10": {
+     "bases": 200,
+     "dif_media": 0.019820904687152065,
+     "dif_dp": 0.004061504904055585,
+     "dif_p5": 0.013264136269871158,
+     "T1": 1.0,
+     "T1_IC95": [
+      0.9817246596448638,
+      1.0
+     ],
+     "T2": 0.18,
+     "T2_IC95": [
+      0.12936892834839725,
+      0.24038109688400738
+     ],
+     "dp_condicional_media": 0.003984942593263581,
+     "dp_condicional_p5_p50_p95": [
+      0.002578408351754586,
+      0.0037961215603187918,
+      0.0059586084016958005
+     ],
+     "fracao_dp_condicional_ge_real": 0.025,
+     "s2_municipal": 0.9330135303809236,
+     "s2_efeito": 0.21284961311738568,
+     "variancia_ruido_ponderada": 0.9826329876755474,
+     "prop_total_latente": 0.09999999999999999,
+     "prop_condicional_latente": 0.17804492761016175,
+     "segundos": 6.796817334019579,
+     "seed_sequence": [
+      8112026,
+      1,
+      5
+     ],
+     "T1_pct": 100.0,
+     "T1_IC95_pct": [
+      98.172466,
+      100.0
+     ],
+     "T2_pct": 18.0,
+     "T2_IC95_pct": [
+      12.936893,
+      24.03811
+     ]
+    }
+   },
+   "grandes": {
+    "D3_nulo": {
+     "bases": 200,
+     "dif_media": -2.38365954452455e-05,
+     "dif_dp": 0.0009811895669745753,
+     "dif_p5": -0.001623108146544771,
+     "T1": 0.06,
+     "T1_IC95": [
+      0.031383953893483446,
+      0.1024618313083245
+     ],
+     "T2": 1.0,
+     "T2_IC95": [
+      0.9817246596448638,
+      1.0
+     ],
+     "dp_condicional_media": 0.0009397370706638081,
+     "dp_condicional_p5_p50_p95": [
+      0.0008827055254274582,
+      0.0009405237628582459,
+      0.0009914064777214533
+     ],
+     "fracao_dp_condicional_ge_real": 0.0,
+     "s2_municipal": 2.091661464355044,
+     "s2_efeito": 0,
+     "variancia_ruido_ponderada": 1.0,
+     "prop_total_latente": 0.0,
+     "prop_condicional_latente": 0.0,
+     "segundos": 2.2052579580049496,
+     "seed_sequence": [
+      8112026,
+      2,
+      0
+     ],
+     "T1_pct": 6.0,
+     "T1_IC95_pct": [
+      3.138395,
+      10.246183
+     ],
+     "T2_pct": 100.0,
+     "T2_IC95_pct": [
+      98.172466,
+      100.0
+     ]
+    },
+    "D3_condicional10": {
+     "bases": 200,
+     "dif_media": 0.004800945645838751,
+     "dif_dp": 0.0009966945027773558,
+     "dif_p5": 0.003245010199200312,
+     "T1": 1.0,
+     "T1_IC95": [
+      0.9817246596448638,
+      1.0
+     ],
+     "T2": 1.0,
+     "T2_IC95": [
+      0.9817246596448638,
+      1.0
+     ],
+     "dp_condicional_media": 0.001036027108686984,
+     "dp_condicional_p5_p50_p95": [
+      0.000976472540923875,
+      0.0010394902133490469,
+      0.00110043936844273
+     ],
+     "fracao_dp_condicional_ge_real": 0.0,
+     "s2_municipal": 2.091661464355044,
+     "s2_efeito": 0.1111111111111111,
+     "variancia_ruido_ponderada": 1.0,
+     "prop_total_latente": 0.034692163896445,
+     "prop_condicional_latente": 0.09999999999999999,
+     "segundos": 2.171347875002539,
+     "seed_sequence": [
+      8112026,
+      2,
+      1
+     ],
+     "T1_pct": 100.0,
+     "T1_IC95_pct": [
+      98.172466,
+      100.0
+     ],
+     "T2_pct": 100.0,
+     "T2_IC95_pct": [
+      98.172466,
+      100.0
+     ]
+    },
+    "D3_total10": {
+     "bases": 200,
+     "dif_media": 0.013770551267461384,
+     "dif_dp": 0.0012600762677701324,
+     "dif_p5": 0.011851219979016314,
+     "T1": 1.0,
+     "T1_IC95": [
+      0.9817246596448638,
+      1.0
+     ],
+     "T2": 0.0,
+     "T2_IC95": [
+      0.0,
+      0.01827534035513624
+     ],
+     "dp_condicional_media": 0.0012394006213967464,
+     "dp_condicional_p5_p50_p95": [
+      0.0011671751151911313,
+      0.0012362245846301591,
+      0.0013202011901971222
+     ],
+     "fracao_dp_condicional_ge_real": 0.0,
+     "s2_municipal": 2.091661464355044,
+     "s2_efeito": 0.3435179404838938,
+     "variancia_ruido_ponderada": 1.0,
+     "prop_total_latente": 0.1,
+     "prop_condicional_latente": 0.2556854137430939,
+     "segundos": 2.171685957990121,
+     "seed_sequence": [
+      8112026,
+      2,
+      2
+     ],
+     "T1_pct": 100.0,
+     "T1_IC95_pct": [
+      98.172466,
+      100.0
+     ],
+     "T2_pct": 0.0,
+     "T2_IC95_pct": [
+      0.0,
+      1.827534
+     ]
+    },
+    "D5_nulo": {
+     "bases": 200,
+     "dif_media": -3.816743586318809e-05,
+     "dif_dp": 0.003241561618631257,
+     "dif_p5": -0.005027231547379764,
+     "T1": 0.04,
+     "T1_IC95": [
+      0.017424808994480595,
+      0.07729196822601608
+     ],
+     "T2": 1.0,
+     "T2_IC95": [
+      0.9817246596448638,
+      1.0
+     ],
+     "dp_condicional_media": 0.0028768643314099696,
+     "dp_condicional_p5_p50_p95": [
+      0.0016893315612326585,
+      0.002414403116669642,
+      0.005656003286509549
+     ],
+     "fracao_dp_condicional_ge_real": 0.3,
+     "s2_municipal": 2.088957342939586,
+     "s2_efeito": 0,
+     "variancia_ruido_ponderada": 1.0020156217687681,
+     "prop_total_latente": 0.0,
+     "prop_condicional_latente": 0.0,
+     "segundos": 2.181326749996515,
+     "seed_sequence": [
+      8112026,
+      2,
+      3
+     ],
+     "T1_pct": 4.0,
+     "T1_IC95_pct": [
+      1.742481,
+      7.729197
+     ],
+     "T2_pct": 100.0,
+     "T2_IC95_pct": [
+      98.172466,
+      100.0
+     ]
+    },
+    "D5_condicional10": {
+     "bases": 200,
+     "dif_media": 0.00498641219335546,
+     "dif_dp": 0.0023474921211197974,
+     "dif_p5": 0.0009417442614590558,
+     "T1": 0.74,
+     "T1_IC95": [
+      0.6734222463428603,
+      0.7993151451236593
+     ],
+     "T2": 0.97,
+     "T2_IC95": [
+      0.935849373294973,
+      0.9889125443277452
+     ],
+     "dp_condicional_media": 0.00255447005699471,
+     "dp_condicional_p5_p50_p95": [
+      0.0016067391072858673,
+      0.002255007051661881,
+      0.004030364020395187
+     ],
+     "fracao_dp_condicional_ge_real": 0.205,
+     "s2_municipal": 2.088957342939586,
+     "s2_efeito": 0.1111111111111111,
+     "variancia_ruido_ponderada": 1.0020156217687681,
+     "prop_total_latente": 0.034699623270408965,
+     "prop_condicional_latente": 0.09981892252613919,
+     "segundos": 2.185334874986438,
+     "seed_sequence": [
+      8112026,
+      2,
+      4
+     ],
+     "T1_pct": 74.0,
+     "T1_IC95_pct": [
+      67.342225,
+      79.931515
+     ],
+     "T2_pct": 97.0,
+     "T2_IC95_pct": [
+      93.584937,
+      98.891254
+     ]
+    },
+    "D5_total10": {
+     "bases": 200,
+     "dif_media": 0.01371118317012393,
+     "dif_dp": 0.002810696440114928,
+     "dif_p5": 0.009506868107279976,
+     "T1": 0.99,
+     "T1_IC95": [
+      0.9643453316027603,
+      0.998786650986264
+     ],
+     "T2": 0.035,
+     "T2_IC95": [
+      0.014185525898419244,
+      0.0707809983509772
+     ],
+     "dp_condicional_media": 0.0027976055855324124,
+     "dp_condicional_p5_p50_p95": [
+      0.0017070047551235802,
+      0.0024545472468920928,
+      0.004979167189258464
+     ],
+     "fracao_dp_condicional_ge_real": 0.3,
+     "s2_municipal": 2.088957342939586,
+     "s2_efeito": 0.34344144052315045,
+     "variancia_ruido_ponderada": 1.0020156217687681,
+     "prop_total_latente": 0.09999999999999999,
+     "prop_condicional_latente": 0.2552600526233927,
+     "segundos": 2.1943722090218216,
+     "seed_sequence": [
+      8112026,
+      2,
+      5
+     ],
+     "T1_pct": 99.0,
+     "T1_IC95_pct": [
+      96.434533,
+      99.878665
+     ],
+     "T2_pct": 3.5,
+     "T2_IC95_pct": [
+      1.418553,
+      7.0781
+     ]
+    }
+   }
+  }
+ },
+ "astra_injecao": {
+  "semente": 9112026,
+  "bases": 200,
+  "permutacoes": 1000,
+  "nota": "Injeção condicional no resíduo real; NÃO é teste de equivalência nem estimativa do poder verdadeiro.",
+  "versoes": {
+   "principal": {
+    "bases": 200,
+    "dif_media": 0.0026531871134265416,
+    "dif_dp": 0.0004335633550305979,
+    "dif_p5": 0.0019681847939998186,
+    "T1": 0.0,
+    "T1_IC95": [
+     0.0,
+     0.01827534035513624
+    ],
+    "T2": 1.0,
+    "T2_IC95": [
+     0.9817246596448638,
+     1.0
+    ],
+    "dp_condicional_media": 0.0056354197028973775,
+    "dp_condicional_p5_p50_p95": [
+     0.0055807987530666825,
+     0.005636165288226474,
+     0.005686297299836748
+    ],
+    "fracao_dp_condicional_ge_real": 0.0,
+    "variancia_injetada_dentro": 0.04331437256028023,
+    "T1_pct": 0.0,
+    "T1_IC95_pct": [
+     0.0,
+     1.827534
+    ],
+    "T2_pct": 100.0,
+    "T2_IC95_pct": [
+     98.172466,
+     100.0
+    ]
+   },
+   "atraso": {
+    "bases": 200,
+    "dif_media": 0.01357073303616646,
+    "dif_dp": 0.0004913759963691965,
+    "dif_p5": 0.012730069155467557,
+    "T1": 1.0,
+    "T1_IC95": [
+     0.9817246596448638,
+     1.0
+    ],
+    "T2": 1.0,
+    "T2_IC95": [
+     0.9817246596448638,
+     1.0
+    ],
+    "dp_condicional_media": 0.006156095310587001,
+    "dp_condicional_p5_p50_p95": [
+     0.0060765288364092816,
+     0.006157180033269191,
+     0.006236615655573452
+    ],
+    "fracao_dp_condicional_ge_real": 0.0,
+    "variancia_injetada_dentro": 0.04338102252722376,
+    "T1_pct": 100.0,
+    "T1_IC95_pct": [
+     98.172466,
+     100.0
+    ],
+    "T2_pct": 100.0,
+    "T2_IC95_pct": [
+     98.172466,
+     100.0
+    ]
+   },
+   "grandes": {
+    "bases": 200,
+    "dif_media": 0.002071445235289603,
+    "dif_dp": 0.00045750695734263127,
+    "dif_p5": 0.0013340980012533123,
+    "T1": 0.0,
+    "T1_IC95": [
+     0.0,
+     0.01827534035513624
+    ],
+    "T2": 1.0,
+    "T2_IC95": [
+     0.9817246596448638,
+     1.0
+    ],
+    "dp_condicional_media": 0.0028469937786394697,
+    "dp_condicional_p5_p50_p95": [
+     0.002693751033739075,
+     0.002835289511877258,
+     0.003007748718909647
+    ],
+    "fracao_dp_condicional_ge_real": 0.195,
+    "variancia_injetada_dentro": 0.019813595870852106,
+    "T1_pct": 0.0,
+    "T1_IC95_pct": [
+     0.0,
+     1.827534
+    ],
+    "T2_pct": 100.0,
+    "T2_IC95_pct": [
+     98.172466,
+     100.0
+    ]
+   }
+  }
+ },
+ "astra_decomposicao": {
+  "versoes": {
+   "principal": {
+    "B": 0.5664976762699927,
+    "dp_condicional_exato": 0.006033191665435401,
+    "numero_efetivo_contribuintes_variancia": 1.5096194371573253,
+    "concentracao_SS_10pct": 0.4988072869875202,
+    "escala_quadratica_media_por_celula": 0.9726757707064995,
+    "componentes": {
+     "C1": {
+      "dp_contribuicao_isolada_mesmo_denominador": 0.00035265857216339045,
+      "dp_sem_componente_mesmo_denominador": 0.0058883397259215505
+     },
+     "C2": {
+      "dp_contribuicao_isolada_mesmo_denominador": 0.005618957362178374,
+      "dp_sem_componente_mesmo_denominador": 0.0006992725898148169
+     },
+     "C3": {
+      "dp_contribuicao_isolada_mesmo_denominador": 0.00046527626234788233,
+      "dp_sem_componente_mesmo_denominador": 0.005757064789545029
+     }
+    },
+    "termos_cov_ordem": [
+     "C1",
+     "C2",
+     "C3",
+     "C1xC2",
+     "C1xC3",
+     "C2xC3"
+    ],
+    "fracao_covariancia_com_total": [
+     0.0036071635336327045,
+     0.9220620544672019,
+     0.005747029179433502,
+     0.022093905935710874,
+     0.003880743143912701,
+     0.04260910374010817
+    ],
+    "variancias_temporais_residuo": [
+     0.62899167732511,
+     0.730426754133234,
+     0.861842250894699,
+     0.9944567357087906,
+     0.9074155151455751,
+     0.7565443780758622,
+     0.844347644847442,
+     0.8339359684097081,
+     0.852939996113341,
+     1.5047195920559637
+    ],
+    "concentracao_SS_10pct_pct": 49.880729
+   },
+   "atraso": {
+    "B": 0.5774724768351103,
+    "dp_condicional_exato": 0.0065955382684500215,
+    "numero_efetivo_contribuintes_variancia": 3.71639248162588,
+    "concentracao_SS_10pct": 0.5155552245146466,
+    "escala_quadratica_media_por_celula": 0.9826329876755475,
+    "componentes": {
+     "C1": {
+      "dp_contribuicao_isolada_mesmo_denominador": 0.0003671025260913683,
+      "dp_sem_componente_mesmo_denominador": 0.006495112527292265
+     },
+     "C2": {
+      "dp_contribuicao_isolada_mesmo_denominador": 0.006236686959254583,
+      "dp_sem_componente_mesmo_denominador": 0.000874974336780923
+     },
+     "C3": {
+      "dp_contribuicao_isolada_mesmo_denominador": 0.0006547545437164425,
+      "dp_sem_componente_mesmo_denominador": 0.006329997887444499
+     }
+    },
+    "termos_cov_ordem": [
+     "C1",
+     "C2",
+     "C3",
+     "C1xC2",
+     "C1xC3",
+     "C2xC3"
+    ],
+    "fracao_covariancia_com_total": [
+     0.0032866085380140373,
+     0.9331220812337792,
+     0.00926608424044486,
+     0.014161743648089229,
+     0.004152614254284021,
+     0.03601086808538871
+    ],
+    "variancias_temporais_residuo": [
+     null,
+     0.7294330899832301,
+     0.8614796395138058,
+     0.9943516829795523,
+     0.9089811374886445,
+     0.7563437643517333,
+     0.8445056124035524,
+     0.8330470055075507,
+     0.8524734506274353,
+     1.5051426809013266
+    ],
+    "concentracao_SS_10pct_pct": 51.555522
+   },
+   "grandes": {
+    "B": 0.7245810976796252,
+    "dp_condicional_exato": 0.0029332432030918162,
+    "numero_efetivo_contribuintes_variancia": 3.500286766514986,
+    "concentracao_SS_10pct": 0.48525262359522325,
+    "escala_quadratica_media_por_celula": 1.0020156217687681,
+    "componentes": {
+     "C1": {
+      "dp_contribuicao_isolada_mesmo_denominador": 0.0007421372575518865,
+      "dp_sem_componente_mesmo_denominador": 0.0031317240521396834
+     },
+     "C2": {
+      "dp_contribuicao_isolada_mesmo_denominador": 0.003227779319647709,
+      "dp_sem_componente_mesmo_denominador": 0.0008600718034574955
+     },
+     "C3": {
+      "dp_contribuicao_isolada_mesmo_denominador": 0.0001661255260534606,
+      "dp_sem_componente_mesmo_denominador": 0.0029925769467422396
+     }
+    },
+    "termos_cov_ordem": [
+     "C1",
+     "C2",
+     "C3",
+     "C1xC2",
+     "C1xC3",
+     "C2xC3"
+    ],
+    "fracao_covariancia_com_total": [
+     0.06256329960857407,
+     1.0412634300887105,
+     0.0025771459263345797,
+     -0.09688580841195285,
+     0.01878951121450544,
+     -0.02830757842617199
+    ],
+    "variancias_temporais_residuo": [
+     0.42278993273507365,
+     0.466910777535734,
+     0.6167970956624724,
+     0.6976083485808942,
+     0.6857523298409923,
+     0.5725110513336709,
+     0.6533591788769636,
+     0.6723988101323661,
+     0.7510171964265528,
+     0.91152841363803
+    ],
+    "concentracao_SS_10pct_pct": 48.525262
+   }
+  }
+ },
+ "tamanho_sob_nulo": {
+  "costura_completos_rho217": {
+   "rejeicoes": 8,
+   "bases": 100,
+   "taxa": 0.08,
+   "ic95": [
+    0.0352,
+    0.1516
+   ],
+   "rho": 0.21696453979704527,
+   "municipios": 2737,
+   "taxa_pct": 8.0,
+   "ic95_pct": [
+    3.52,
+    15.16
+   ]
+  },
+  "costura_com_lacuna_rho217": {
+   "rejeicoes": 49,
+   "bases": 100,
+   "taxa": 0.49,
+   "ic95": [
+    0.3886,
+    0.592
+   ],
+   "rho": 0.21696453979704527,
+   "municipios": 2561,
+   "taxa_pct": 49.0,
+   "ic95_pct": [
+    38.86,
+    59.2
+   ]
+  },
+  "costura_todos_rho217": {
+   "rejeicoes": 34,
+   "bases": 100,
+   "taxa": 0.34,
+   "ic95": [
+    0.2482,
+    0.4415
+   ],
+   "rho": 0.21696453979704527,
+   "municipios": 5298,
+   "taxa_pct": 34.0,
+   "ic95_pct": [
+    24.82,
+    44.15
+   ]
+  },
+  "costura_com_lacuna_rho0": {
+   "rejeicoes": 9,
+   "bases": 100,
+   "taxa": 0.09,
+   "ic95": [
+    0.042,
+    0.164
+   ],
+   "rho": 0.0,
+   "municipios": 2561,
+   "taxa_pct": 9.0,
+   "ic95_pct": [
+    4.2,
+    16.4
+   ]
+  },
+  "mascara_com_lacuna_rho0": {
+   "rejeicoes": 6,
+   "bases": 100,
+   "taxa": 0.06,
+   "ic95": [
+    0.0223,
+    0.126
+   ],
+   "rho": 0.0,
+   "municipios": 2471,
+   "taxa_pct": 6.0,
+   "ic95_pct": [
+    2.23,
+    12.6
+   ]
+  },
+  "mascara_com_lacuna_rho217": {
+   "rejeicoes": 36,
+   "bases": 300,
+   "taxa": 0.12,
+   "ic95": [
+    0.0855,
+    0.1622
+   ],
+   "rho": 0.21696453979704527,
+   "municipios": 2471,
+   "taxa_pct": 12.0,
+   "ic95_pct": [
+    8.55,
+    16.22
+   ]
+  },
+  "mascara_todos_rho217": {
+   "rejeicoes": 26,
+   "bases": 300,
+   "taxa": 0.08666666666666667,
+   "ic95": [
+    0.0574,
+    0.1244
+   ],
+   "rho": 0.21696453979704527,
+   "municipios": 5208,
+   "taxa_pct": 8.666667,
+   "ic95_pct": [
+    5.74,
+    12.44
+   ]
+  },
+  "costura_so_borda_rho217": {
+   "rejeicoes": 10,
+   "bases": 200,
+   "taxa": 0.05,
+   "ic95": [
+    0.0242,
+    0.09
+   ],
+   "rho": 0.21696453979704527,
+   "municipios": 707,
+   "taxa_pct": 5.0,
+   "ic95_pct": [
+    2.42,
+    9.0
+   ]
+  },
+  "costura_lacuna_interior_rho217": {
+   "rejeicoes": 128,
+   "bases": 200,
+   "taxa": 0.64,
+   "ic95": [
+    0.5693,
+    0.7065
+   ],
+   "rho": 0.21696453979704527,
+   "municipios": 1854,
+   "taxa_pct": 64.0,
+   "ic95_pct": [
+    56.93,
+    70.65
+   ]
+  },
+  "costura_com_lacuna_rho084": {
+   "rejeicoes": 43,
+   "bases": 200,
+   "taxa": 0.215,
+   "ic95": [
+    0.1602,
+    0.2785
+   ],
+   "rho": 0.084,
+   "municipios": 2561,
+   "taxa_pct": 21.5,
+   "ic95_pct": [
+    16.02,
+    27.85
+   ]
+  }
+ }
+}

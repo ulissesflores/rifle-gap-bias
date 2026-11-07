@@ -1,0 +1,30 @@
+{
+ "municipios": {
+  "com_lacuna": 2561,
+  "so_borda": 707,
+  "interior": 1854
+ },
+ "rodadas": {
+  "costura_so_borda_rho217": {
+   "rejeicao_sob_nulo": 0.05,
+   "bases": 200,
+   "semente": 201,
+   "rho": 0.21696453979704527,
+   "municipios": 707
+  },
+  "costura_lacuna_interior_rho217": {
+   "rejeicao_sob_nulo": 0.64,
+   "bases": 200,
+   "semente": 202,
+   "rho": 0.21696453979704527,
+   "municipios": 1854
+  },
+  "costura_com_lacuna_rho084": {
+   "rejeicao_sob_nulo": 0.215,
+   "bases": 200,
+   "semente": 203,
+   "rho": 0.084,
+   "municipios": 2561
+  }
+ }
+}

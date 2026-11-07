@@ -1,0 +1,15 @@
+{
+ "municipio_anos_com_total_negativo_por_ano": {
+  "2024": 34
+ },
+ "municipios_2024": 34,
+ "municipios_2024_por_uf": {
+  "TO": 31,
+  "GO": 3
+ },
+ "conta": "RO1.1.1.2.50.0.0",
+ "coluna": "Receitas Brutas Realizadas",
+ "iptu_bruto_negativo_n": 34,
+ "iptu_bruto_mediana_reais": -19591153.71,
+ "municipio_anos_no_painel": 109334
+}

@@ -1,0 +1,89 @@
+{
+  "locale": "pt-br",
+  "_note": "Rótulos deste idioma. Os números vêm sempre de output/results.json.",
+  "figuras": {
+    "fig3_largura": {
+      "titulo": "Desvio-padrão da permutação, versão principal",
+      "eixo_x": "DP da permutação, condicional ao conjunto de dados",
+      "series": {
+        "real_indice": "Dado real: índice",
+        "real_so_c2": "Dado real: só receita própria (C2)",
+        "real_sem_c2": "Dado real: sem receita própria",
+        "gerador_d3": "Gerador com efeito de município (D3, média de 200 bases)",
+        "gerador_d5": "Gerador com município e escala desigual (D5, média de 200 bases)"
+      }
+    },
+    "fig2_escala": {
+      "titulo": "Pacote rifle sob o nulo: costura (linhas), nostitch e sem lacuna (pontos)",
+      "eixo_x": "Número de municípios no painel (escala log)",
+      "eixo_y": "Rejeições a 5% (barra = intervalo exato de 95%)",
+      "nominal": "nominal 5%",
+      "series": {
+        "na_troca": "Lacuna vizinha de troca de prefeito",
+        "p9": "Lacuna no 1º meio-mandato após a eleição",
+        "aleatoria": "Lacuna interior sorteada",
+        "p9_nostitch_N5468": "nostitch, lacuna após a eleição",
+        "aleatoria_nostitch_N5468": "nostitch, lacuna sorteada",
+        "na_troca_nostitch_N5468": "nostitch, lacuna vizinha de troca",
+        "sem_lacuna": "sem lacuna (linha de base do pacote)"
+      }
+    },
+    "fig1_tipo": {
+      "titulo": "Onde a lacuna cai decide (pacote fiel, ρ 0,217)",
+      "eixo_x": "Rejeições a 5% sob o nulo (barra = intervalo exato de 95%)",
+      "nominal": "nominal 5%",
+      "series": {
+        "sem_lacuna": "Sem lacuna",
+        "p9": "Lacuna após a eleição, costurada",
+        "meio": "Lacuna no meio do mandato, costurada",
+        "p9_rho0": "Lacuna após a eleição, costurada, ρ 0",
+        "p9_nostitch": "Lacuna após a eleição, nostitch",
+        "aleatoria_nostitch": "Lacuna sorteada, nostitch"
+      }
+    }
+  },
+  "tabelas": {
+    "tab1_celulas": {
+      "titulo": "Tabela 1. Células do pacote fiel: desenho e rejeição a 5% (500 bases, 1.000 permutações cada)",
+      "colunas": {
+        "modulo": "Módulo",
+        "n": "Municípios",
+        "obs": "Observações usadas",
+        "lacuna": "Lacuna",
+        "modo": "Tratamento",
+        "rho": "ρ",
+        "prop": "Efeito (Prop)",
+        "taxa": "Rejeição (%)",
+        "ic": "IC 95% exato (%)"
+      },
+      "modulo": {
+        "ado": "diagnostico_ado",
+        "ado_juizes": "diagnostico_ado_juizes",
+        "ado_escala": "diagnostico_ado_escala",
+        "ado_mascara_real": "diagnostico_ado_mascara_real"
+      },
+      "mascara_real": {
+        "interior": "máscara real do índice, municípios com lacuna interior",
+        "so_borda": "máscara real do índice, só lacuna de borda"
+      },
+      "lacuna": {
+        "nenhuma": "nenhuma",
+        "p9": "período 9",
+        "meio": "meio de mandato",
+        "aleatoria2": "sorteada, 2+ prefeitos em cada trecho",
+        "aleatoria": "interior sorteada",
+        "na_troca": "vizinha de troca"
+      },
+      "fonte": "Fonte: `results.json` do estudo (saídas com sha256 conferido). Município sem lacuna: 10 observações. As linhas da máscara real usam só a informação de quais municípios-período têm o índice; o resultado é sintético. Efeito = fração da variância devida ao prefeito; 0% = nulo verdadeiro. Observações usadas = municípios-período que entram no teste depois da lacuna e, no `nostitch`, do descarte de trechos com um só prefeito; não registrado (—) nas células de escala e da máscara real. Nas células com lacuna no período 9 e `nostitch`, as observações usadas incluem o período 10, trecho de uma linha que nunca é sorteado e que não contribui para a variação entre permutações quando o seu prefeito não aparece no outro trecho. Municípios = unidades que entram na célula antes do descarte de trechos pelo `nostitch`.",
+      "modo": {
+        "costura": "costura",
+        "nostitch": "nostitch"
+      },
+      "ate": " a "
+    }
+  },
+  "numero": {
+    "decimal": ",",
+    "milhar": "."
+  }
+}

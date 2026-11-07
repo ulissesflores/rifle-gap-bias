@@ -1,0 +1,92 @@
+{
+ "semente": 13112026,
+ "rho": 0.21696453979704527,
+ "bases": 500,
+ "permutacoes": 1000,
+ "celulas": {
+  "aleatoria_N50": {
+   "condicao": "aleatoria",
+   "N": 50,
+   "informam": 50,
+   "rejeicoes": 34,
+   "bases": 500,
+   "taxa": 0.068,
+   "ic95": [
+    0.0475,
+    0.0937
+   ],
+   "fracao_lacuna_vizinha_de_troca": 0.74,
+   "fracao_passagem_atravessa_lacuna": 0.26
+  },
+  "aleatoria_N200": {
+   "condicao": "aleatoria",
+   "N": 200,
+   "informam": 200,
+   "rejeicoes": 62,
+   "bases": 500,
+   "taxa": 0.124,
+   "ic95": [
+    0.0964,
+    0.1561
+   ],
+   "fracao_lacuna_vizinha_de_troca": 0.69,
+   "fracao_passagem_atravessa_lacuna": 0.31
+  },
+  "aleatoria_N1000": {
+   "condicao": "aleatoria",
+   "N": 1000,
+   "informam": 1000,
+   "rejeicoes": 151,
+   "bases": 500,
+   "taxa": 0.302,
+   "ic95": [
+    0.262,
+    0.3443
+   ],
+   "fracao_lacuna_vizinha_de_troca": 0.703,
+   "fracao_passagem_atravessa_lacuna": 0.297
+  },
+  "alinhada_p9_N50": {
+   "condicao": "alinhada_p9",
+   "N": 50,
+   "informam": 50,
+   "rejeicoes": 64,
+   "bases": 500,
+   "taxa": 0.128,
+   "ic95": [
+    0.1,
+    0.1605
+   ],
+   "fracao_lacuna_vizinha_de_troca": 0.7,
+   "fracao_passagem_atravessa_lacuna": 0.3
+  },
+  "alinhada_p9_N200": {
+   "condicao": "alinhada_p9",
+   "N": 200,
+   "informam": 200,
+   "rejeicoes": 90,
+   "bases": 500,
+   "taxa": 0.18,
+   "ic95": [
+    0.1473,
+    0.2165
+   ],
+   "fracao_lacuna_vizinha_de_troca": 0.615,
+   "fracao_passagem_atravessa_lacuna": 0.385
+  },
+  "alinhada_p9_N1000": {
+   "condicao": "alinhada_p9",
+   "N": 1000,
+   "informam": 999,
+   "rejeicoes": 254,
+   "bases": 500,
+   "taxa": 0.508,
+   "ic95": [
+    0.4632,
+    0.5527
+   ],
+   "fracao_lacuna_vizinha_de_troca": 0.617,
+   "fracao_passagem_atravessa_lacuna": 0.383
+  }
+ }
+}

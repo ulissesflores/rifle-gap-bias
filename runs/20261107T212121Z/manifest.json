@@ -1,0 +1,430 @@
+{
+  "run_id": "20261107T212121Z",
+  "nota": "repo rifle-gap-bias (2026-11-07): em ingles + 4 idiomas, sem docs/paper ate o DOI",
+  "python": "3.12.12",
+  "plataforma": "macOS-26.7.2-arm64-arm-64bit",
+  "pip_freeze": [
+    "Pygments==2.21.0",
+    "contourpy==1.4.0",
+    "cycler==0.12.1",
+    "fonttools==4.68.0",
+    "iniconfig==2.3.1",
+    "kiwisolver==1.5.1",
+    "matplotlib==3.11.2",
+    "numpy==2.5.4",
+    "packaging==26.3",
+    "pillow==13.0.0",
+    "pluggy==1.7.0",
+    "pyparsing==3.3.3",
+    "pytest==9.2.0",
+    "python-dateutil==4.0.0",
+    "scipy==1.18.1",
+    "tzdata==2026.6"
+  ],
+  "provenance": {
+    "hash_alg": "sha256",
+    "domain_separation": {
+      "leaf": "0x00",
+      "node": "0x01",
+      "link": "0x02"
+    },
+    "stage_order": [
+      "ambiente",
+      "prereg",
+      "dados",
+      "cadeias_de_origem",
+      "codigo",
+      "congelado",
+      "resultados",
+      "tabelas",
+      "paper"
+    ],
+    "stages": [
+      {
+        "name": "ambiente",
+        "kind": "file",
+        "nfiles": 1,
+        "hash": "5978903fb62278f0f5e0204bd575bdab5e94d65338cad17eee46bcbddcb4a7f4",
+        "leaves": [
+          {
+            "path": "requirements.lock",
+            "sha256": "5978903fb62278f0f5e0204bd575bdab5e94d65338cad17eee46bcbddcb4a7f4",
+            "size": 262
+          }
+        ]
+      },
+      {
+        "name": "prereg",
+        "kind": "file",
+        "nfiles": 1,
+        "hash": "4f84319cd2cd4f1b4cbb339947b1f1e28df8ebcf428dad7357c69832d3f3acbb",
+        "leaves": [
+          {
+            "path": "data/PREREGISTRATION.md",
+            "sha256": "4f84319cd2cd4f1b4cbb339947b1f1e28df8ebcf428dad7357c69832d3f3acbb",
+            "size": 6508
+          }
+        ]
+      },
+      {
+        "name": "dados",
+        "kind": "tree",
+        "nfiles": 3,
+        "hash": "0197035885b4433fcb90890f9720cc056254ff7f4901a762bace9172820df728",
+        "leaves": [
+          {
+            "path": "data/mandatos.csv",
+            "sha256": "3373609262ed10bae3b628418794ba7d8815058b474a3d8d6612d1449b22be10",
+            "size": 782298
+          },
+          {
+            "path": "data/mascara_indice.csv",
+            "sha256": "e8057ff493aeea954381907127c94a02abf4738c4c6b1fdac9eb88fa1f42a9a7",
+            "size": 530873
+          },
+          {
+            "path": "data/parametros.json",
+            "sha256": "c58b9ff97adb6d6a213ba29aff77b2f45ab32650c15572d8dea61e83f9f0441a",
+            "size": 171
+          }
+        ]
+      },
+      {
+        "name": "cadeias_de_origem",
+        "kind": "tree",
+        "nfiles": 3,
+        "hash": "f56eabda8221ca1ece058a9c815423a12a25c815780ac369da1c347ac7624027",
+        "leaves": [
+          {
+            "path": "data/origem/analise.manifest.jsonl",
+            "sha256": "10682b331a914f64342e61cd67d0c3aa6af2c6703a0f45a8d13e0e10d6d3d27a",
+            "size": 14370
+          },
+          {
+            "path": "data/origem/piloto.manifest.jsonl",
+            "sha256": "5db0cb7eafef604373373eee48b762bd6b85308c20daa0e1e81493cb8db92edc",
+            "size": 28330
+          },
+          {
+            "path": "data/origem/preregistro.manifest.jsonl",
+            "sha256": "5ac55b42278366efc0147dcd54bf84e7c44752723048e61ec1cb36aa850cd53c",
+            "size": 3901
+          }
+        ]
+      },
+      {
+        "name": "codigo",
+        "kind": "tree",
+        "nfiles": 27,
+        "hash": "915141de09bd50dbe904c0e2f841278e748e5863158165513b4cc3e8efe08767",
+        "leaves": [
+          {
+            "path": "code/diagnostico_ado.py",
+            "sha256": "3c3883fa81262d4e5bcf66f664049af464ef9803c35612782f3c270d92cdd0f6",
+            "size": 5847
+          },
+          {
+            "path": "code/diagnostico_ado_escala.py",
+            "sha256": "be826f26470ca147d0ac3998db6c2bcedc5c0f5cfe29d354762615e59c0186a4",
+            "size": 3855
+          },
+          {
+            "path": "code/diagnostico_ado_juizes.py",
+            "sha256": "19367fff076762981d16dfa6d2542fe21f21e884810770e0aa201b97ada7f504",
+            "size": 6239
+          },
+          {
+            "path": "code/diagnostico_ado_mascara_real.py",
+            "sha256": "ce52dbb5c77dce628560724843483d50ab7d82430feaf7c9a043048cbb6f69c3",
+            "size": 3820
+          },
+          {
+            "path": "code/montar_results.py",
+            "sha256": "156a92a443ab492ef33a48bd739ae18101e20897639034f2343e3c745fb5b1dc",
+            "size": 6768
+          },
+          {
+            "path": "code/painel.py",
+            "sha256": "df65074932f2895da884b1e6f3e703601aad1c1bfc25f13f7bbe434d0ef75bd3",
+            "size": 3958
+          },
+          {
+            "path": "code/rifle_ado.py",
+            "sha256": "e89690d974676c0239dbbe21a163b67808e38bbf48c9dea2441760dc135eea26",
+            "size": 4426
+          },
+          {
+            "path": "code/verificacoes_port.py",
+            "sha256": "a7e0ea7d8772cdf444152ce717cb61b6176981f2946dac285fc007334c493e98",
+            "size": 9178
+          },
+          {
+            "path": "configs/stages.json",
+            "sha256": "db730ee9704c474b0b11c6d84f15b8abd6c9c5ef7ff7b738c7e6054c87f27bd1",
+            "size": 1488
+          },
+          {
+            "path": "run_all.py",
+            "sha256": "2962cf912cff78d5ea24b6733c0b6a4658922591b8b12bfa4d4f89433f33de2c",
+            "size": 3276
+          },
+          {
+            "path": "scripts/build_run.py",
+            "sha256": "5f91131c4175cfd56b8bb329f28ccdc380c19312c083ca37ba4d10443cbceb97",
+            "size": 2352
+          },
+          {
+            "path": "scripts/make_figures.py",
+            "sha256": "0f7e58cedbd4ccc36e2fc4d42a94800cf611c51fba4f4933508454e1a89d7ddc",
+            "size": 11691
+          },
+          {
+            "path": "scripts/make_tables.py",
+            "sha256": "4b6c796b3d9684b152950f1573aee96d210ec853b19583e5b92adaa53531f01e",
+            "size": 9378
+          },
+          {
+            "path": "scripts/provenance_chain.py",
+            "sha256": "73ce77111dc220f516e6caa0828a54954998e5fff87a89a3da8b861e567622ee",
+            "size": 16685
+          },
+          {
+            "path": "scripts/rodada_completa.sh",
+            "sha256": "f4f79379c3177ef3578a6caeca97bc58465d13bf6ed57019811d15c5991f299b",
+            "size": 407
+          },
+          {
+            "path": "scripts/verify_chain.py",
+            "sha256": "0850d45a901a7f0dde2b5fed5093406df9c94439638bcd485da4bb1faa3e729b",
+            "size": 1614
+          },
+          {
+            "path": "scripts/verify_figures.py",
+            "sha256": "58d8410dc8fd25d5c53c8fbf0364f7230464076552ec4e67fad611c9af42009a",
+            "size": 13551
+          },
+          {
+            "path": "stata/rifle_celulas.do",
+            "sha256": "9279e94c30116bb9714e37095f471fa2979091c01dea175a99cdcf5a2e7cf3d2",
+            "size": 3407
+          },
+          {
+            "path": "tests/conftest.py",
+            "sha256": "cd31a98f5026621a50bcd8a57f41bbd7d3b70473376bfc24d23e405f6f46ae77",
+            "size": 231
+          },
+          {
+            "path": "tests/test_anonimizacao.py",
+            "sha256": "e1cc3b0f79b3e3aa53172878865cb812678fb045a5c0ae7f519acc3388db4f84",
+            "size": 807
+          },
+          {
+            "path": "tests/test_cadeias_origem.py",
+            "sha256": "2d84e1a516827ae026b127fa6f1f5499f11deb4f4e134a368f5d9ced1abc3cb3",
+            "size": 1733
+          },
+          {
+            "path": "tests/test_determinismo.py",
+            "sha256": "a145ca06dc4e5baaededd883a7889ec197370e9c7311bc77fa01bdd173f574fe",
+            "size": 397
+          },
+          {
+            "path": "tests/test_numeros_do_paper.py",
+            "sha256": "626a134f34ff32a4cf087d411298ffeb055e484dd653719ae11b6dd7b3b9face",
+            "size": 2142
+          },
+          {
+            "path": "tests/test_resultados.py",
+            "sha256": "c5fe73e7488898ae5bca1ff5f3bf63d4032fe142fefda26dc534cd9b53028aa2",
+            "size": 589
+          },
+          {
+            "path": "tests/test_rifle_ado_mao.py",
+            "sha256": "5a4561569d08ea5fcc68abc6e242605c8d8cbb4652afa0c4ed05fe8629318ba4",
+            "size": 2746
+          },
+          {
+            "path": "tests/test_rifle_ado_ponta.py",
+            "sha256": "67987b63971877a7ac36082b20f0ad59ac484386a74111d7cc3b9db372383d3c",
+            "size": 2604
+          },
+          {
+            "path": "tests/test_verificacoes_port.py",
+            "sha256": "26e5b5066ffd1ba130b18764b4b852257602227a09c7e90cfd79ba5085e62150",
+            "size": 887
+          }
+        ]
+      },
+      {
+        "name": "congelado",
+        "kind": "tree",
+        "nfiles": 21,
+        "hash": "1bbaf7c7c87c8636e7abb26fafe5d8cc4b4e244f12ac9b8a5352b672e028aca3",
+        "leaves": [
+          {
+            "path": "data/congelado/analise/revisao-astra/astra_decomposicao.json",
+            "sha256": "980a81c1761bc701fe16d45fa96be50cd8a5d519ea903ce99eb293a79f75b33e",
+            "size": 4587
+          },
+          {
+            "path": "data/congelado/analise/revisao-astra/astra_injecao.json",
+            "sha256": "0af55d4b38f5ad03474cd121e3faa64fabb4003e67e043f0b23263b22cef3307",
+            "size": 2070
+          },
+          {
+            "path": "data/congelado/analise/revisao-astra/astra_reproducao.json",
+            "sha256": "60e33ec83941dc68f92331f3fda0e5d9ff602a9e3f93edbbbe0d10e963c3e095",
+            "size": 5499
+          },
+          {
+            "path": "data/congelado/analise/revisao-astra/astra_simulacoes.json",
+            "sha256": "48684b8d607838cfd7d0477fd323b93ec55ba28f88137b4e808d85050a924188",
+            "size": 19957
+          },
+          {
+            "path": "data/congelado/analise/saidas/diagnostico_calibracao.json",
+            "sha256": "c0e7d7b769858c5ee34a67948569d268fa8f9f3257eaa1965e6b83b41db26414",
+            "size": 3414
+          },
+          {
+            "path": "data/congelado/analise/saidas/diagnostico_heterocedasticidade.json",
+            "sha256": "ac71aff0aadaa6784e55e8d49db593e42e8277ea1c7a190eb47f5c64d5768fce",
+            "size": 2163
+          },
+          {
+            "path": "data/congelado/analise/saidas/nota_iptu.json",
+            "sha256": "2ca51b33c91029462a49816e654032ac4fb2fa6135ba1d31f214f0b0455b7d28",
+            "size": 327
+          },
+          {
+            "path": "data/congelado/analise/saidas/resultado_v2.json",
+            "sha256": "31c3598ad61009090accb8d3ab3cc1588cbdab2483b49abb7cece19fe83e346d",
+            "size": 7208
+          },
+          {
+            "path": "data/congelado/analise/saidas/resultado_v2_corrigido.json",
+            "sha256": "cfd199cd9c56ed239ac46305fcb8e02f6227ffded9e7c656a6e40348ca7bb592",
+            "size": 7337
+          },
+          {
+            "path": "data/congelado/piloto/saidas/confirmacao_tamanho_v2.json",
+            "sha256": "0c98e2ab1a0a4a46b4119653a78b0118400da37688753fc5f660000a2ebf2616",
+            "size": 2071
+          },
+          {
+            "path": "data/congelado/piloto/saidas/diagnostico_ado.json",
+            "sha256": "f3061d971801a02535ea0b08bc223b7bc176cb76b30cf7d5a42503b74fb89326",
+            "size": 2413
+          },
+          {
+            "path": "data/congelado/piloto/saidas/diagnostico_ado_escala.json",
+            "sha256": "f3f25245229b88af2070de9646e9489e193845ec216c1e7827f3cc908aac1563",
+            "size": 3174
+          },
+          {
+            "path": "data/congelado/piloto/saidas/diagnostico_ado_juizes.json",
+            "sha256": "1f2d332e746edb57ccca6db0defc13f02968582bd1cf81dffbb60e8e19e40e5c",
+            "size": 3368
+          },
+          {
+            "path": "data/congelado/piloto/saidas/diagnostico_ado_mascara_real.json",
+            "sha256": "d7f31226cacb48d9d4f5914cbe3031a03a2f7b88febd46ae45fffbd69bd8734f",
+            "size": 574
+          },
+          {
+            "path": "data/congelado/piloto/saidas/diagnostico_alinhamento.json",
+            "sha256": "5491adba73d5cff5f1adfcabbbe71c086a1cfb2d1790db1d880cac7c365e9bd4",
+            "size": 1872
+          },
+          {
+            "path": "data/congelado/piloto/saidas/diagnostico_borda.json",
+            "sha256": "04e13d5fc4d4d685e98aa6a2824b1422a4b5f700ccd96ba1be212b61990cac16",
+            "size": 560
+          },
+          {
+            "path": "data/congelado/piloto/saidas/diagnostico_costura.json",
+            "sha256": "7f39dd98b518134891782bf13ffcad1e2a422591c58c5200e83856e609debf57",
+            "size": 1236
+          },
+          {
+            "path": "data/congelado/piloto/saidas/diagnostico_escala.json",
+            "sha256": "5ff43eb1806a11c623d18561ae322bb2c32bb83aa48118a5212dfeead24b52bf",
+            "size": 1751
+          },
+          {
+            "path": "data/congelado/piloto/saidas/simulacoes.json",
+            "sha256": "f598bf57298e3000b362ee97bb3a63163337e93990e5ec1b5b0890449c91b00c",
+            "size": 5462
+          },
+          {
+            "path": "data/congelado/piloto/saidas/simulacoes_v2.json",
+            "sha256": "767352b4dccf6c51a234efce24d3c95f00de96e90ed4c7cb6f7a5772d8ec67dd",
+            "size": 7812
+          },
+          {
+            "path": "data/congelado/piloto/saidas/verificacoes_port.json",
+            "sha256": "c94011105838a44e05cc27fc449913d3737c7170caa026b2fd8367faea9201e9",
+            "size": 730
+          }
+        ]
+      },
+      {
+        "name": "resultados",
+        "kind": "file",
+        "nfiles": 1,
+        "hash": "bfc83b09b34a05e3e108b73e41bf15221fd808c4966f4ddda136f688f4655e4b",
+        "leaves": [
+          {
+            "path": "output/results.json",
+            "sha256": "bfc83b09b34a05e3e108b73e41bf15221fd808c4966f4ddda136f688f4655e4b",
+            "size": 101831
+          }
+        ]
+      },
+      {
+        "name": "tabelas",
+        "kind": "tree",
+        "nfiles": 4,
+        "hash": "254039d644c3f12f783486066cef809a223a7e8042be369e891022ad91c0bc66",
+        "leaves": [
+          {
+            "path": "output/tables/tab1_celulas.en.md",
+            "sha256": "c6d510985258eaddac293cf6b70e27f8ea3d9f6f406948abd3bbae7d893b8d67",
+            "size": 9866
+          },
+          {
+            "path": "output/tables/tab1_celulas.es.md",
+            "sha256": "cd6837624fbacf854bb16629b2b05962be989210b4c4587c87561d576a1d23a7",
+            "size": 9980
+          },
+          {
+            "path": "output/tables/tab1_celulas.it.md",
+            "sha256": "5be93191f4703abdcf52740629422c86daad6a4e2a4a8f5bf09cdb87b5092a25",
+            "size": 9986
+          },
+          {
+            "path": "output/tables/tab1_celulas.pt-br.md",
+            "sha256": "cebaccab1eae5bee175bb27d21e8f9d182e50b0d004d27f5d56bb360e5bfb022",
+            "size": 10029
+          }
+        ]
+      },
+      {
+        "name": "paper",
+        "kind": "tree",
+        "nfiles": 1,
+        "hash": "0066ed6506f27edbe72e5602b8304fe0c71592bb6a614d282e9c189dbb883f18",
+        "leaves": [
+          {
+            "path": "data/numeros_publicados.json",
+            "sha256": "44028cadf70729563725fd7c190272737acb4ea4508a4f535f0434eb21870f68",
+            "size": 53284
+          }
+        ]
+      }
+    ],
+    "prev_chain_head": "0000000000000000000000000000000000000000000000000000000000000000",
+    "root": "4173b2b04a0203a9efc02713147f570db88842411a72a8ef438f7f44175db902",
+    "chain_head": "4173b2b04a0203a9efc02713147f570db88842411a72a8ef438f7f44175db902"
+  }
+}

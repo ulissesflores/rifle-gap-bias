@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+CLAUDE.md
+output/rerun/
+output/stata_celulas.dta
+
+# o artigo entra no repositorio so com o DOI (versao final)
+docs/paper/

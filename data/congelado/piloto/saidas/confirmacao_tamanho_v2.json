@@ -1,0 +1,127 @@
+{
+ "semente": 4112026,
+ "limite": 0.075,
+ "permutacoes": 1000,
+ "rho_gerador": 0.21696453979704527,
+ "condicoes": {
+  "principal": {
+   "versao": "principal",
+   "ruido": "ar1",
+   "bases": 2000,
+   "decisiva": true,
+   "rejeicoes": 104,
+   "taxa": 0.052,
+   "ic95": [
+    0.0427,
+    0.0627
+   ],
+   "passa": true
+  },
+  "atraso": {
+   "versao": "atraso",
+   "ruido": "ar1",
+   "bases": 2000,
+   "decisiva": true,
+   "rejeicoes": 131,
+   "taxa": 0.0655,
+   "ic95": [
+    0.0551,
+    0.0772
+   ],
+   "passa": true
+  },
+  "grandes": {
+   "versao": "grandes",
+   "ruido": "ar1",
+   "bases": 2000,
+   "decisiva": true,
+   "rejeicoes": 106,
+   "taxa": 0.053,
+   "ic95": [
+    0.0436,
+    0.0637
+   ],
+   "passa": true
+  },
+  "principal_rho0": {
+   "versao": "principal",
+   "ruido": "rho0",
+   "bases": 1000,
+   "decisiva": false,
+   "rejeicoes": 46,
+   "taxa": 0.046,
+   "ic95": [
+    0.0339,
+    0.0609
+   ],
+   "passa": true
+  },
+  "principal_rho04": {
+   "versao": "principal",
+   "ruido": "rho04",
+   "bases": 1000,
+   "decisiva": false,
+   "rejeicoes": 50,
+   "taxa": 0.05,
+   "ic95": [
+    0.0373,
+    0.0654
+   ],
+   "passa": true
+  },
+  "principal_ma1_theta06": {
+   "versao": "principal",
+   "ruido": "ma1",
+   "bases": 1000,
+   "decisiva": false,
+   "rejeicoes": 56,
+   "taxa": 0.056,
+   "ic95": [
+    0.0426,
+    0.0721
+   ],
+   "passa": true
+  },
+  "principal_t5": {
+   "versao": "principal",
+   "ruido": "t5",
+   "bases": 1000,
+   "decisiva": false,
+   "rejeicoes": 50,
+   "taxa": 0.05,
+   "ic95": [
+    0.0373,
+    0.0654
+   ],
+   "passa": true
+  },
+  "principal_escala_municipal": {
+   "versao": "principal",
+   "ruido": "escala",
+   "bases": 1000,
+   "decisiva": false,
+   "rejeicoes": 62,
+   "taxa": 0.062,
+   "ic95": [
+    0.0479,
+    0.0788
+   ],
+   "passa": true
+  },
+  "principal_nao_estacionario": {
+   "versao": "principal",
+   "ruido": "naoestac",
+   "bases": 1000,
+   "decisiva": false,
+   "rejeicoes": 12,
+   "taxa": 0.012,
+   "ic95": [
+    0.0062,
+    0.0209
+   ],
+   "passa": true
+  }
+ },
+ "decisivas_passam": true,
+ "informativas_passam": true
+}

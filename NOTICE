@@ -1,0 +1,14 @@
+Does a mayor improve a city beyond chance? Missing data at a change of mayor makes the test say yes — replication package
+Copyright 2026 Carlos Ulisses Flores, Codex Hash Research Laboratory.
+
+This repository has two licenses:
+
+  * Code (code/, scripts/, tests/, stata/, run_all.py) — Apache License 2.0.
+    See LICENSE and LICENSES/Apache-2.0.txt.
+
+  * Text of the paper and figures (docs/*, output/figures/*) — Creative Commons
+    Attribution 4.0 International (CC BY 4.0). See LICENSES/CC-BY-4.0.txt.
+
+The data in data/ are research records released for reproduction: the panel of terms of office
+is anonymized (one code per mayor-municipality pair, with no CPF or name) and derives from open
+data of the Tribunal Superior Eleitoral. Cite the paper (CITATION.cff) when using them.

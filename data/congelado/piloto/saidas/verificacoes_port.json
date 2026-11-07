@@ -1,0 +1,34 @@
+{
+ "semente": 19112026,
+ "rho": 0.21696453979704527,
+ "ponta": {
+  "ordens": 36,
+  "p_exato": 0.1111111111111111,
+  "p_teste": 0.110335,
+  "diff_exata": 0.2180924287118977,
+  "diff_teste": 0.21851773890098092,
+  "passa": true
+ },
+ "media_inclui_real": {
+  "diff_teste": 0.2424410029498525,
+  "diff_com_linha_real": 0.2424410029498526,
+  "diff_sem_linha_real": 0.32325467059980345,
+  "passa": true
+ },
+ "nostitch": {
+  "celulas": 8,
+  "trechos": 4,
+  "ordens": 8,
+  "p_exato": 0.75,
+  "p_teste": 0.75113,
+  "diff_exata": -0.049815773750248926,
+  "diff_teste": -0.05000970812712169,
+  "passa": true
+ },
+ "dois_municipios": {
+  "p_q_real_maior": 0.4729525,
+  "bases_q": 400000,
+  "rejeicao_teste": 0.48125,
+  "bases_teste": 4000
+ }
+}

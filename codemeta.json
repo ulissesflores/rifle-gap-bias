@@ -1,0 +1,53 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "rifle-gap-bias",
+  "codeRepository": "https://github.com/ulissesflores/rifle-gap-bias",
+  "description": "Replication package of the paper 'Does a mayor improve a city beyond chance? Missing data at a change of mayor makes the test say yes': size of the RIFLE test (Berry and Fowler) with gaps in the middle of the series, measured in a translation of the official code on the real tenure structure of 5,468 Brazilian municipalities; anonymized panel, frozen outputs with sha256, tests that lock the published numbers and a Merkle provenance chain.",
+  "license": "https://spdx.org/licenses/Apache-2.0",
+  "version": "1.0.0",
+  "dateCreated": "2026-11-03",
+  "programmingLanguage": [
+    {
+      "@type": "ComputerLanguage",
+      "name": "Python",
+      "version": "3.12"
+    },
+    {
+      "@type": "ComputerLanguage",
+      "name": "Stata"
+    }
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Carlos Ulisses",
+      "familyName": "Flores",
+      "@id": "https://orcid.org/0000-0002-6034-7765",
+      "url": "https://ulissesflores.com",
+      "sameAs": "http://lattes.cnpq.br/6905246706890561",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Codex Hash Research Laboratory, Codex Hash Ltda., Brazil"
+      }
+    }
+  ],
+  "keywords": [
+    "randomization inference",
+    "leader effects",
+    "missing data",
+    "serial correlation",
+    "preregistration",
+    "mayors"
+  ],
+  "softwareRequirements": [
+    "numpy==2.5.4",
+    "scipy==1.18.1",
+    "matplotlib==3.11.2",
+    "pytest"
+  ],
+  "relatedLink": [
+    "https://doi.org/10.1126/sciadv.abe3404",
+    "https://ideas.repec.org/c/boc/bocode/s458461.html"
+  ]
+}
